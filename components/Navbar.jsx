@@ -5,25 +5,6 @@ import { cn } from "@/lib/utils"
 import { Separator } from "@/components/ui/separator"
 import Image from "next/image";
 
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 const navItems = [
   {
@@ -40,9 +21,9 @@ const navItems = [
   {
     name: "Projects", href: "#pooja-rooms",
     dropdown: [
-      { name: "Communal", href: "/", src: "https://images.squarespace-cdn.com/content/v1/65d325ddd662de7fdcb2411f/bc03c460-5a81-44e1-9920-fc07e711d20a/download+%285%29.jpg" },
-      { name: "Residential", href: "/", src: "https://fabdiz.com/wp-content/uploads/2024/04/product-jpeg-1000x1000-1.webp" },
-      { name: "International", href: "/", src: 'https://media.designcafe.com/wp-content/uploads/2022/11/24185017/living-room-marble-wall-design-for-partition.jpg' },
+      { name: "Communal", href: "/projects/communal", src: "https://images.squarespace-cdn.com/content/v1/65d325ddd662de7fdcb2411f/bc03c460-5a81-44e1-9920-fc07e711d20a/download+%285%29.jpg" },
+      { name: "Residential", href: "/projects/residential", src: "https://fabdiz.com/wp-content/uploads/2024/04/product-jpeg-1000x1000-1.webp" },
+      { name: "International", href: "/projects/international", src: 'https://media.designcafe.com/wp-content/uploads/2022/11/24185017/living-room-marble-wall-design-for-partition.jpg' },
     ],
   },
   {
@@ -70,7 +51,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-3">
-          <div className="w-10 h-10 bg-gradient-to-br from-slate-600 via-slate-400 to-slate-600 rounded-lg flex items-center justify-center shadow-lg">
+          <Link href={'/'} className="w-10 h-10 bg-gradient-to-br from-slate-600 via-slate-400 to-slate-600 rounded-lg flex items-center justify-center shadow-lg">
             {/* Gem Icon */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +62,7 @@ const Navbar = () => {
             >
               <path d="M12 3L2 9l10 12 10-12-10-6z" />
             </svg>
-          </div>
+          </Link>
         </div>
 
         {/* Navigation Links */}
@@ -97,10 +78,10 @@ const Navbar = () => {
                 <Link
                   href={item.href}
                   className={!item.dropdown ? cn(
-                    "px-3 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors duration-200 relative",
+                    "px-3 py-2 text-lg font-medium font-robo text-gray-700 hover:text-gray-900 transition-colors duration-200 relative",
                     "after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-slate-600 after:transition-all after:duration-300",
                     hoveredItem === item.name ? "after:w-full text-gray-900" : "after:w-0",
-                  ) : "px-3 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors duration-200 relative"}
+                  ) : "px-3 py-2 text-lg font-medium text-gray-700 hover:text-gray-900 transition-colors duration-200 relative"}
                 >
                   {item.name}
                 </Link>
@@ -116,9 +97,9 @@ const Navbar = () => {
                     )}
                   >
                     {/* left section  */}
-                    <div className="col-span-2 flex flex-col gap-3 ">
+                    <div className="col-span-2 flex flex-col gap-3 pt-2">
                       {item.dropdown.map((link) => (
-                        <div key={link.name}>{link.name}</div>
+                        <Link href={link.href} className="text-[#242424] hover:cursor-pointer hover:underline decoration-[#d59352] decoration-2 underline-offset-3" key={link.name}>{link.name}</Link>
                       ))}
                     </div>
 
