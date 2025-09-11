@@ -121,3 +121,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+.bg-zoom {
+  background-size: 100%;
+}
+
+.bg-zoom-hover {
+  background-size: 200%;
+}

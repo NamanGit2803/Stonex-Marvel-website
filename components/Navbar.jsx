@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
 import { cn } from "@/lib/utils"
 import { Separator } from "@/components/ui/separator"
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 
 const navItems = [
@@ -45,7 +46,16 @@ const navItems = [
 ];
 
 const Navbar = () => {
+
+  const router = useRouter()
+
   const [hoveredItem, setHoveredItem] = useState(null)
+
+  useEffect(() => {
+    setHoveredItem(null)
+  }, [router.query])
+  
+
   return (
     <nav className="top-0 sticky w-full z-50 bg-background/95 backdrop-blur-xl border-b border-border/50 shadow-sm">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">

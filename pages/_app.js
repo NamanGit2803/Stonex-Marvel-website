@@ -1,16 +1,17 @@
 import "@/styles/globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Roboto } from "next/font/google";
+import { Montserrat } from 'next/font/google';
 
-const roboto = Roboto({
-  weight: ["400", "700"],
-  subsets: ["latin"],
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  variable: '--font-montserrat', // Optional: use as a CSS variable
+  display: 'swap',
 });
 
 export default function App({ Component, pageProps }) {
   return (
-    <main  className={roboto.className}>
+    <main  className={montserrat.variable}>
       <Navbar />
       <Component {...pageProps} />
       <Footer />

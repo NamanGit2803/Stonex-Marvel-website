@@ -1,0 +1,147 @@
+.section {
+  padding: 60px 0;
+  background-color: #fff;
+  /* Optional: Add background color if needed */
+}
+
+.container {
+  max-width: 1320px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+  align-items: center;
+}
+
+.colLg8,
+.colMd8 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .colMd8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+  }
+}
+
+@media (min-width: 992px) {
+  .colLg8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+  }
+
+  .colLg4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+}
+
+.colLg4,
+.colMd4 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .colMd4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+}
+
+.customWidth {
+  max-width: 80%;
+}
+
+.customWidth h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.customWidth p {
+  width: 80%;
+  margin-bottom: 0;
+  padding: 2rem 0;
+  font-size: 1.1rem;
+}
+
+.btnFree {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.btnFree:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+}
+
+.serviceImg {
+  background-image: url('https://www.tilakstonearts.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fservice.ec3c94bc.webp&w=2048&q=75');
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 8px;
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+
+  .colLg8,
+  .colMd8,
+  .colLg4,
+  .colMd4 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .serviceImg {
+    height: 300px;
+  }
+}
+
+@media (max-width: 767px) {
+  .customWidth h2 {
+    font-size: 1.75rem;
+  }
+
+  .customWidth p {
+    font-size: 1rem;
+  }
+
+  .serviceImg {
+    height: 250px;
+  }
+}
