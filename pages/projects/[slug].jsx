@@ -41,7 +41,7 @@ const Projects = () => {
             </div>}
 
             {/* project section  */}
-            <div className='p-5 py-10 flex flex-col items-center justify-center gap-7'>
+            <div className='p-5 p-10 flex flex-col items-center justify-center gap-7'>
                 <h1 className='font-semibold text-2xl'>{title} Projects</h1>
                 <div className='flex flex-col gap-10 w-[80%] justify-center items-center'>
                     {/* search bar  */}
@@ -53,13 +53,13 @@ const Projects = () => {
                     </div>
                     {/* projects  */}
                     <div className='grid grid-cols-2 md:grid-cols-3 w-full gap-4'>
-                        <div style={{ backgroundImage: `url(${imgSrc})`}} className='h-[70vh] w-full bg-cover bg-center bg-no-repeat'>
+                        <div style={{ backgroundImage: `url(${imgSrc})`}} className='h-[70vh] w-full bg-fit bg-center bg-no-repeat'>
 dsds
                         </div>
-                        <div style={{ backgroundImage: `url(${imgSrc})`}} className='h-[70vh] w-full bg-cover bg-center bg-no-repeat'>
+                        <div style={{ backgroundImage: `url(${imgSrc})`}} className='h-[70vh] w-full bg-fit bg-center bg-no-repeat'>
 xsx
                         </div>
-                        <div style={{ backgroundImage: `url(${imgSrc})`}} className='h-[70vh] w-full bg-cover bg-center bg-no-repeat'>
+                        <div style={{ backgroundImage: `url(${imgSrc})`}} className='h-[70vh] w-full bg-fit bg-center bg-no-repeat'>
 za
                         </div>
                     </div>
