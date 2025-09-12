@@ -30,7 +30,7 @@ const navItems = [
   {
     name: "Our Design", href: "#dream-temples",
     dropdown: [
-      { name: "Pooja Rooms", href: "/", src: "https://bonito.in/wp-content/uploads/2021/11/1-01.jpg" },
+      { name: "Pooja Rooms", href: "/our-design/PoojaRooms", src: "https://bonito.in/wp-content/uploads/2021/11/1-01.jpg" },
       { name: "Dream Temples", href: "/", src: "https://5.imimg.com/data5/SELLER/Default/2024/9/448018779/ZB/HH/ZZ/26887741/marble-pooja-mandir.jpg" },
       { name: "Murti", href: "/", src: 'https://media.designcafe.com/wp-content/uploads/2022/11/24185017/living-room-marble-wall-design-for-partition.jpg' },
       { name: "Home Decor", href: "/", src: 'https://media.designcafe.com/wp-content/uploads/2022/11/24185017/living-room-marble-wall-design-for-partition.jpg' },
