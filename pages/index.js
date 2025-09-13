@@ -2,11 +2,16 @@ import Head from "next/head";
 import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import styles from "@/styles/Home.module.css";
-import HeroSection from "@/components/home/HeroSection";
-import ProductsShowingSection from "@/components/home/ProductsShowingSection";
-import Hero from "@/components/home/Hero";
-import DimensionsPictures from "@/components/home/DimensionsPictures";
-import DreamTempleBudget from "@/components/home/DreamTempleBudget";
+import Hero from "@/components/Hero";
+import DimensionsPictures from "@/components/DimensionsPictures";
+import DreamTempleBudget from "@/components/DreamTempleBudget";
+import PoojaRoomJourney from "@/components/PoojaRoomJourney";
+import ComparisonTable from "@/components/ComparisonTable";
+import DesignSteps from "@/components/DesignSteps";
+import ProjectShowcase from "@/components/ProjectShowcase";
+import ClientCarousel from "@/components/ClientCarousel";
+import CitySection from "@/components/CitySection";
+import FAQ from "@/components/FAQ";
 
 
 export default function Home() {
@@ -21,9 +26,26 @@ export default function Home() {
       <div className="min-h-[80vh] w-full">
         <Hero />
 
-        <DimensionsPictures/>
+        <DreamTempleBudget />
 
-        <DreamTempleBudget/>
+        <ComparisonTable />
+
+        <DimensionsPictures />
+
+        <DesignSteps />
+
+        <ProjectShowcase />
+
+        <CitySection />
+
+
+        <ClientCarousel />
+
+        <FAQ />
+
+        <PoojaRoomJourney />
+
+
 
       </div>
     </>

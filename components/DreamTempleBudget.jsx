@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '@/styles/DreamTempleBudget.module.css';
+import styles from '../styles/DreamTempleBudget.module.css';
 
 const DreamTempleBudget = () => {
   const templeOptions = [
@@ -27,12 +27,12 @@ const DreamTempleBudget = () => {
 
   return (
     <section className={styles.budgetSection}>
-      <div className="container-fluid" style={{ paddingLeft: '50px', paddingRight: '50px' }}>
+      <div className="container-fluid" style={{paddingLeft: '40px', paddingRight: '40px'}}>
         <div className="row">
           <div className={`col-xl-10 mx-auto mb-3 ${styles.headerContainer}`}>
             <h2>Dream Temple for Every Budget</h2>
             <p>
-              Transform your space with our exquisite Dream Temples, thoughtfully
+              Transform your space with our exquisite Dream Temples, thoughtfully 
               <br className="d-none d-lg-block" /> designed to suit every style and budget.
             </p>
           </div>
@@ -42,8 +42,8 @@ const DreamTempleBudget = () => {
             <div key={index} className={`col-md-3 ${styles.customCol}`}>
               <div className={styles.poojaCard}>
                 <div className={styles.cardImg}>
-                  <img
-                    src={temple.image}
+                  <img 
+                    src={temple.image} 
                     alt={temple.title}
                     loading="lazy"
                     decoding="async"
