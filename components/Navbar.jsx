@@ -41,8 +41,8 @@ const navItems = [
   },
   { name: "Services", href: "#virtual-tour" },
   { name: "How It Works", href: "#projects" },
-  { name: "Location", href: "#guides" },
-  { name: "Blog", href: "#contact" },
+  { name: "Location", href: "/Location" },
+  { name: "Blog", href: "/Blog" },
   { name: "Book Appointment", href: "/AppointmentPage" },
   { name: "Testimonials", href: "#contact" },
 ];
@@ -94,7 +94,7 @@ const Navbar = () => {
           <div className="hidden md:flex flex-col items-center w-full">
             {/* Logo - Centered */}
             <div className="flex items-center justify-center mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-slate-600 via-slate-400 to-slate-600 rounded-lg flex items-center justify-center shadow-lg">
+              <Link href={'/'} className="w-10 h-10 bg-gradient-to-br from-slate-600 via-slate-400 to-slate-600 rounded-lg flex items-center justify-center shadow-lg">
                 {/* Gem Icon */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -105,7 +105,7 @@ const Navbar = () => {
                 >
                   <path d="M12 3L2 9l10 12 10-12-10-6z" />
                 </svg>
-              </div>
+              </Link>
             </div>
 
             {/* Navigation Links - Centered */}
