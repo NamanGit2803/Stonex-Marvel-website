@@ -44,7 +44,7 @@ const navItems = [
   { name: "Location", href: "/Location" },
   { name: "Blog", href: "/Blog" },
   { name: "Book Appointment", href: "/AppointmentPage" },
-  { name: "Testimonials", href: "#contact" },
+  { name: "Testimonials", href: "/Testimonials" },
 ];
 
 const Navbar = () => {

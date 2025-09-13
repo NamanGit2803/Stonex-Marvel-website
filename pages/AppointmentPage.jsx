@@ -6,6 +6,13 @@ import { Input } from "@/components/ui/input";
 import { Calendar } from "@/components/ui/calendar";
 import { Label } from "@/components/ui/label";
 import { cn } from "@/lib/utils";
+import {
+  RadioGroup,
+  RadioGroupItem,
+} from "@/components/ui/radio-group"
+import { Store } from 'lucide-react';
+import { MdOutlineTempleHindu } from "react-icons/md";
+
 
 export default function AppointmentPage() {
   const [service, setService] = useState("store");
@@ -25,54 +32,67 @@ export default function AppointmentPage() {
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-10">
-      <h1 className="text-2xl font-bold text-center mb-8">
+      <h1 className="text-2xl tracking-[.1500rem] font-semibold text-center mb-8">
         BOOK AN APPOINTMENT NOW
       </h1>
 
       <form onSubmit={handleSubmit} className="space-y-6">
         {/* Input fields */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div>
+          <div className="flex flex-col gap-2">
             <Label>Full Name</Label>
             <Input required placeholder="Enter your name" />
           </div>
-          <div>
+          <div className="flex flex-col gap-2">
             <Label>Contact Number</Label>
             <Input required type="tel" placeholder="Enter contact number" />
           </div>
-          <div>
+          <div className="flex flex-col gap-2">
             <Label>City</Label>
             <Input required placeholder="Enter city" />
           </div>
         </div>
 
         {/* Service Selection */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <Card
-            className={cn(
-              "cursor-pointer border-2",
-              service === "store" && "border-yellow-500"
-            )}
-            onClick={() => setService("store")}
-          >
-            <CardContent className="p-4 text-center">
-              <h3 className="font-semibold">Store Tour</h3>
-              <p className="text-sm text-gray-600">45 minutes</p>
-            </CardContent>
-          </Card>
-          <Card
-            className={cn(
-              "cursor-pointer border-2",
-              service === "temple" && "border-yellow-500"
-            )}
-            onClick={() => setService("temple")}
-          >
-            <CardContent className="p-4 text-center">
-              <h3 className="font-semibold">Temple Customization</h3>
-              <p className="text-sm text-gray-600">1 hour 30 minutes</p>
-            </CardContent>
-          </Card>
-        </div>
+        <RadioGroup value={service} onValueChange={(val) => setService(val)} className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className={cn(
+            "p-5 px-8 rounded-lg flex gap-4 items-center hover:cursor-pointer",
+            service === "store" ? "border border-yellow-500 " : 'border '
+          )}>
+            <RadioGroupItem value="store" id="r1" className="
+           border-yellow-500
+           data-[state=checked]:bg-yellow-500
+           data-[state=checked]:text-yellow-500
+           data-[state=checked]:border-yellow-500
+           "/>
+            <Label htmlFor="r1" className="flex gap-3 hover:cursor-pointer">
+              <Store className="h-8 w-8" />
+              <div className="flex flex-col">
+                <span className="text-lg">Store Tour</span>
+                <span className="text-sm font-extralight">45 minutes</span>
+              </div>
+            </Label>
+          </div>
+
+          <div className={cn(
+            "p-5 px-8 rounded-lg flex gap-4 items-center hover:cursor-pointer",
+            service === "customization" ? "border border-yellow-500 " : 'border '
+          )}>
+            <RadioGroupItem value="customization" id="r2" className="
+           border-yellow-500
+           data-[state=checked]:bg-yellow-500
+           data-[state=checked]:text-yellow-500
+           data-[state=checked]:border-yellow-500
+           "/>
+            <Label htmlFor="r2" className="flex gap-3 hover:cursor-pointer">
+              <Store className="h-8 w-8" />
+              <div className="flex flex-col">
+                <span className="text-lg">Temple Customization</span>
+                <span className="text-sm font-extralight">1 hours 30 minutes</span>
+              </div>
+            </Label>
+          </div>
+        </RadioGroup>
 
         <div className="grid grid-cols-1 md:grid-cols-2">
           {/* Calendar */}
