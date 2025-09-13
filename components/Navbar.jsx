@@ -4,6 +4,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils"
 import { Separator } from "@/components/ui/separator"
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 
 
@@ -42,10 +43,12 @@ const navItems = [
   { name: "How It Works", href: "#projects" },
   { name: "Location", href: "#guides" },
   { name: "Blog", href: "#contact" },
+  { name: "Book Appointment", href: "/AppointmentPage" },
   { name: "Testimonials", href: "#contact" },
 ];
 
 const Navbar = () => {
+  const router = useRouter()
   const [hoveredItem, setHoveredItem] = useState(null);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -60,6 +63,12 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+
+  useEffect(() => {
+    setHoveredItem(null)
+  }, [router.query])
+
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });

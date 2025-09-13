@@ -122,10 +122,13 @@
   }
 }
 
-.bg-zoom {
-  background-size: 100%;
+
+/* Selected date */
+.rdp-day_selected {
+  @apply bg-yellow-500 text-white hover:bg-yellow-600;
 }
 
-.bg-zoom-hover {
-  background-size: 200%;
+/* Today */
+.rdp-day_today {
+  @apply border border-yellow-500 text-yellow-700 font-semibold;
 }
