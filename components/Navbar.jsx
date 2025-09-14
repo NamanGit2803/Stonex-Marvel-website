@@ -10,7 +10,7 @@ import { useRouter } from "next/router";
 
 const navItems = [
   {
-    name: "House Of Talks", href: "/",
+    name: "House Of Talks", href: "",
     dropdown: [
       { name: "About Us", href: "/", src: "https://i.pinimg.com/564x/68/5d/bf/685dbf4b95c6c81f0158ae13e0369881.jpg" },
       { name: "Exprience Center", href: "/", src: "https://images.orientbell.com/media/catalog/product/s/u/super_gloss_blue_marble_stone_dk_1.jpg" },
@@ -21,15 +21,15 @@ const navItems = [
     ],
   },
   {
-    name: "Projects", href: "#pooja-rooms",
+    name: "Projects", href: '',
     dropdown: [
-      { name: "Communal", href: "/", src: "https://images.squarespace-cdn.com/content/v1/65d325ddd662de7fdcb2411f/bc03c460-5a81-44e1-9920-fc07e711d20a/download+%285%29.jpg" },
-      { name: "Residential", href: "/", src: "https://fabdiz.com/wp-content/uploads/2024/04/product-jpeg-1000x1000-1.webp" },
-      { name: "International", href: "/", src: 'https://media.designcafe.com/wp-content/uploads/2022/11/24185017/living-room-marble-wall-design-for-partition.jpg' },
+      { name: "Communal", href: "/projects/communal", src: "https://images.squarespace-cdn.com/content/v1/65d325ddd662de7fdcb2411f/bc03c460-5a81-44e1-9920-fc07e711d20a/download+%285%29.jpg" },
+      { name: "Residential", href: "/projects/residential", src: "https://fabdiz.com/wp-content/uploads/2024/04/product-jpeg-1000x1000-1.webp" },
+      { name: "International", href: "/projects/international", src: 'https://media.designcafe.com/wp-content/uploads/2022/11/24185017/living-room-marble-wall-design-for-partition.jpg' },
     ],
   },
   {
-    name: "Our Design", href: "#dream-temples",
+    name: "Our Design", href: "",
     dropdown: [
       { name: "Pooja Rooms", href: "/", src: "https://bonito.in/wp-content/uploads/2021/11/1-01.jpg" },
       { name: "Dream Temples", href: "/", src: "https://5.imimg.com/data5/SELLER/Default/2024/9/448018779/ZB/HH/ZZ/26887741/marble-pooja-mandir.jpg" },
