@@ -31,15 +31,20 @@ const navItems = [
   {
     name: "Our Design", href: "",
     dropdown: [
-      { name: "Pooja Rooms", href: "/", src: "https://bonito.in/wp-content/uploads/2021/11/1-01.jpg" },
-      { name: "Dream Temples", href: "/", src: "https://5.imimg.com/data5/SELLER/Default/2024/9/448018779/ZB/HH/ZZ/26887741/marble-pooja-mandir.jpg" },
+      { name: "Pooja Rooms", href: "/marble-pooja-room-designs", src: "https://bonito.in/wp-content/uploads/2021/11/1-01.jpg" },
+      { name: "Dream Temples", href: "/premium-marble-temple-for-home", src: "https://5.imimg.com/data5/SELLER/Default/2024/9/448018779/ZB/HH/ZZ/26887741/marble-pooja-mandir.jpg" },
       { name: "Murti", href: "/", src: 'https://media.designcafe.com/wp-content/uploads/2022/11/24185017/living-room-marble-wall-design-for-partition.jpg' },
       { name: "Home Decor", href: "/", src: 'https://media.designcafe.com/wp-content/uploads/2022/11/24185017/living-room-marble-wall-design-for-partition.jpg' },
-      { name: "Communal Temples", href: "/", src: 'https://media.designcafe.com/wp-content/uploads/2022/11/24185017/living-room-marble-wall-design-for-partition.jpg' },
-      { name: "Jain temples", href: "/", src: 'https://media.designcafe.com/wp-content/uploads/2022/11/24185017/living-room-marble-wall-design-for-partition.jpg' },
+      { name: "Communal Temples", href: "/communal-temple-design", src: 'https://media.designcafe.com/wp-content/uploads/2022/11/24185017/living-room-marble-wall-design-for-partition.jpg' },
+      { name: "Jain temples", href: "/jain-temple", src: 'https://media.designcafe.com/wp-content/uploads/2022/11/24185017/living-room-marble-wall-design-for-partition.jpg' },
     ],
   },
-  { name: "Services", href: "#virtual-tour" },
+  { name: "Services", href: "",
+    dropdown: [
+      { name: "TSA International", href: "/marble-home-temple-international", src: "https://bonito.in/wp-content/uploads/2021/11/1-01.jpg" },
+      { name: "TSA Design Hub", href: "/home-temple-interior-designers", src: "https://bonito.in/wp-content/uploads/2021/11/1-01.jpg" },
+    ]
+   },
   { name: "How It Works", href: "#projects" },
   { name: "Location", href: "/Location" },
   { name: "Blog", href: "/Blog" },
@@ -148,10 +153,10 @@ const Navbar = () => {
                       {/* right section  */}
                       <div className="col-span-10 grid grid-cols-6 gap-2 border-l  items-center px-4 py-5">
                         {item.dropdown.map((link) => (
-                          <div key={link.name} className="flex flex-col items-center h-full">
+                          <Link href={link.href} key={link.name} className="flex flex-col items-center h-full">
                             <img className="w-full h-full rounded-sm" src={link.src} alt="img" />
                             <span>{link.name}</span>
-                          </div>
+                          </Link>
                         ))}
                       </div>
                     </div>
