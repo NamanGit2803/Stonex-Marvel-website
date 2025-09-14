@@ -141,7 +141,7 @@ const Navbar = () => {
                       {/* left section  */}
                       <div className="col-span-2 flex flex-col gap-3 ">
                         {item.dropdown.map((link) => (
-                          <div key={link.name}>{link.name}</div>
+                          <Link href={link.href} className="text-[#242424] hover:cursor-pointer hover:underline decoration-[#d59352] decoration-2 underline-offset-3" key={link.name}>{link.name}</Link>
                         ))}
                       </div>
 
