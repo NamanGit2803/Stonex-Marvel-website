@@ -10,7 +10,7 @@ import { useRouter } from "next/router";
 
 const navItems = [
   {
-    name: "House Of Talks", href: "",
+    name: "HOUSE OF TILAK", href: "",
     dropdown: [
       { name: "About Us", href: "/", src: "https://i.pinimg.com/564x/68/5d/bf/685dbf4b95c6c81f0158ae13e0369881.jpg" },
       { name: "Exprience Center", href: "/", src: "https://images.orientbell.com/media/catalog/product/s/u/super_gloss_blue_marble_stone_dk_1.jpg" },
@@ -21,7 +21,7 @@ const navItems = [
     ],
   },
   {
-    name: "Projects", href: '',
+    name: "PROJECTS", href: '',
     dropdown: [
       { name: "Communal", href: "/projects/communal", src: "https://images.squarespace-cdn.com/content/v1/65d325ddd662de7fdcb2411f/bc03c460-5a81-44e1-9920-fc07e711d20a/download+%285%29.jpg" },
       { name: "Residential", href: "/projects/residential", src: "https://fabdiz.com/wp-content/uploads/2024/04/product-jpeg-1000x1000-1.webp" },
@@ -29,7 +29,7 @@ const navItems = [
     ],
   },
   {
-    name: "Our Design", href: "",
+    name: "OUR CREATION", href: "",
     dropdown: [
       { name: "Pooja Rooms", href: "/marble-pooja-room-designs", src: "https://bonito.in/wp-content/uploads/2021/11/1-01.jpg" },
       { name: "Dream Temples", href: "/premium-marble-temple-for-home", src: "https://5.imimg.com/data5/SELLER/Default/2024/9/448018779/ZB/HH/ZZ/26887741/marble-pooja-mandir.jpg" },
@@ -39,17 +39,17 @@ const navItems = [
       { name: "Jain temples", href: "/jain-temple", src: 'https://media.designcafe.com/wp-content/uploads/2022/11/24185017/living-room-marble-wall-design-for-partition.jpg' },
     ],
   },
-  { name: "Services", href: "",
+  { name: "SERVICES", href: "",
     dropdown: [
       { name: "TSA International", href: "/marble-home-temple-international", src: "https://bonito.in/wp-content/uploads/2021/11/1-01.jpg" },
       { name: "TSA Design Hub", href: "/home-temple-interior-designers", src: "https://bonito.in/wp-content/uploads/2021/11/1-01.jpg" },
     ]
    },
-  { name: "How It Works", href: "#projects" },
-  { name: "Location", href: "/Location" },
-  { name: "Blog", href: "/Blog" },
-  { name: "Book Appointment", href: "/AppointmentPage" },
-  { name: "Testimonials", href: "/Testimonials" },
+  { name: "HOW IT WORKS", href: "#projects" },
+  { name: "LOCATION", href: "/Location" },
+  { name: "BLOG", href: "/Blog" },
+  { name: "BOOK APPOINTMENT", href: "/AppointmentPage" },
+  { name: "TESTIMONIALS", href: "/Testimonials" },
 ];
 
 const Navbar = () => {
@@ -125,10 +125,10 @@ const Navbar = () => {
                   <Link
                     href={item.href}
                     className={!item.dropdown ? cn(
-                      "px-3 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors duration-200 relative",
-                      "after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-slate-600 after:transition-all after:duration-300",
+                      "px-2 font-medium tracking-wider py-2 text-sm hover:text-gray-900 transition-colors duration-200 relative",
+                      "after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-[#d59352] after:transition-all after:duration-300",
                       hoveredItem === item.name ? "after:w-full text-gray-900" : "after:w-0",
-                    ) : "px-3 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors duration-200 relative"}
+                    ) : "px-2 font-medium tracking-wider py-2 text-sm  hover:text-gray-900 transition-colors duration-200 relative"}
                   >
                     {item.name}
                   </Link>
