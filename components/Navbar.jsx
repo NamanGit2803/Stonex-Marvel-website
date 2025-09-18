@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils"
 import { Separator } from "@/components/ui/separator"
 import Image from "next/image";
 import { useRouter } from "next/router";
+import SpeedDial from "@/components/SpeedDial";
 
 
 
@@ -55,19 +56,9 @@ const navItems = [
 const Navbar = () => {
   const router = useRouter()
   const [hoveredItem, setHoveredItem] = useState(null);
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [expandedItem, setExpandedItem] = useState(null);
   const [showContactForm, setShowContactForm] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 100);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
 
   useEffect(() => {
@@ -75,9 +66,7 @@ const Navbar = () => {
   }, [router.query])
 
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+ 
 
   const toggleItemExpansion = (itemName) => {
     if (expandedItem === itemName) {
@@ -125,10 +114,10 @@ const Navbar = () => {
                   <Link
                     href={item.href}
                     className={!item.dropdown ? cn(
-                      "px-2 font-medium tracking-wider py-2 text-sm hover:text-gray-900 transition-colors duration-200 relative",
+                      "px-2 tracking-wider py-2 text-sm hover:text-gray-900 transition-colors duration-200 relative",
                       "after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-[#d59352] after:transition-all after:duration-300",
                       hoveredItem === item.name ? "after:w-full text-gray-900" : "after:w-0",
-                    ) : "px-2 font-medium tracking-wider py-2 text-sm  hover:text-gray-900 transition-colors duration-200 relative"}
+                    ) : "px-2  tracking-wider py-2 text-sm  hover:text-gray-900 transition-colors duration-200 relative"}
                   >
                     {item.name}
                   </Link>
@@ -411,30 +400,10 @@ const Navbar = () => {
       )}
 
       {/* Floating Action Buttons */}
-      <div className="icons">
-        {/* Call Button */}
-        <a
-          href="tel:+1234567890"
-          className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-colors"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5 text-white"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-            />
-          </svg>
-        </a>
+      <div>
 
         {/* Scroll to Top Button - Only visible when scrolled */}
-        {isScrolled && (
+        {/* {isScrolled && (
           <button
             onClick={scrollToTop}
             className="w-10 h-10 bg-white border border-gray-200 rounded-full flex items-center justify-center shadow-lg hover:bg-gray-50 transition-colors"
@@ -454,13 +423,13 @@ const Navbar = () => {
               />
             </svg>
           </button>
-        )}
+        )} */}
       </div>
 
       <style jsx>{`
   .icons {
     animation: floaty 4s ease-in-out infinite;
-    bottom: 2rem !important;
+    bottom: 5.5rem !important;
     cursor: pointer;
     right: 14px !important;
     position: fixed !important;
