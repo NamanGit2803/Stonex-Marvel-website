@@ -5,6 +5,9 @@ import { cn } from "@/lib/utils"
 import { Separator } from "@/components/ui/separator"
 import Image from "next/image";
 import { useRouter } from "next/router";
+import SpeedDial from "@/components/SpeedDial";
+
+
 
 const navItems = [
   {
@@ -53,19 +56,9 @@ const navItems = [
 const Navbar = () => {
   const router = useRouter()
   const [hoveredItem, setHoveredItem] = useState(null);
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [expandedItem, setExpandedItem] = useState(null);
   const [showContactForm, setShowContactForm] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 100);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
 
   useEffect(() => {
@@ -73,9 +66,7 @@ const Navbar = () => {
   }, [router.query])
 
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+ 
 
   const toggleItemExpansion = (itemName) => {
     if (expandedItem === itemName) {
@@ -92,15 +83,12 @@ const Navbar = () => {
   return (
     <>
       <nav className="top-0 sticky w-full z-50 bg-background/95 backdrop-blur-xl border-b border-border/50 shadow-sm">
-        <div className="container mx-auto px-4 py-4">
+        <div className="container mx-auto px-4 py-4 flex flex-col items-center">
           {/* Desktop Layout */}
-          <div className="hidden lg:flex items-center justify-between w-full">
-            {/* Logo and Title - Left */}
-            <Link
-              href="/"
-              className="flex items-center gap-2 focus:outline-none focus:ring-0"
-            >
-              <div className="w-10 h-10 bg-gradient-to-br from-slate-600 via-slate-400 to-slate-600 rounded-lg flex items-center justify-center shadow-lg">
+          <div className="hidden md:flex flex-col items-center w-full">
+            {/* Logo - Centered */}
+            <div className="flex items-center justify-center mb-4">
+              <Link href={'/'} className="w-10 h-10 bg-gradient-to-br from-slate-600 via-slate-400 to-slate-600 rounded-lg flex items-center justify-center shadow-lg">
                 {/* Gem Icon */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -111,38 +99,28 @@ const Navbar = () => {
                 >
                   <path d="M12 3L2 9l10 12 10-12-10-6z" />
                 </svg>
-              </div>
-              {/* <span className="font-semibold text-lg">House of Indian Stonex</span> */}
-            </Link>
+              </Link>
+            </div>
 
-
-            {/* Navigation Links - Right */}
-            <div className="flex items-center space-x-2 xl:space-x-4 2xl:space-x-6 focus:outline-none focus:ring-0">
+            {/* Navigation Links - Centered */}
+            <div className="flex items-baseline space-x-8">
               {navItems.map((item) => (
                 <div
                   key={item.name}
-                  className="relative "
+                  className="relative"
                   onMouseEnter={() => setHoveredItem(item.name)}
                   onMouseLeave={() => setHoveredItem(null)}
                 >
-                <Link
-                  href={item.href}
-                  className={
-                    !item.dropdown
-                      ? cn(
-                          "px-1 font-medium tracking-wider py-2 text-xs xl:text-sm hover:text-gray-900 transition-colors duration-200 relative",
-                          "after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-[#d59352] after:transition-all after:duration-300",
-                          hoveredItem === item.name
-                            ? "after:w-full text-gray-900"
-                            : "after:w-0",
-                          "focus:outline-none focus:ring-0" // ✅ only once, applied here
-                        )
-                      : "px-1 font-medium tracking-wider py-2 text-xs xl:text-sm hover:text-gray-900 transition-colors duration-200 relative focus:outline-none focus:ring-0"
-                  }
-                >
-                  {item.name}
-                </Link>
-
+                  <Link
+                    href={item.href}
+                    className={!item.dropdown ? cn(
+                      "px-2 tracking-wider py-2 text-sm hover:text-gray-900 transition-colors duration-200 relative",
+                      "after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-[#d59352] after:transition-all after:duration-300",
+                      hoveredItem === item.name ? "after:w-full text-gray-900" : "after:w-0",
+                    ) : "px-2  tracking-wider py-2 text-sm  hover:text-gray-900 transition-colors duration-200 relative"}
+                  >
+                    {item.name}
+                  </Link>
 
                   {/* Dropdown Menu */}
                   {item.dropdown && (
@@ -178,10 +156,10 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Layout */}
-          <div className="lg:hidden flex items-center justify-between w-full relative">
+          <div className="md:hidden flex items-center justify-between w-full relative">
             {/* Mobile Menu Button - Left */}
             <button
-              className="p-2 rounded-lg hover:bg-slate-100 transition z-50 focus:outline-none"
+              className="p-2 rounded-lg hover:bg-slate-100 transition z-50"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               <svg
@@ -200,27 +178,24 @@ const Navbar = () => {
               </svg>
             </button>
 
-            {/* Logo and Title - Center (absolute positioning to keep it centered) */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 flex items-center">
-              <Link href={'/'} className="flex items-center gap-2">
-                <div className="w-10 h-10 bg-gradient-to-br from-slate-600 via-slate-400 to-slate-600 rounded-lg flex items-center justify-center shadow-lg">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 text-white drop-shadow-sm"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path d="M12 3L2 9l10 12 10-12-10-6z" />
-                  </svg>
-                </div>
-                {/* <span className="font-semibold text-sm">House of Indian Stonex</span> */}
-              </Link>
+            {/* Logo - Center (absolute positioning to keep it centered) */}
+            <div className="absolute left-1/2 transform -translate-x-1/2">
+              <div className="w-10 h-10 bg-gradient-to-br from-slate-600 via-slate-400 to-slate-600 rounded-lg flex items-center justify-center shadow-lg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6 text-white drop-shadow-sm"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path d="M12 3L2 9l10 12 10-12-10-6z" />
+                </svg>
+              </div>
             </div>
 
             {/* Contact Button - Right */}
             <button
-              className="px-3 py-1.5 bg-[#b88624] text-white rounded-md text-xs font-medium focus:outline-none"
+              className="px-3 py-1.5 bg-[#b88624] text-white rounded-md text-xs font-medium"
               onClick={toggleContactForm}
             >
               Contact Us
@@ -229,7 +204,7 @@ const Navbar = () => {
 
           {/* Mobile Sidebar - Updated to fix visibility issues */}
           <div className={cn(
-            "lg:hidden fixed top-0 left-0 h-screen w-full bg-white shadow-xl z-40 transform transition-transform duration-300 ease-in-out overflow-y-auto",
+            "md:hidden fixed top-0 left-0 h-screen w-full bg-white shadow-xl z-40 transform transition-transform duration-300 ease-in-out overflow-y-auto",
             isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
           )}>
             <div className="p-6 min-h-full">
@@ -237,7 +212,7 @@ const Navbar = () => {
               <div className="flex justify-end mb-6">
                 <button
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="p-2 rounded-full hover:bg-gray-100 focus:outline-none"
+                  className="p-2 rounded-full hover:bg-gray-100"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -252,7 +227,7 @@ const Navbar = () => {
                     {item.dropdown ? (
                       <div>
                         <button
-                          className="flex items-center justify-between w-full px-3 py-2 text-sm font-medium text-gray-700 focus:outline-none"
+                          className="flex items-center justify-between w-full px-3 py-2 text-sm font-medium text-gray-700"
                           onClick={() => toggleItemExpansion(item.name)}
                         >
                           <span>{item.name}</span>
@@ -304,7 +279,7 @@ const Navbar = () => {
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-50">
           <div className="bg-white rounded-lg p-6 max-w-md w-full relative">
             <button
-              className="absolute top-4 right-4 p-2 rounded-full hover:bg-gray-100 text-gray-600 focus:outline-none"
+              className="absolute top-4 right-4 p-2 rounded-full hover:bg-gray-100 text-gray-600"
               onClick={toggleContactForm}
             >
               <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 352 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -415,7 +390,7 @@ const Navbar = () => {
 
               <button
                 type="submit"
-                className="w-full bg-black text-white py-3 px-4 rounded-md hover:bg-gray-800 transition-colors font-medium focus:outline-none"
+                className="w-full bg-black text-white py-3 px-4 rounded-md hover:bg-gray-800 transition-colors font-medium"
               >
                 Next
               </button>
@@ -423,6 +398,79 @@ const Navbar = () => {
           </div>
         </div>
       )}
+
+      {/* Floating Action Buttons */}
+      <div>
+
+        {/* Scroll to Top Button - Only visible when scrolled */}
+        {/* {isScrolled && (
+          <button
+            onClick={scrollToTop}
+            className="w-10 h-10 bg-white border border-gray-200 rounded-full flex items-center justify-center shadow-lg hover:bg-gray-50 transition-colors"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5 text-gray-600"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M5 10l7-7m0 0l7 7m-7-7v18"
+              />
+            </svg>
+          </button>
+        )} */}
+      </div>
+
+      <style jsx>{`
+  .icons {
+    animation: floaty 4s ease-in-out infinite;
+    bottom: 5.5rem !important;
+    cursor: pointer;
+    right: 14px !important;
+    position: fixed !important;
+    z-index: 999 !important;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  @keyframes floaty {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+
+  /* Form input floating labels */
+  input:focus + label,
+  input:not(:placeholder-shown) + label {
+    top: -0.75rem !important;
+    left: 0.5rem !important;
+    font-size: 0.75rem !important;
+    background: white;
+    padding: 0 0.5rem;
+    color: #3b82f6 !important;
+  }
+
+  /* Phone input focus state */
+  .flex:focus-within {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+  }
+
+  /* Input focus states */
+  input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+  }
+`}</style>
     </>
   );
 };

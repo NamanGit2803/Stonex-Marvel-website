@@ -1,6 +1,6 @@
 import "@/styles/globals.css";
 // import Navbar from "@/components/Navbar";
-import Navbar from "@/components/Navbar2";
+import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Montserrat } from 'next/font/google';
 import SpeedDial from "@/components/SpeedDial";
@@ -26,7 +26,7 @@ export default function App({ Component, pageProps }) {
   }, []);
 
 
-   const scrollToTop = () => {
+  const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 

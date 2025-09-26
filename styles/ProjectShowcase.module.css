@@ -190,13 +190,7 @@
   justify-content: center;
 }
 
-.slickPrev {
-  margin-left: -20px;
-}
 
-.slickNext {
-  margin-right: -20px;
-}
 
 .slickPrev:hover, .slickNext:hover {
   background-color: #333;

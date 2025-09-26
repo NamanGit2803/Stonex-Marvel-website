@@ -61,24 +61,24 @@ const ProjectShowcase = () => {
     <div className={styles.section}>
       <div className={styles.container}>
         <h2 className={styles.heading}>Explore Our Projects</h2>
-        
+
         <div className={`${styles.row} ${styles.justifyContentCenter}`}>
           <div className={styles.colXl10}>
             <div className={styles.btnTab}>
               <ul>
-                <li 
+                <li
                   className={activeTab === 'Communal' ? styles.active : ''}
                   onClick={() => setActiveTab('Communal')}
                 >
                   Communal
                 </li>
-                <li 
+                <li
                   className={activeTab === 'Residential' ? styles.active : ''}
                   onClick={() => setActiveTab('Residential')}
                 >
                   Residential
                 </li>
-                <li 
+                <li
                   className={activeTab === 'International' ? styles.active : ''}
                   onClick={() => setActiveTab('International')}
                 >
@@ -88,7 +88,7 @@ const ProjectShowcase = () => {
             </div>
           </div>
         </div>
-        
+
         <div className={styles.mt4}>
           <div className={styles.row}>
             <div className={styles.colMd12}>
@@ -117,7 +117,7 @@ const ProjectShowcase = () => {
                     </div>
                   ))}
                 </div>
-                
+
                 <div className={styles.sliderControls}>
                   <button className={styles.slickPrev} onClick={scrollLeft}>
                     <FaChevronLeft />

@@ -1,45 +1,85 @@
-import { Plus, Edit, Share2, Trash2 } from "lucide-react";
+import React, { useState, useRef, useEffect } from "react";
+import { Plus } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { FaInstagram } from "react-icons/fa";
-import { FiFacebook } from "react-icons/fi";
-import { FiYoutube } from "react-icons/fi";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FiFacebook, FiYoutube } from "react-icons/fi";
+import { FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 
 export default function SpeedDial() {
   const actions = [
-    { icon: <FaInstagram/>, label: "Edit", onClick: () => alert("Edit clicked") },
-    { icon: <FiFacebook/>, label: "Share", onClick: () => alert("Share clicked") },
-    { icon: <FiYoutube />, label: "Delete", onClick: () => alert("Delete clicked") },
-    { icon: <FaLinkedinIn />, label: "Delete", onClick: () => alert("Delete clicked") },
+    { icon: <FaInstagram />, label: "Instagram" },
+    { icon: <FiFacebook />, label: "Facebook" },
+    { icon: <FiYoutube />, label: "YouTube" },
+    { icon: <FaLinkedinIn />, label: "LinkedIn" },
+    { icon: <FaWhatsapp />, label: "Whatsapp" },
   ];
 
+  const [open, setOpen] = useState(false);
+  const closeTimer = useRef(null);
+
+  // clear timer on unmount
+  useEffect(() => {
+    return () => {
+      if (closeTimer.current) window.clearTimeout(closeTimer.current);
+    };
+  }, []);
+
   return (
-    <div className=" flex flex-col items-end space-y-2 group z-100">
-      {/* Action Buttons */}
+    // wrapper contains both button and actions so moving to actions keeps pointer "inside" this wrapper
+    <div
+      className="relative flex flex-col items-end z-50"
+      // close when mouse fully leaves wrapper
+      onMouseLeave={() => {
+        // small delay avoids flicker if user moves fast
+        closeTimer.current = window.setTimeout(() => setOpen(false), 80);
+      }}
+      // if pointer re-enters, cancel closing
+      onMouseEnter={() => {
+        if (closeTimer.current) {
+          window.clearTimeout(closeTimer.current);
+          closeTimer.current = null;
+        }
+      }}
+    >
+      {/* Action Buttons (positioned above the main button) */}
       <div
-        className={`flex flex-col items-end space-y-2 transition-all duration-300 opacity-0 translate-y-5 group-hover:opacity-100 group-hover:translate-y-0`}
+        className={`absolute bottom-full right-0 mb-2 flex flex-col items-end space-y-2 transition-all duration-150
+          ${open ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 translate-y-3 pointer-events-none duration-400"}
+        `}
       >
         {actions.map((action) => (
-          <div key={action.label} className="flex items-center space-x-2">
-            <Button
-              size="icon"
-              variant="secondary"
-              className="rounded-full shadow-lg"
-              onClick={action.onClick}
-            >
-              {action.icon}
-            </Button>
-          </div>
+          <Button
+            key={action.label}
+            size="icon"
+            variant="secondary"
+            className="rounded-full shadow-lg"
+            onClick={() => console.log(action.label)}
+          >
+            {action.icon}
+          </Button>
         ))}
       </div>
 
       {/* Main Floating Button */}
-      <Button
-        size="icon"
-        className="cursor-pointer rounded-full h-10 w-10 bg-[#e4903d] hover:bg-[#c0660c] shadow-lg transition-transform duration-300 group-hover:rotate-45"
+      <div
+        // IMPORTANT: only this onMouseEnter opens the speed dial
+        onMouseEnter={() => {
+          if (closeTimer.current) {
+            window.clearTimeout(closeTimer.current);
+            closeTimer.current = null;
+          }
+          setOpen(true);
+        }}
+        // keyboard support
+        onFocus={() => setOpen(true)}
       >
-        <Plus size={22} className="text-white" />
-      </Button>
+        <Button
+          size="icon"
+          className="cursor-pointer rounded-full h-10 w-10 bg-[#e4903d] hover:bg-[#c0660c] shadow-lg transition-transform duration-200"
+        >
+          <Plus size={22} className="text-white" />
+        </Button>
+      </div>
     </div>
   );
 }
