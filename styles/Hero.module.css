@@ -71,12 +71,14 @@
 }
 
 .contactForm {
-  background: white;
+  background: rgba(255, 255, 255, 0.15); /* Light blue with slight transparency */
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   width: 450px;
   position: relative;
+  backdrop-filter: blur(5px); /* Adds a subtle blur effect for better readability */
+  border: 1px solid #1a1a1a; /* Darker border */
 }
 
 .closeButton {
@@ -95,13 +97,15 @@
 .contactForm h2 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  color: #333;
+  color: #000; /* Black color for better visibility */
+  font-weight: 600;
 }
 
 .contactForm > p {
-  color: #666;
+  color: #333; /* Darker text for better visibility */
   margin-bottom: 1.5rem;
   font-size: 0.9rem;
+  font-weight: 500;
 }
 
 .formGroup {
@@ -119,31 +123,36 @@
   left: 0.75rem;
   top: 0.75rem;
   font-size: 1rem;
-  color: #999;
+  color: #333; /* Darker label text */
   pointer-events: none;
   transition: all 0.2s ease;
+  font-weight: 500;
 }
 
 .inputContainer .focusedLabel {
   top: -0.75rem;
   left: 0.5rem;
   font-size: 0.8rem;
-  background: white;
+  background: rgba(9, 9, 9, 0.9);
   padding: 0 0.5rem;
-  color: #1e90ff; /* Light blue color for focused label */
+  color: #fff; /* White text on blue background */
+  border-radius: 3px;
 }
 
 .inputContainer input {
   width: 100%;
   padding: 0.75rem;
-  border: 1px solid #ddd;
+  border: 1px solid #333; /* Darker border */
   border-radius: 4px;
   font-size: 1rem;
+  background: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+  color: #000; /* Black text */
 }
 
 .inputContainer input:focus {
   outline: none;
-  border-color: #1e90ff; /* Light blue border on focus */
+  border-color: #000; /* Black border on focus */
+  background: rgba(255, 255, 255, 1); /* Solid white when focused */
 }
 
 .phoneInputContainer {
@@ -153,20 +162,24 @@
 .phoneInput {
   display: flex;
   align-items: center;
-  border: 1px solid #ddd;
+  border: 1px solid #333; /* Darker border */
   border-radius: 4px;
   transition: border-color 0.2s ease;
+  background: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
 }
 
 .phoneInputFocused {
-  border-color: #1e90ff; /* Light blue border on focus */
+  border-color: #000; /* Black border on focus */
+  background: rgba(255, 255, 255, 1); /* Solid white when focused */
 }
 
 .countryCode {
   padding: 0.75rem;
-  background: #f5f5f5;
-  border-right: 1px solid #ddd;
+  background: rgba(245, 245, 245, 0.9); /* Slightly transparent background */
+  border-right: 1px solid #333; /* Darker border */
   font-size: 1rem;
+  color: #000; /* Black text */
+  font-weight: 500;
 }
 
 .phoneInput input {
@@ -175,6 +188,8 @@
   font-size: 1rem;
   width: 100%;
   border-radius: 0 4px 4px 0;
+  background: transparent;
+  color: #000; /* Black text */
 }
 
 .phoneInput input:focus {
@@ -185,8 +200,8 @@
 .radioLabel {
   display: block;
   margin-bottom: 0.5rem;
-  font-weight: 500;
-  color: #333;
+  font-weight: 600; /* Bolder font */
+  color: #000; /* Black color */
   font-size: 0.9rem;
 }
 
@@ -202,8 +217,9 @@
   position: relative;
   padding-left: 2rem;
   cursor: pointer;
-  color: #333;
+  color: #000; /* Black text */
   font-size: 0.9rem;
+  font-weight: 500;
 }
 
 .radioOption input[type="radio"] {
@@ -216,7 +232,7 @@
 }
 
 .nextButton {
-  background: #000;
+  background: #000; /* Black background */
   color: white;
   border: none;
   padding: 0.75rem 2rem;
@@ -226,10 +242,12 @@
   cursor: pointer;
   width: 100%;
   margin-top: 1rem;
+  border: 1px solid #000; /* Black border */
 }
 
 .nextButton:hover {
-  background: #333;
+  background: #333; /* Dark gray on hover */
+  border-color: #333;
 }
 
 /* Responsive Design */

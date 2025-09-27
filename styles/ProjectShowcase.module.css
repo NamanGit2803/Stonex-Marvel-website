@@ -1,5 +1,6 @@
 .section {
   padding: 60px 0;
+  overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 .container {
@@ -25,8 +26,10 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--bs-gutter-y));
-  margin-right: calc(-0.5 * var(--bs-gutter-x));
-  margin-left: calc(-0.5 * var(--bs-gutter-x));
+  /* Remove negative margins that cause overflow */
+  margin-right: 0;
+  margin-left: 0;
+  width: 100%; /* Ensure row takes full width */
 }
 
 .justifyContentCenter {
@@ -36,11 +39,15 @@
 .colXl10 {
   flex: 0 0 auto;
   width: 83.33333333%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
 }
 
 .colMd12 {
   flex: 0 0 auto;
   width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
 }
 
 .btnTab {
@@ -182,7 +189,7 @@
   color: #fff;
   border: none;
   border-radius: 50%;
-  cursor: button;
+  cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   display: flex;
@@ -190,7 +197,13 @@
   justify-content: center;
 }
 
+.slickPrev {
+  margin-left: -20px;
+}
 
+.slickNext {
+  margin-right: -20px;
+}
 
 .slickPrev:hover, .slickNext:hover {
   background-color: #333;
@@ -245,7 +258,7 @@
   
   .btnTab ul {
     gap: 0.5rem;
-    justify-content: center; /* Ensure buttons are centered on mobile */
+    justify-content: center;
     padding-bottom: 5px;
   }
   
@@ -286,7 +299,7 @@
   }
   
   .btnTab ul {
-    gap: 0.4rem; /* Further reduce gap on very small screens */
+    gap: 0.4rem;
   }
   
   .btnTab li {
@@ -327,7 +340,7 @@
   }
   
   .btnTab ul {
-    gap: 0.3rem; /* Minimal gap on smallest screens */
+    gap: 0.3rem;
   }
   
   .btnTab li {

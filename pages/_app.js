@@ -1,6 +1,6 @@
 import "@/styles/globals.css";
 // import Navbar from "@/components/Navbar";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/Navbar2";
 import Footer from "@/components/Footer";
 import { Montserrat } from 'next/font/google';
 import SpeedDial from "@/components/SpeedDial";

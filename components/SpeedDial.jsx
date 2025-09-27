@@ -4,14 +4,15 @@ import { Button } from "@/components/ui/button";
 import { FaInstagram } from "react-icons/fa";
 import { FiFacebook, FiYoutube } from "react-icons/fi";
 import { FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
+import Link from "next/link";
 
 export default function SpeedDial() {
   const actions = [
-    { icon: <FaInstagram />, label: "Instagram" },
-    { icon: <FiFacebook />, label: "Facebook" },
-    { icon: <FiYoutube />, label: "YouTube" },
-    { icon: <FaLinkedinIn />, label: "LinkedIn" },
-    { icon: <FaWhatsapp />, label: "Whatsapp" },
+    { icon: <FaInstagram />, label: "Instagram", href: '' },
+    { icon: <FiFacebook />, label: "Facebook", href: '' },
+    { icon: <FiYoutube />, label: "YouTube", href: '' },
+    { icon: <FaLinkedinIn />, label: "LinkedIn", href: '' },
+    { icon: <FaWhatsapp />, label: "Whatsapp" , href: ' https://wa.me/+918058843190'}
   ];
 
   const [open, setOpen] = useState(false);
@@ -48,6 +49,7 @@ export default function SpeedDial() {
         `}
       >
         {actions.map((action) => (
+          <Link href={action.href}>
           <Button
             key={action.label}
             size="icon"
@@ -57,6 +59,7 @@ export default function SpeedDial() {
           >
             {action.icon}
           </Button>
+          </Link>
         ))}
       </div>
 
