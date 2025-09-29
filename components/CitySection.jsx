@@ -7,72 +7,47 @@ const CitySection = () => {
   const cities = [
     {
       name: "Delhi",
-      image: "https://www.tilakstonearts.com/_next/static/media/Delhi.6befc27a.webp",
+      image: "/india-gate.png",
       link: "/locations/delhi"
     },
     {
       name: "Mumbai",
-      image: "https://www.tilakstonearts.com/_next/static/media/Mumbai.44c8b88d.webp",
+      image: "/mumbai.png",
       link: "/locations/mumbai"
     },
     {
       name: "Ahmedabad",
-      image: "https://www.tilakstonearts.com/_next/static/media/Ahmedabad.253d0900.webp",
+      image: "/statue.png",
       link: "/locations/ahmedabad"
     },
     {
       name: "Chennai",
-      image: "https://www.tilakstonearts.com/_next/static/media/Chennai.e060dfe3.webp",
+      image: "/chennai.png",
       link: "/locations/chennai"
     },
     {
-      name: "Kolkata",
-      image: "https://www.tilakstonearts.com/_next/static/media/kolkata.1befdfeb.webp",
-      link: "/locations/kolkata"
-    },
-    {
-      name: "Ranchi",
-      image: "https://www.tilakstonearts.com/_next/static/media/Ranchi.84cc20ce.webp",
-      link: "/locations/ranchi"
-    },
-    {
-      name: "Indore",
-      image: "https://www.tilakstonearts.com/_next/static/media/Indore.b11d262a.webp",
-      link: "/locations/indore"
-    },
-    {
-      name: "Gurgaon",
-      image: "https://www.tilakstonearts.com/_next/static/media/Gurgaon.2d407329.webp",
-      link: "/locations/gurgaon"
-    },
-    {
-      name: "Pune",
-      image: "https://www.tilakstonearts.com/_next/static/media/Pune.012a9161.webp",
-      link: "/locations/pune"
-    },
-    {
       name: "Surat",
-      image: "https://www.tilakstonearts.com/_next/static/media/Surat.953a51b7.webp",
+      image: "/surat.png",
       link: "/locations/surat"
     },
     {
       name: "Kota",
-      image: "https://www.tilakstonearts.com/_next/static/media/Kota.cd493d54.webp",
+      image: "/kota.png",
       link: "/locations/kota"
     },
     {
       name: "Jaipur",
-      image: "https://www.tilakstonearts.com/_next/static/media/Jaipur.240e1c2c.webp",
+      image: "/jaipur.png",
       link: "/locations/jaipur"
     },
      {
       name: "Hyderabad",
-      image: "https://www.tilakstonearts.com/_next/static/media/Jaipur.240e1c2c.webp",
+      image: "/hyderabad.png",
       link: "/locations/jaipur"
     },
      {
       name: "Bengaluru",
-      image: "https://www.tilakstonearts.com/_next/static/media/Jaipur.240e1c2c.webp",
+      image: "/bangalore.png",
       link: "/locations/jaipur"
     },
     {
@@ -154,9 +129,10 @@ const CitySection = () => {
                       className="flex flex-col items-center transition-transform duration-300 hover:scale-105"
                     >
                       <div 
-                        className="w-[120px] h-[120px] border border-[#ae8d40] rounded-full relative cursor-pointer overflow-hidden bg-cover bg-center"
+                        className="w-[100px] h-[100px]  rounded-3xl relative cursor-pointer overflow-hidden bg-contain bg-center bg-no-repeat"
                         style={{ 
-                          backgroundImage: `url(${city.image})`
+                          backgroundImage: `url(${city.image})`,
+                          backgroundSize: '70%'
                         }}
                       >
                         {/* Removed the dark overlay */}

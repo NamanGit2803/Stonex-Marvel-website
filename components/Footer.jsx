@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="grid grid-cols-2 gap-8 py-10 md:py-20 lg:grid-cols-5">
           {/* logo  */}
           <div className="flex flex-col col-span-2 sm:col-span-1 gap-3 justify-start items-start">
-            <Link href='/' className=" w-full flex-col flex tracking-[.1600rem] leading-2 text-theme">
+            <Link href='/' className=" w-full flex-col flex tracking-[.1600rem] leading-2">
               <span className="text-2xl font-semibold">Indian</span>
               <span className="text-4xl font-semibold">Stonex</span>
             </Link>
@@ -40,19 +40,13 @@ const Footer = () => {
             <div className="flex text-sm flex-col gap-4">
               <Link href={""}>About Us</Link>
               <Link href={""}>The Team</Link>
-              <Link href={""}>Artisans of Tilak</Link>
-              <Link href={""}>
-                Collaborations
-              </Link>
+              <Link href={""}>Artisans</Link>
               <Link href={""}>Our Clients</Link>
             </div>
           </div>
           <div className="flex flex-col gap-3">
             <h3 className=" text-xl">Quick Links</h3>
             <div className="flex text-sm flex-col gap-4">
-              <Link href={""}>
-                How it Works
-              </Link>
               <Link href={"/marble-pooja-room-designs"}>
                 Pooja Room
               </Link>
@@ -62,9 +56,6 @@ const Footer = () => {
               <Link href={"/communal-temple-design"}>
                 Communal Temples
               </Link>
-              <Link href={"/marble-home-temple-international"}>
-                TSA International
-              </Link>
               <Link href={"/AppointmentPage"}>
                 Book appointment
               </Link>
@@ -73,20 +64,16 @@ const Footer = () => {
           <div className="flex flex-col gap-3">
             <h3 className=" text-xl">Legal</h3>
             <div className="flex text-sm flex-col gap-4">
-              <Link href={""}>Corporate Info</Link>
               <Link href={"/"}>
                 Terms & Conditions
               </Link>
               <Link href={""}>Privacy Policy</Link>
-              <Link href={""}>Cookies Policy</Link>
-              <Link href={""}>Disclaimer</Link>
             </div>
           </div>
           <div className="flex flex-col gap-3">
             <h3 className="text-xl">Need Help</h3>
             <div className="flex flex-col gap-4 text-sm">
               <Link href={""}>FAQs</Link>
-              <Link href={""}>Stores</Link>
               <Link href={""}>Call Us</Link>
               <Link href={""}>Email</Link>
             </div>
