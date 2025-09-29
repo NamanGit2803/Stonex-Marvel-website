@@ -5,16 +5,21 @@ import { FaInstagram } from "react-icons/fa";
 import { FiFacebook, FiYoutube } from "react-icons/fi";
 import { FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { IoMdCall } from "react-icons/io";
+import { FaPinterestP } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
 
 export default function SpeedDial() {
   const actions = [
-    { icon: <FaInstagram />, label: "Instagram", href: '' },
-    { icon: <FiFacebook />, label: "Facebook", href: '' },
-    { icon: <FiYoutube />, label: "YouTube", href: '' },
-    { icon: <FaLinkedinIn />, label: "LinkedIn", href: '' },
+    { icon: <FaInstagram />, label: "Instagram", href: 'https://www.instagram.com/indian_stonex?igsh=dzA3aWpoNXF1dGVk' },
+    { icon: <FiFacebook />, label: "Facebook", href: 'https://www.facebook.com/share/1BEsC7YXEM/' },
+    { icon: <FiYoutube />, label: "YouTube", href: 'https://youtube.com/@indianstonex-c3i?si=Z1i5Ge1sLZyp7Tdo' },
+    { icon: <FaLinkedinIn />, label: "LinkedIn", href: 'https://www.linkedin.com/in/indian-stonex-091ab1385?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
     { icon: <FaWhatsapp />, label: "Whatsapp", href: ' https://wa.me/+918058843190' },
     { icon: <IoMdCall />, label: "Call", href: '' },
+    { icon: <FaPinterestP />, label: "Pinterest", href: 'https://pin.it/4Y2BLCCQ8' },
+    { icon: <FaXTwitter />, label: "Twitter", href: '' }
+    
   ];
 
   const [open, setOpen] = useState(true);

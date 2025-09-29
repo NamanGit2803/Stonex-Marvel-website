@@ -10,7 +10,7 @@ const navItems = [
   {
     name: "Indian Stonex", href: "",
     dropdown: [
-      { name: "About Us", href: "/", src: "https://i.pinimg.com/564x/68/5d/bf/685dbf4b95c6c81f0158ae13e0369881.jpg" },
+      { name: "About Us", href: "/About", src: "https://i.pinimg.com/564x/68/5d/bf/685dbf4b95c6c81f0158ae13e0369881.jpg" },
       { name: "The Team", href: "/", src: 'https://image.made-in-china.com/2f0j00MZnkfCabkqcS/Marble-Stone-Entrnce-Design-Patterns-Modern-Medallion-Marble-Floor-Decor.jpg' },
       { name: "Artisans", href: "/", src: 'https://5.imimg.com/data5/SELLER/Default/2024/5/419339312/HK/SC/EV/50436332/whatsapp-image-2024-05-16-at-12-26-31-pm-1-500x500.jpeg' },
       { name: "Our Clients", href: "/", src: 'https://media.designcafe.com/wp-content/uploads/2021/04/09160149/marble-pooja-mandir-designs-for-home.jpg' },
@@ -27,7 +27,7 @@ const navItems = [
   {
     name: "Our Creations", href: "",
     dropdown: [
-      { name: "Communal Temples", href: "/communal-temple-design", src: 'https://media.designcafe.com/wp-content/uploads/2022/11/24185017/living-room-marble-wall-design-for-partition.jpg' },
+      { name: "Communal Temples", href: "/communal-temple-design", src: 'https://fabdiz.com/wp-content/uploads/2024/04/425299420_1061269654963171_8894025131850542049_n.jpg' },
       { name: "Murti", href: "/", src: 'https://media.designcafe.com/wp-content/uploads/2022/11/24185017/living-room-marble-wall-design-for-partition.jpg' },
       { name: "Dream Temples", href: "/premium-marble-temple-for-home", src: "https://5.imimg.com/data5/SELLER/Default/2024/9/448018779/ZB/HH/ZZ/26887741/marble-pooja-mandir.jpg" },
       { name: "Jain temples", href: "/jain-temple", src: 'https://media.designcafe.com/wp-content/uploads/2022/11/24185017/living-room-marble-wall-design-for-partition.jpg' },
@@ -117,7 +117,7 @@ const Navbar = () => {
                       !item.dropdown
                         ? cn(
                             "px-2 py-2 text-sm font-medium tracking-wide transition-colors duration-200 relative",
-                            "after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-[#d59352] after:transition-all after:duration-300",
+                            "after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-theme after:transition-all after:duration-300",
                             hoveredItem === item.name
                               ? "after:w-full text-gray-900"
                               : "after:w-0 text-gray-700",
