@@ -27,13 +27,13 @@ const DreamTempleBudget = () => {
 
   return (
     <section className={styles.budgetSection}>
-      <div className="container-fluid" style={{paddingLeft: '40px', paddingRight: '40px'}}>
+      <div className="container-fluid" style={{ paddingLeft: '40px', paddingRight: '40px' }}>
         <div className="row">
           <div className={`col-xl-10 mx-auto mb-3 ${styles.headerContainer}`}>
-            <h2>Dream Temple for Every Budget</h2>
+            <h2>A Temple for Every Home & Budget</h2>
             <p>
-              Transform your space with our exquisite Dream Temples, thoughtfully 
-              <br className="d-none d-lg-block" /> designed to suit every style and budget.
+              Explore finely crafted temples,<br className="d-none d-lg-block" />
+              created to suit every home, space, and budget.
             </p>
           </div>
         </div>
@@ -42,8 +42,8 @@ const DreamTempleBudget = () => {
             <div key={index} className={`col-md-3 ${styles.customCol}`}>
               <div className={styles.poojaCard}>
                 <div className={styles.cardImg}>
-                  <img 
-                    src={temple.image} 
+                  <img
+                    src={temple.image}
                     alt={temple.title}
                     loading="lazy"
                     decoding="async"

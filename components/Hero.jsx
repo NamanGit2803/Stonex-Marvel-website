@@ -73,7 +73,7 @@ const Hero = () => {
     <section className={styles.hero}>
       <div className={styles.heroContent}>
         <div className={`${styles.leftContent} ${isFormClosed ? styles.centeredContent : ''}`}>
-          <h1>Let's Get Started With<br />Your Dream Temple</h1>
+          <h1>Creating Sacred Spaces<br />For Generations</h1>
           
           {/* Mobile-only button */}
           <button 

@@ -31,100 +31,89 @@ export default function DesignSteps() {
   const stepDetails = [
     {
       id: 1,
-      title: "Lets connected one on one",
-      description: "This is the first step where we connect with you one on one to understand your requirements and preferences.",
+      title: "Share Your Vision",
+      description: "Tell us about your space and spiritual preferences. We'll understand your needs and create a personalized plan.",
       details: [
         {
-          title: "Fill Form",
-          description: "Please fill the form and provide us with the necessary details about your pooja room design requirements."
+          title: "Quick Consultation",
+          description: "Share your space details and requirements through a simple 5-minute conversation."
         },
         {
-          title: "Connect over a meet",
-          milestone: "Milestone: Concept Discovery Session",
-          description: "Join us in an interactive session to discuss your Pooja Space and design ideas with our experts. Book a time that suits you best."
+          title: "Custom Plan Creation",
+          milestone: "Milestone: Personalized Design Strategy",
+          description: "We create a tailored design plan based on your space, budget, and spiritual preferences."
         }
       ]
     },
     {
       id: 2,
-      title: "Start With your Design",
-      description: "In this step, we collaborate with you to create a design that meets your vision and requirements.",
+      title: "Design & Visualize",
+      description: "See your dream pooja room come alive with stunning 3D designs before we start building.",
       details: [
         {
-          title: "Pay the Design Fee",
-          description: "If you're happy with the session and we're aligned on your needs, choose a design plan to start."
+          title: "3D Design Creation",
+          description: "Get realistic 3D visualizations showing exactly how your pooja room will look in your space."
         },
         {
-          title: "2D Design",
-          milestone: "Milestone: 2D Design Fee",
-          description: "Our expert designers will create a detailed 2D plan for your temple, showcasing the style and placement of deities."
+          title: "Material Selection",
+          milestone: "Milestone: Design Finalization",
+          description: "Choose from premium materials and finishes that match your style and budget."
         },
         {
-          title: "3D Design",
-          milestone: "Milestone: 3D Design Fee",
-          description: "Once the 2D plan is finalized, visualize your dream space with a 3D model."
-        },
-        {
-          title: "Finalize Your Design",
-          description: "Agree on a design to move forward with production."
+          title: "Final Approval",
+          description: "Review and approve the complete design. We make changes until you're completely satisfied."
         }
       ]
     },
     {
       id: 3,
-      title: "Place The Order",
-      description: "Once the design is finalized, you can place the order for your customized pooja room.",
+      title: "Craft & Create",
+      description: "Our skilled artisans bring your design to life with precision and attention to detail.",
       details: [
         {
-          title: "Start the Order Process",
-          description: "Pay 50% of the final quote to get started."
+          title: "Expert Craftsmanship",
+          description: "Watch as master craftsmen transform raw materials into your beautiful pooja room."
         },
         {
-          title: "The Work Commences",
-          description: "Track your project status through our portal."
+          title: "Quality Assurance",
+          milestone: "Milestone: Quality Check",
+          description: "Every piece undergoes rigorous quality checks to ensure perfection."
+        },
+        {
+          title: "Progress Updates",
+          description: "Receive regular photos and videos showing the creation process."
         }
       ]
     },
     {
       id: 4,
-      title: "Approval",
-      description: "Before proceeding, we ensure that everything is approved by you to meet your expectations.",
+      title: "Delivery & Setup",
+      description: "We safely deliver and help set up your perfect pooja room, ready for your spiritual practice.",
       details: [
         {
-          title: "Receive Updates",
-          description: "We'll keep you updated on your Dream Temple's progress. You'll have the chance to provide feedback and approvals as needed."
+          title: "Secure Packaging",
+          description: "Your temple is carefully packaged for complete protection during transit."
         },
         {
-          title: "Share Your Approval",
-          milestone: "Milestone: Pay the remaining 50%",
-          description: "Approve the final pictures of the temple to proceed to the next stage."
-        }
-      ]
-    },
-    {
-      id: 5,
-      title: "Delivery & Installation",
-      description: "Finally, we deliver and install your pooja room at your desired location.",
-      details: [
-        {
-          title: "International Packaging",
-          description: "Once the full payment is received, we'll carefully pack your order and share videos of the process."
+          title: "Worldwide Delivery",
+          description: "We handle all logistics for safe delivery anywhere across the globe."
         },
         {
-          title: "Dispatch from Our Production",
-          description: "Your shipment will be dispatched, ready to reach your doorstep."
+          title: "Easy Installation",
+          milestone: "Milestone: Setup Completion",
+          description: "Get guided support for easy setup - we ensure everything is perfect."
         },
         {
-          title: "Transit Updates",
-          description: "Stay informed about your shipment's journey."
-        },
-        {
-          title: "Unpacking and Installation",
-          description: "When your shipment arrives, we'll schedule a call to assist you with unpacking and installation."
+          title: "After-Service Support",
+          description: "Continuous support to address any questions after your pooja room is installed."
         }
       ]
     }
   ];
+
+  // Safe access to current step details
+  const currentStep = stepDetails[activeStep - 1] || stepDetails[0];
+  const currentModalStep = stepDetails[modalStep - 1] || stepDetails[0];
 
   const openModal = (stepId) => {
     setModalStep(stepId);
@@ -135,14 +124,14 @@ export default function DesignSteps() {
     setShowModal(false);
   };
 
-  const tabNames = ["Connect", "Design", "Order", "Approval", "Delivery"];
+  const tabNames = ["Share", "Design", "Create", "Delivery"];
 
   return (
     <div className="bg-white py-12 px-4 md:px-6 lg:container lg:mx-auto">
       <div className="text-center mb-12">
-        <h3 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Design your Pooja Room in 5 Easy Steps</h3>
+        <h3 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Create Your Sacred Space in 4 Simple Steps</h3>
         <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-          Create your dream pooja room with us. We will guide you through 5 easy steps to get your pooja room designed and delivered to your doorstep.
+          From sharing your vision to enjoying your perfect pooja room - we make the journey seamless and delightful.
         </p>
       </div>
 
@@ -178,7 +167,7 @@ export default function DesignSteps() {
                       className="mt-4 text-amber-700 font-medium hover:text-amber-800 flex items-center transition-colors duration-300"
                       style={{color: '#a08f0f'}}
                     >
-                      Learn more
+                      See details
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                       </svg>
@@ -194,16 +183,16 @@ export default function DesignSteps() {
         {isLargeScreen && (
           <div className="w-full md:w-3/5 lg:w-3/5 bg-white p-8 rounded-lg shadow-sm border border-gray-100">
             <div className="mb-8">
-              <h3 className="text-2xl font-semibold mb-3 text-gray-800">{stepDetails[activeStep - 1].title}</h3>
-              <p className="text-gray-600">{stepDetails[activeStep - 1].description}</p>
+              <h3 className="text-2xl font-semibold mb-3 text-gray-800">{currentStep.title}</h3>
+              <p className="text-gray-600">{currentStep.description}</p>
             </div>
 
-            {stepDetails[activeStep - 1].details.length > 0 && (
+            {currentStep.details.length > 0 && (
               <>
                 <hr className="my-6 border-gray-200" />
                 
                 <div className="space-y-6">
-                  {stepDetails[activeStep - 1].details.map((detail, index) => (
+                  {currentStep.details.map((detail, index) => (
                     <div key={index} className="flex">
                       <div className="flex-shrink-0 mr-4">
                         <div className="w-3 h-3 rounded-full bg-amber-500 mt-2" style={{backgroundColor: '#a08f0f'}}></div>
@@ -229,7 +218,7 @@ export default function DesignSteps() {
         <div className="fixed inset-0 bg-black flex items-center justify-center p-4 z-50 md:hidden" style={{backgroundColor: 'rgba(0,0,0,0.9)'}}>
           <div className="bg-white rounded-lg w-full max-w-md max-h-[90vh] overflow-y-auto">
             <div className="p-4 border-b border-gray-200 flex justify-between items-center">
-              <h4 className="text-xl font-semibold text-gray-800">Design your Pooja Room in 5 Easy Steps</h4>
+              <h4 className="text-xl font-semibold text-gray-800">Create Your Sacred Space in 4 Simple Steps</h4>
               <button onClick={closeModal} className="text-gray-500 hover:text-gray-700">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -254,16 +243,16 @@ export default function DesignSteps() {
             
             <div className="p-5">
               <div className="mb-6">
-                <h3 className="text-xl font-semibold mb-3 text-gray-800">{stepDetails[modalStep - 1].title}</h3>
-                <p className="text-gray-600">{stepDetails[modalStep - 1].description}</p>
+                <h3 className="text-xl font-semibold mb-3 text-gray-800">{currentModalStep.title}</h3>
+                <p className="text-gray-600">{currentModalStep.description}</p>
               </div>
 
-              {stepDetails[modalStep - 1].details.length > 0 && (
+              {currentModalStep.details.length > 0 && (
                 <>
                   <hr className="my-6 border-gray-200" />
                   
                   <div className="space-y-6">
-                    {stepDetails[modalStep - 1].details.map((detail, index) => (
+                    {currentModalStep.details.map((detail, index) => (
                       <div key={index} className="flex">
                         <div className="flex-shrink-0 mr-4">
                           <div className="w-3 h-3 rounded-full mt-2" style={{backgroundColor: '#a08f0f'}}></div>

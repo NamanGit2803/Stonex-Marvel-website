@@ -10,32 +10,36 @@ const FAQ = () => {
 
   const faqData = [
     {
-      question: "What are Dream Temples?",
-      answer: "Dream Temples are <strong>custom-designed, handcrafted marble temples</strong> created by <strong>Tilak Stone Arts</strong>. They are designed to be not just a religious space but a piece of art that reflects your spiritual values and enhances the aesthetic of your home."
+      question: "What types of marble do you use for your stone temples?",
+      answer: "We work with a variety of premium marbles including <strong>Makrana White Marble</strong>, <strong>Italian Carrara Marble</strong>, and <strong>Vietnam White Marble</strong>. Each piece is carefully selected for its quality, durability, and aesthetic appeal to create stunning temple designs."
     },
     {
-      question: "How long does it take to create and install a Dream Temple?",
-      answer: "The process typically takes <strong>6-8 weeks</strong>, from the design approval to final installation. The exact timeline depends on the complexity and customization of the design."
+      question: "How long does the temple design and installation process take?",
+      answer: "The complete process from design consultation to final installation typically takes <strong>4-8 weeks</strong>, depending on the complexity of the design, size of the temple, and customization requirements."
     },
     {
-      question: "Do you provide installation for Dream Temples?",
-      answer: "Yes, installation is included in our service. Our team ensures that the Dream Temple is assembled and installed at your location with precision no matter where you are."
+      question: "Do you provide custom design services for marble temples?",
+      answer: "Absolutely! We specialize in <strong>custom marble temple designs</strong> tailored to your space, preferences, and spiritual requirements. Our design team works closely with you to create a unique piece that complements your home's aesthetics."
     },
     {
-      question: "Are there any discounts or offers available for Dream Temples?",
-      answer: "We periodically offer <strong>limited-time discounts</strong> on <strong>ready-to-ship temples</strong> or <strong>merchandise gifts</strong> with certain designs. <a href='https://mysoulconnect.com/Dream-Temple' rel='noopener noreferrer' target='_blank' class='text-amber-600 hover:text-amber-700 underline'>Contact us</a> for current offers."
+      question: "What is the price range for your marble temples?",
+      answer: "Our marble temples range from <strong>₹25,000 to ₹2,00,000+</strong> depending on size, marble quality, design complexity, and customization. We offer temples for various budgets while maintaining exceptional craftsmanship."
     },
     {
-      question: "How do I get started with my Dream Temple?",
-      answer: "Start by <strong>filling out the 'Get in Touch' form</strong> on our website. The right member from our team will then contact you to assist you with the next steps in the process, guiding you through design, customization, and installation."
+      question: "Do you offer installation services?",
+      answer: "Yes, we provide <strong>professional installation services</strong> across the city. Our experienced team ensures proper placement, alignment, and finishing touches to make your temple the centerpiece of your home."
     },
     {
-      question: "What material do we use to create our Dream Temples?",
-      answer: "We exclusively use imported <strong>Vietnam White Marble</strong> to craft our Dream Temples, ensuring the highest quality and durability. However, upon special request and where the budget allows, we also offer the option of using <strong>high-grade Makrana Marble</strong> or other premium <strong>Italian stones</strong> to further elevate the elegance and craftsmanship of the temple."
+      question: "How do I maintain and clean my marble temple?",
+      answer: "Marble temples require gentle care. We recommend <strong>dusting regularly with a soft cloth</strong> and <strong>cleaning with pH-neutral stone cleaners</strong>. Avoid acidic cleaners and harsh chemicals. We provide complete maintenance guidelines with every temple."
     },
     {
-      question: "Where to See your Work?",
-      answer: "You are invited to explore our work at our Experience Center, or you can view some of our past documented projects <a href='https://mysoulconnect.com/Residential-project' rel='noopener noreferrer' target='_blank' class='text-amber-600 hover:text-amber-700 underline'>here</a> to get a closer look at the craftsmanship and designs we offer."
+      question: "Can I see examples of your previous work?",
+      answer: "Yes! You can visit our <strong>showroom to see sample temples</strong> or browse our portfolio of completed projects <a href='https://stonemarbletemple.com/portfolio' rel='noopener noreferrer' target='_blank' class='text-amber-600 hover:text-amber-700 underline'>here</a>. We have photos and videos showcasing our craftsmanship."
+    },
+    {
+      question: "What makes your marble temples different from others?",
+      answer: "Our temples feature <strong>hand-carved intricate designs</strong>, <strong>premium quality marble</strong>, and <strong>expert craftsmanship</strong> passed down through generations. We focus on both spiritual significance and artistic excellence in every piece we create."
     }
   ];
 

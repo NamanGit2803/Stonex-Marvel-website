@@ -18,7 +18,7 @@ export default function AboutUs() {
                         <img
                             src={'/about2.svg'}
                             alt="Artisan carving marble illustration"
-                            className=" object-contain"
+                            className=" object-contain rounded-xl"
                         />
                         
 

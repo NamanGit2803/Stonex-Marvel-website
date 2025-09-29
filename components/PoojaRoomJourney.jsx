@@ -83,7 +83,7 @@ const PoojaRoomJourney = () => {
         {/* Content */}
         <div className="h-full flex flex-col justify-center items-center text-center px-4">
           <h2 className="text-white text-4xl md:text-5xl font-medium mb-8" style={{ fontSize: '1.6rem', color: '#fff' }}>
-            Start your Pooja Room Journey Today
+            Let's Build Your Pooja Temple Together
           </h2>
           <button 
             className="flex items-center justify-center gap-2 group hover:bg-amber-700 transition-colors duration-300"
@@ -96,7 +96,7 @@ const PoojaRoomJourney = () => {
               padding: '0.75rem 1.875rem',
               borderRadius: '4px',
               color: '#fff',
-              backgroundColor: '#b8860b',
+              backgroundColor: '#ff7e2e',
               border: 'none',
               width: 'max-content',
               cursor: 'pointer'

@@ -81,29 +81,29 @@ const DimensionsPictures = () => {
               <div className={styles.content}>
 
                 
-                <h2>All we Need is your Space Dimensions and Pictures</h2>
-                <p>Before starting the session, we require you to have your site pictures and dimensions ready. This allows us to understand your space and craft a suitable solution, ensuring we make the most out of our concept discovery session.</p>
+                <h2>Share Your Space Details - We'll Handle the Rest!</h2>
+                <p>To create your perfect pooja unit design, we just need some basic information about your space. Have your room measurements and a few photos ready, and we'll take care of the creative magic!</p>
                 
                 <div className={styles.featureList}>
                   <div className={styles.feature}>
                     <FaArrowRight className={styles.featureArrow} />
-                    <span>Professional space assessment</span>
+                    <span>Quick & easy space evaluation</span>
                   </div>
                   <div className={styles.feature}>
                     <FaArrowRight className={styles.featureArrow} />
-                    <span>Customized design solutions</span>
+                    <span>Personalized design just for you</span>
                   </div>
                   <div className={styles.feature}>
                     <FaArrowRight className={styles.featureArrow} />
-                    <span>Free consultation session</span>
+                    <span>Complimentary design consultation</span>
                   </div>
                 </div>
                 
                 <div className={styles.btnFree} onClick={handleButtonClick}>
-                  <span>Get Free Consultation</span>
+                  <span>Start Your Design Journey</span>
                   <FaArrowRight className={styles.btnIcon} />
                 </div>
-              </div>
+              </div>
             </div>
             <div className={styles.imageColumn}>
               <div className={styles.imageWrapper}>

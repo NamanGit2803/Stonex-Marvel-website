@@ -7,43 +7,19 @@ export default function ClientCarousel() {
   const containerRef = useRef(null);
   
   // Client logos data
-  const clients = [
-    { id: 1, image: "https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1737543172338.jpeg&w=256&q=75" },
-    { id: 2, image: "https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1737465806731.png&w=256&q=75" },
-    { id: 3, image: "https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1737527011809.png&w=256&q=75" },
-    { id: 4, image: "https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1737527091126.jpeg&w=256&q=75" },
-    { id: 5, image: "https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1737541725553.png&w=256&q=75" },
-    { id: 6, image: "https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1737541812847.png&w=256&q=75" },
-    { id: 7, image: "https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1737542442989.png&w=256&q=75" },
-    { id: 8, image: "https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1737542624255.jpeg&w=256&q=75" },
-    { id: 9, image: "https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1737542851797.png&w=256&q=75" },
-    { id: 10, image: "https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1737542902213.avif&w=256&q=75" },
-    { id: 11, image: "https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1737542951087.jpeg&w=256&q=75" },
-    { id: 12, image: "https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1737543029401.png&w=256&q=75" },
-    { id: 13, image: "https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1737543100607.jpeg&w=256&q=75" },
-    { id: 14, image: "https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1737543227034.png&w=256&q=75" },
-    { id: 15, image: "https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1737543316781.png&w=256&q=75" },
-    { id: 16, image: "https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1737543389187.jpeg&w=256&q=75" },
-    { id: 17, image: "https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1737543500982.webp&w=256&q=75" },
-    { id: 18, image: "https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1737543587843.jpeg&w=256&q=75" },
-    { id: 19, image: "https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1737543683852.webp&w=256&q=75" },
-    { id: 20, image: "https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1737543942545.jpeg&w=256&q=75" },
-    { id: 21, image: "https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1737544092406.png&w=256&q=75" },
-    { id: 22, image: "https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1737544186131.jpeg&w=256&q=75" },
-    { id: 23, image: "https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1737544343260.png&w=256&q=75" },
-    { id: 24, image: "https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1737544457962.jpeg&w=256&q=75" },
-    { id: 25, image: "https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1737544905974.png&w=256&q=75" },
-    { id: 26, image: "https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1737544992488.png&w=256&q=75" },
-    { id: 27, image: "https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1737545100478.png&w=256&q=75" },
-    { id: 28, image: "https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1737545222257.png&w=256&q=75" },
-    { id: 29, image: "https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1737545372053.png&w=256&q=75" },
-    { id: 30, image: "https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1737545544494.jpeg&w=256&q=75" },
-    { id: 31, image: "https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1737545708690.jpeg&w=256&q=75" },
-    { id: 32, image: "https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1737559221377.png&w=256&q=75" },
-    { id: 33, image: "https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1740832316111.jpeg&w=256&q=75" },
-    { id: 34, image: "https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1748234550553.jpeg&w=256&q=75" },
-    { id: 35, image: "https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1748234854141.jpeg&w=256&q=75" }
-  ];
+   const clients = [
+    { id: 1, image: "/client1.jpg" },
+    { id: 2, image: "/client2.jpg" },
+    { id: 3, image: "/client3.jpg" },
+    { id: 4, image: "/client4.jpg" },
+    { id: 5, image: "/client5.jpg" },
+    { id: 6, image: "/client6.jpg" },
+    { id: 7, image: "/client7.jpg" },
+    { id: 8, image: "/client8.jpg" },
+    { id: 9, image: "/client9.jpg" },
+    { id: 10, image: "/client10.jpg" },
+    { id: 11, image: "/client11.jpg" },
+  ];
 
   // Update visible items based on screen size
   useEffect(() => {

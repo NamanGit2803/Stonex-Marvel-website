@@ -18,7 +18,6 @@ export default function SpeedDial() {
     { icon: <FaWhatsapp />, label: "Whatsapp", href: ' https://wa.me/+918058843190' },
     { icon: <IoMdCall />, label: "Call", href: '' },
     { icon: <FaPinterestP />, label: "Pinterest", href: 'https://pin.it/4Y2BLCCQ8' },
-    { icon: <FaXTwitter />, label: "Twitter", href: '' }
     
   ];
 
