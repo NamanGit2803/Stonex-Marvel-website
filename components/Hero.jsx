@@ -4,6 +4,7 @@ import styles from '../styles/Hero.module.css';
 
 const Hero = () => {
   const [isFormVisible, setIsFormVisible] = useState(false);
+  const [isFormClosed, setIsFormClosed] = useState(false); // New state to track form closure
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
@@ -63,10 +64,15 @@ const Hero = () => {
     console.log(formData);
   };
 
+  // New function to handle cross button click for desktop
+  const handleCloseForm = () => {
+    setIsFormClosed(true);
+  };
+
   return (
     <section className={styles.hero}>
       <div className={styles.heroContent}>
-        <div className={styles.leftContent}>
+        <div className={`${styles.leftContent} ${isFormClosed ? styles.centeredContent : ''}`}>
           <h1>Let's Get Started With<br />Your Dream Temple</h1>
           
           {/* Mobile-only button */}
@@ -78,12 +84,20 @@ const Hero = () => {
           </button>
         </div>
         
-        <div className={`${styles.rightContent} ${isFormVisible ? styles.mobileFormVisible : ''}`}>
+        <div className={`${styles.rightContent} ${isFormVisible ? styles.mobileFormVisible : ''} ${isFormClosed ? styles.hiddenForm : ''}`}>
           <div className={styles.contactForm}>
             {/* Close button for mobile */}
             <button 
               className={styles.closeButton}
               onClick={() => setIsFormVisible(false)}
+            >
+              <FaTimes />
+            </button>
+            
+            {/* Cross button for desktop */}
+            <button 
+              className={styles.desktopCloseButton}
+              onClick={handleCloseForm}
             >
               <FaTimes />
             </button>

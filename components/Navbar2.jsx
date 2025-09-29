@@ -73,10 +73,6 @@ const Navbar = () => {
   }, [router.query])
 
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
   const toggleItemExpansion = (itemName) => {
     if (expandedItem === itemName) {
       setExpandedItem(null);
@@ -130,7 +126,7 @@ const Navbar = () => {
                       !item.dropdown
                         ? cn(
                             "px-1 font-medium tracking-wider py-2 text-xs xl:text-sm hover:text-gray-900 transition-colors duration-200 relative",
-                            "after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-[#d59352] after:transition-all after:duration-300",
+                            "after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-theme after:transition-all after:duration-300",
                             hoveredItem === item.name
                               ? "after:w-full text-gray-900"
                               : "after:w-0",
@@ -218,7 +214,7 @@ const Navbar = () => {
 
             {/* Contact Button - Right */}
             <button
-              className="px-3 py-1.5 bg-[#b88624] text-white rounded-md text-xs font-medium focus:outline-none"
+              className="px-3 py-1.5 bg-theme text-white rounded-md text-xs font-medium focus:outline-none"
               onClick={toggleContactForm}
             >
               Contact Us

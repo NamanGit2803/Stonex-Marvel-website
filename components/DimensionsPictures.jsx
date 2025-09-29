@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FaTimes } from 'react-icons/fa';
+import { FaTimes, FaRulerCombined, FaCamera, FaArrowRight } from 'react-icons/fa';
 import styles from '../styles/DimensionsPictures.module.css';
 
 const DimensionsPictures = () => {
@@ -79,23 +79,45 @@ const DimensionsPictures = () => {
           <div className={styles.row}>
             <div className={styles.contentColumn}>
               <div className={styles.content}>
+
+                
                 <h2>All we Need is your Space Dimensions and Pictures</h2>
                 <p>Before starting the session, we require you to have your site pictures and dimensions ready. This allows us to understand your space and craft a suitable solution, ensuring we make the most out of our concept discovery session.</p>
+                
+                <div className={styles.featureList}>
+                  <div className={styles.feature}>
+                    <FaArrowRight className={styles.featureArrow} />
+                    <span>Professional space assessment</span>
+                  </div>
+                  <div className={styles.feature}>
+                    <FaArrowRight className={styles.featureArrow} />
+                    <span>Customized design solutions</span>
+                  </div>
+                  <div className={styles.feature}>
+                    <FaArrowRight className={styles.featureArrow} />
+                    <span>Free consultation session</span>
+                  </div>
+                </div>
+                
                 <div className={styles.btnFree} onClick={handleButtonClick}>
-                  Get Free Consultation
+                  <span>Get Free Consultation</span>
+                  <FaArrowRight className={styles.btnIcon} />
                 </div>
               </div>
             </div>
             <div className={styles.imageColumn}>
-              <div className={styles.serviceImg}>
-                {/* Image will be set via CSS background */}
+              <div className={styles.imageWrapper}>
+                <div className={styles.serviceImg}>
+                  {/* Temple design appropriate image */}
+                </div>
+                <div className={styles.imageOverlay}></div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Form overlay */}
+      {/* Form overlay - unchanged */}
       {showForm && (
         <div className={styles.formOverlay}>
           <div className={styles.formContainer}>

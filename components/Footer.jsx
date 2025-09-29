@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="grid grid-cols-2 gap-8 py-10 md:py-20 lg:grid-cols-5">
           {/* logo  */}
           <div className="flex flex-col col-span-2 sm:col-span-1 gap-3 justify-start items-start">
-            <Link href='/' className=" w-full flex-col flex tracking-[.1600rem] leading-2 text-yellow-600">
+            <Link href='/' className=" w-full flex-col flex tracking-[.1600rem] leading-2 text-theme">
               <span className="text-2xl font-semibold">Indian</span>
               <span className="text-4xl font-semibold">Stonex</span>
             </Link>
@@ -103,7 +103,7 @@ const Footer = () => {
         <Separator className="w-full" />
 
         {/* Copyright section  */}
-        <div className="flex justify-center items-center h-[5vh] text-yellow-600">
+        <div className="flex justify-center items-center h-[5vh] text-theme">
           © Indian Stonex Private Limited, 2024
         </div>
       </div>
