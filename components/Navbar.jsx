@@ -13,7 +13,7 @@ const navItems = [
       { name: "About Us", href: "/About", src: "https://i.pinimg.com/564x/68/5d/bf/685dbf4b95c6c81f0158ae13e0369881.jpg" },
       { name: "The Team", href: "/", src: 'https://image.made-in-china.com/2f0j00MZnkfCabkqcS/Marble-Stone-Entrnce-Design-Patterns-Modern-Medallion-Marble-Floor-Decor.jpg' },
       { name: "Artisans", href: "/", src: 'https://5.imimg.com/data5/SELLER/Default/2024/5/419339312/HK/SC/EV/50436332/whatsapp-image-2024-05-16-at-12-26-31-pm-1-500x500.jpeg' },
-      { name: "Our Clients", href: "/", src: 'https://media.designcafe.com/wp-content/uploads/2021/04/09160149/marble-pooja-mandir-designs-for-home.jpg' },
+      { name: "Our Clients", href: "/OurClients", src: 'https://media.designcafe.com/wp-content/uploads/2021/04/09160149/marble-pooja-mandir-designs-for-home.jpg' },
     ],
   },
   {
@@ -214,7 +214,7 @@ const Navbar = () => {
 
             {/* Contact Button - Right */}
             <button
-              className="px-4 py-2 bg-[#b88624] text-white rounded-md text-sm font-medium focus:outline-none focus:ring-0 hover:bg-[#a07820] transition-colors"
+              className="px-4 py-2 bg-theme text-white rounded-md text-sm font-medium focus:outline-none focus:ring-0 hover:bg-[#a07820] transition-colors"
               onClick={toggleContactForm}
             >
               Contact Us

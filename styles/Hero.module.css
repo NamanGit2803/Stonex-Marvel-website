@@ -59,7 +59,7 @@
 
 .mobileExpertButton {
   display: none;
-  background: #000;
+  background: var(--color-theme);
   color: white;
   border: none;
   padding: 0.75rem 2rem;
@@ -71,7 +71,7 @@
 }
 
 .mobileExpertButton:hover {
-  background: #333;
+  background: var(--color-hover-theme);
 }
 
 .rightContent {
@@ -103,7 +103,7 @@
   position: absolute;
   top: 0.5rem; /* Adjusted position */
   right: 0.5rem; /* Adjusted position */
-  background: rgba(0, 0, 0, 0.7);
+  background: var(--color-theme);
   border: none;
   font-size: 1rem;
   cursor: pointer;
@@ -124,7 +124,7 @@
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
-  background: rgba(0, 0, 0, 0.7);
+  background: var(--color-theme);
   border: none;
   font-size: 1rem;
   cursor: pointer;
@@ -139,12 +139,12 @@
 }
 
 .desktopCloseButton:hover {
-  background: rgba(0, 0, 0, 0.9);
+  background: var(--color-hover-theme);
   transform: scale(1.1);
 }
 
 .closeButton:hover {
-  background: rgba(0, 0, 0, 0.9);
+  background: var(--color-hover-theme);
   transform: scale(1.1);
 }
 
@@ -189,7 +189,7 @@
   top: -0.6rem; /* Adjusted position */
   left: 0.5rem;
   font-size: 0.75rem; /* Reduced font size */
-  background: rgba(9, 9, 9, 0.9);
+  background: var(--color-theme);
   padding: 0 0.5rem;
   color: #fff; /* White text on blue background */
   border-radius: 3px;
@@ -294,7 +294,7 @@
 }
 
 .nextButton {
-  background: #000; /* Black background */
+  background: var(--color-theme); /* Black background */
   color: white;
   border: none;
   padding: 0.6rem 2rem; /* Reduced padding */
@@ -304,13 +304,12 @@
   cursor: pointer;
   width: 100%;
   margin-top: 0.8rem; /* Reduced margin */
-  border: 1px solid #000; /* Black border */
+   /* Black border */
   height: 45px; /* Fixed height */
 }
 
 .nextButton:hover {
-  background: #333; /* Dark gray on hover */
-  border-color: #333;
+  background: var(--color-hover-theme); /* Dark gray on hover */
 }
 
 /* Show desktop close button only on desktop */

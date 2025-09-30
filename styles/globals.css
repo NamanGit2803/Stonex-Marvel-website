@@ -5,7 +5,8 @@
 
 :root {
   --background: oklch(1 0 0);
-  --theme: oklch(73.05% 0.1796 47.90deg);;
+  --theme: oklch(73.05% 0.1796 47.90deg);
+  --hover-theme: oklch(0.71 0.21 48.3);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -43,7 +44,8 @@
 
 .dark {
   --background: oklch(0.145 0 0);
-  --theme: oklch(73.05% 0.1796 47.90deg);;
+  --theme: oklch(73.05% 0.1796 47.90deg);
+  --hover-theme: oklch(0.71 0.21 48.3);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.145 0 0);
   --card-foreground: oklch(0.985 0 0);
@@ -80,6 +82,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-theme: var(--theme);
+  --color-hover-theme: var(--hover-theme);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);

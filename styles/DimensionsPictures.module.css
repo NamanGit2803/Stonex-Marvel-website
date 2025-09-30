@@ -59,7 +59,7 @@
 }
 
 .iconWrapper {
-  background: #8B4513;
+  background: var(--color-theme);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -106,7 +106,7 @@
 }
 
 .featureArrow {
-  color: #8B4513;
+  color: var(--color-theme);
   font-size: 0.9rem;
 }
 
@@ -127,7 +127,7 @@
 }
 
 .btnFree:hover {
-  background: #fa721e;
+  background: var(--color-hover-theme);
   transform: translateY(-2px);
 }
 

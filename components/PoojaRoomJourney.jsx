@@ -86,7 +86,7 @@ const PoojaRoomJourney = () => {
             Let's Build Your Pooja Temple Together
           </h2>
           <button 
-            className="flex items-center justify-center gap-2 group hover:bg-amber-700 transition-colors duration-300"
+            className="flex items-center justify-center gap-2 group hover:bg-hover-theme transition-colors duration-300"
             style={{
               textDecoration: 'none',
               fontSize: '1rem',
@@ -96,7 +96,7 @@ const PoojaRoomJourney = () => {
               padding: '0.75rem 1.875rem',
               borderRadius: '4px',
               color: '#fff',
-              backgroundColor: '#ff7e2e',
+              backgroundColor: 'var(--color-theme)',
               border: 'none',
               width: 'max-content',
               cursor: 'pointer'
@@ -412,7 +412,7 @@ const PoojaRoomJourney = () => {
                 </div>
                 
                 <button type="submit" style={{
-                  background: '#000',
+                  background: 'var(--color-theme)',
                   color: 'white',
                   border: 'none',
                   padding: '0.75rem 2rem',

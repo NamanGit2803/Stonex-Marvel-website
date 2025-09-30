@@ -89,20 +89,18 @@
 
 .btnTab li:hover {
   background-color: #e9ecef;
-  border-color: #b08c47;
-  color: #b08c47;
+  border-color: var(--color-theme);
+  color: var(--color-theme);
 }
 
 .btnTab li.active {
-  background-color: #000;
+  background-color: var(--color-theme);
   color: #fff;
-  border-color: #000;
 }
 
 .btnTab li.active:hover {
-  background-color: #000;
+  background-color: var(--color-hover-theme);
   color: #fff;
-  border-color: #b08c47;
 }
 
 .mt4 {
@@ -185,7 +183,7 @@
   pointer-events: all;
   width: 40px;
   height: 40px;
-  background-color: #000;
+  background-color: var(--color-theme);
   color: #fff;
   border: none;
   border-radius: 50%;

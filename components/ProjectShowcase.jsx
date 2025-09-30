@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import styles from '../styles/ProjectShowcase.module.css';
 import Image from 'next/image';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
@@ -7,44 +7,52 @@ const ProjectShowcase = () => {
   const [activeTab, setActiveTab] = useState('Residential');
   const sliderRef = useRef(null);
 
-  // Sample project data - you can replace this with your actual data
+  // Updated project data with temple-related titles
   const projects = [
     {
       id: 1,
-      title: 'Mr. Goyal x Tilak Stone Arts',
+      title: 'Divine Marble Temple - Rohtak',
       image: 'https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1733043480807.jpeg&w=1920&q=75',
-      link: '/Residential/detail/manoj-goyal-marble-pooja-room-in-rohtak-haryana'
+      link: '/Residential/detail/manoj-goyal-marble-pooja-room-in-rohtak-haryana',
+      category: 'Communal'
     },
     {
       id: 2,
-      title: 'Mr. Mehta X Tilak Stone Arts',
+      title: 'Sacred Marble Temple - Ashok Vihar',
       image: 'https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1732991607721.jpeg&w=1920&q=75',
-      link: '/Residential/detail/parvesh-mehta-marble-temple-in-ashok-vihar-delhi'
+      link: '/Residential/detail/parvesh-mehta-marble-temple-in-ashok-vihar-delhi',
+      category: 'Residential'
     },
     {
       id: 3,
-      title: 'Mrs. Nisha x Tilak Stone Arts',
+      title: 'Elegant Marble Temple - Worli',
       image: 'https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1732984135083.jpeg&w=1920&q=75',
-      link: '/Residential/detail/nisha-jain-samosharana-marble-temple-in-worli-mumbai-maharashtra'
+      link: '/Residential/detail/nisha-jain-samosharana-marble-temple-in-worli-mumbai-maharashtra',
+      category: 'Residential'
     },
     {
       id: 4,
-      title: 'Miss. Palak X Tilak Stone Arts',
+      title: 'Traditional Marble Temple - Gorakhpur',
       image: 'https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1733044968981.jpeg&w=1920&q=75',
-      link: '/Residential/detail/palak-gupta-marble-temple-in-gorakhpur-uttar-pradesh'
+      link: '/Residential/detail/palak-gupta-marble-temple-in-gorakhpur-uttar-pradesh',
+      category: 'Residential'
     },
     {
       id: 5,
-      title: 'Mr. Poddar X Tilak Stone Arts India',
+      title: 'Royal Marble Temple - Jaipur',
       image: 'https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1733851641162.jpeg&w=1920&q=75',
-      link: '/Residential/detail/harsh-poddar-marble-pooja-room-in-jaipur-rajasthan'
+      link: '/Residential/detail/harsh-poddar-marble-pooja-room-in-jaipur-rajasthan',
+      category: 'International'
     }
   ];
+
+  // Filter projects based on active tab
+  const filteredProjects = projects.filter(project => project.category === activeTab);
 
   const scrollLeft = () => {
     if (sliderRef.current) {
       const slideWidth = sliderRef.current.querySelector(`.${styles.slide}`).offsetWidth;
-      const gap = 24; // 1.5rem in pixels (assuming 1rem = 16px)
+      const gap = 24;
       sliderRef.current.scrollBy({ left: -(slideWidth + gap), behavior: 'smooth' });
     }
   };
@@ -52,9 +60,21 @@ const ProjectShowcase = () => {
   const scrollRight = () => {
     if (sliderRef.current) {
       const slideWidth = sliderRef.current.querySelector(`.${styles.slide}`).offsetWidth;
-      const gap = 24; // 1.5rem in pixels (assuming 1rem = 16px)
+      const gap = 24;
       sliderRef.current.scrollBy({ left: slideWidth + gap, behavior: 'smooth' });
     }
+  };
+
+  // Scroll to appropriate card when tab changes
+  useEffect(() => {
+    if (sliderRef.current) {
+      // Scroll to start when tab changes
+      sliderRef.current.scrollTo({ left: 0, behavior: 'smooth' });
+    }
+  }, [activeTab]);
+
+  const handleTabClick = (tabName) => {
+    setActiveTab(tabName);
   };
 
   return (
@@ -68,19 +88,19 @@ const ProjectShowcase = () => {
               <ul>
                 <li
                   className={activeTab === 'Communal' ? styles.active : ''}
-                  onClick={() => setActiveTab('Communal')}
+                  onClick={() => handleTabClick('Communal')}
                 >
                   Communal
                 </li>
                 <li
                   className={activeTab === 'Residential' ? styles.active : ''}
-                  onClick={() => setActiveTab('Residential')}
+                  onClick={() => handleTabClick('Residential')}
                 >
                   Residential
                 </li>
                 <li
                   className={activeTab === 'International' ? styles.active : ''}
-                  onClick={() => setActiveTab('International')}
+                  onClick={() => handleTabClick('International')}
                 >
                   International
                 </li>
@@ -94,7 +114,7 @@ const ProjectShowcase = () => {
             <div className={styles.colMd12}>
               <div className={styles.sliderContainer}>
                 <div className={styles.slider} ref={sliderRef}>
-                  {projects.map(project => (
+                  {filteredProjects.map(project => (
                     <div key={project.id} className={styles.slide}>
                       <div className={styles.cardProject}>
                         <div className={styles.clientCard}>

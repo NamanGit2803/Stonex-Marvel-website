@@ -23,7 +23,7 @@ export default function Home() {
 
         <DesignSteps />
 
-        {/* <ProjectShowcase /> */}
+        <ProjectShowcase />
 
         <CitySection />
 

@@ -164,8 +164,8 @@ export default function DesignSteps() {
                         e.stopPropagation();
                         openModal(step.id);
                       }}
-                      className="mt-4 text-theme font-medium hover:text-amber-800 flex items-center transition-colors duration-300"
-                      style={{color: '#a08f0f'}}
+                      className="mt-4 text-theme font-medium hover:text-hover-theme flex items-center transition-colors duration-300"
+                      style={{color: 'var(--color-theme)'}}
                     >
                       See details
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -195,7 +195,7 @@ export default function DesignSteps() {
                   {currentStep.details.map((detail, index) => (
                     <div key={index} className="flex">
                       <div className="flex-shrink-0 mr-4">
-                        <div className="w-3 h-3 rounded-full bg-amber-500 mt-2" style={{backgroundColor: 'var(--color-theme'}}></div>
+                        <div className="w-3 h-3 rounded-full  mt-2" style={{backgroundColor: 'var(--color-theme'}}></div>
                       </div>
                       <div>
                         <h4 className="font-semibold text-gray-800">{detail.title}</h4>
@@ -231,9 +231,9 @@ export default function DesignSteps() {
                 <div 
                   key={index}
                   className={`flex-1 text-center py-3 px-2 text-sm font-medium ${
-                    modalStep === index + 1 ? 'text-amber-700 border-b-2 border-amber-600' : 'text-gray-500'
+                    modalStep === index + 1 ? 'text-theme border-b-2 border-theme' : 'text-gray-500'
                   }`}
-                  style={modalStep === index + 1 ? {color: '#a08f0f', borderBottomColor: '#a08f0f'} : {}}
+                  
                   onClick={() => setModalStep(index + 1)}
                 >
                   {name}
@@ -255,12 +255,12 @@ export default function DesignSteps() {
                     {currentModalStep.details.map((detail, index) => (
                       <div key={index} className="flex">
                         <div className="flex-shrink-0 mr-4">
-                          <div className="w-3 h-3 rounded-full mt-2" style={{backgroundColor: '#a08f0f'}}></div>
+                          <div className="w-3 h-3 rounded-full mt-2 bg-theme"></div>
                         </div>
                         <div>
                           <h4 className="font-semibold text-gray-800">{detail.title}</h4>
                           {detail.milestone && (
-                            <div className="text-sm font-medium my-2" style={{color: '#a08f0f'}}>{detail.milestone}</div>
+                            <div className="text-sm font-medium my-2 text-theme">{detail.milestone}</div>
                           )}
                           <p className="text-gray-600 mt-1">{detail.description}</p>
                         </div>
