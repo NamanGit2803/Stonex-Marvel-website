@@ -116,14 +116,14 @@ const Navbar = () => {
                     className={
                       !item.dropdown
                         ? cn(
-                            "px-2 py-2 text-sm font-medium tracking-wide transition-colors duration-200 relative",
+                            "px-2 py-2 text-sm uppercase tracking-wide transition-colors duration-200 relative",
                             "after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-theme after:transition-all after:duration-300",
                             hoveredItem === item.name
                               ? "after:w-full text-gray-900"
-                              : "after:w-0 text-gray-700",
+                              : "after:w-0 ",
                             "focus:outline-none focus:ring-0 focus:border-0"
                           )
-                        : "px-2 py-2 text-sm font-medium tracking-wide text-gray-700 hover:text-gray-900 transition-colors duration-200 relative focus:outline-none focus:ring-0 focus:border-0"
+                        : "px-2 py-2 uppercase text-sm  tracking-wide hover:text-gray-900 transition-colors duration-200 relative focus:outline-none focus:ring-0 focus:border-0"
                     }
                   >
                     {item.name}

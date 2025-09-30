@@ -24,7 +24,7 @@ const Footer = () => {
 
             {/* details  */}
             <div className="w-full pr-5">
-              <span className="text-xs">Address : First & Second Floor, TSA India, Mall 21, Mirza Ismail Road, Opposite Rajmandir Cinema, 5 Batti, C Scheme, Jaipur, Rajasthan 302001</span>
+              <span className="text-xs">Address : n Front of Post Office, near Truck Union, Vasundhara Nagar Manglana Road, Makrana Rajasthan. 341505</span>
             </div>
 
             <div className="w-full pr-5 flex flex-col text-sm">
@@ -39,12 +39,9 @@ const Footer = () => {
           <div className="flex flex-col gap-3 ">
             <h3 className=" text-xl">House Of Talks</h3>
             <div className="flex text-sm flex-col gap-4">
-              <Link href={""}>About Us</Link>
+              <Link href={"/About"}>About Us</Link>
               <Link href={""}>The Team</Link>
-              <Link href={""}>Indian Stonex</Link>
-              <Link href={""}>
-                Collaborations
-              </Link>
+              <Link href={"/"}>Indian Stonex</Link>
               <Link href={""}>Our Clients</Link>
             </div>
           </div>
@@ -62,9 +59,6 @@ const Footer = () => {
               </Link>
               <Link href={"/communal-temple-design"}>
                 Communal Temples
-              </Link>
-              <Link href={"/marble-home-temple-international"}>
-                TSA International
               </Link>
               <Link href={"/AppointmentPage"}>
                 Book appointment
@@ -116,7 +110,7 @@ const Footer = () => {
         <Separator className="w-full" />
 
         {/* Copyright section  */}
-        <div className="flex justify-center items-center h-[5vh] text-theme">
+        <div className="flex justify-center items-center h-[5vh] ">
           © Indian Stonex Private Limited, 2024
         </div>
       </div>
