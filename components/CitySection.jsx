@@ -7,102 +7,97 @@ const CitySection = () => {
   const cities = [
     {
       name: "Delhi",
-      image: "/india-gate.png",
+      image: "/Delhi.png",
       link: "/locations/delhi"
     },
     {
       name: "Mumbai",
-      image: "/mumbai.png",
+      image: "/Mumbai.png",
       link: "/locations/mumbai"
     },
     {
       name: "Ahmedabad",
-      image: "/statue.png",
+      image: "/Ahemdabad.png",
       link: "/locations/ahmedabad"
     },
     {
       name: "Chennai",
-      image: "/chennai.png",
+      image: "/Chennia.png",
       link: "/locations/chennai"
     },
     {
       name: "Surat",
-      image: "/surat.png",
+      image: "/Surat.png",
       link: "/locations/surat"
     },
     {
       name: "Kota",
-      image: "/kota.png",
+      image: "/Kota.png",
       link: "/locations/kota"
     },
     {
       name: "Jaipur",
-      image: "/jaipur.png",
+      image: "/Jaipur.png",
       link: "/locations/jaipur"
     },
      {
       name: "Hyderabad",
-      image: "/hyderabad.png",
+      image: "/Hyderabad.png",
       link: "/locations/jaipur"
     },
      {
       name: "Bengaluru",
-      image: "/bangalore.png",
+      image: "/Benglore.png",
       link: "/locations/jaipur"
     },
     {
       name: "Raipur",
-      image: "https://www.tilakstonearts.com/_next/static/media/Jaipur.240e1c2c.webp",
+      image: "/Raipur.png",
       link: "/locations/jaipur"
     },
     {
       name: "Vishakapatnam",
-      image: "https://www.tilakstonearts.com/_next/static/media/Jaipur.240e1c2c.webp",
+      image: "/Vishakapatnam.png",
       link: "/locations/jaipur"
     },
     {
       name: "Jabalpur",
-      image: "https://www.tilakstonearts.com/_next/static/media/Jaipur.240e1c2c.webp",
+      image: "/Jabalpur.png",
       link: "/locations/jaipur"
     },
     {
       name: "Bhopal",
-      image: "https://www.tilakstonearts.com/_next/static/media/Jaipur.240e1c2c.webp",
+      image: "/BHOPAL.png",
       link: "/locations/jaipur"
     },
     {
       name: "Gurugram",
-      image: "https://www.tilakstonearts.com/_next/static/media/Jaipur.240e1c2c.webp",
-      link: "/locations/jaipur"
-    },
-    {
-      name: "Surat",
-      image: "https://www.tilakstonearts.com/_next/static/media/Jaipur.240e1c2c.webp",
+      image: "/Gurugram.png",
       link: "/locations/jaipur"
     },
     {
       name: "Jodhpur",
-      image: "https://www.tilakstonearts.com/_next/static/media/Jaipur.240e1c2c.webp",
+      image: "/Jodhpur.png",
       link: "/locations/jaipur"
     },
     {
       name: "Jaisalmer",
-      image: "https://www.tilakstonearts.com/_next/static/media/Jaipur.240e1c2c.webp",
+      image: "/Jaisalmer.png",
       link: "/locations/jaipur"
     },
     {
       name: "Udaipur",
-      image: "https://www.tilakstonearts.com/_next/static/media/Jaipur.240e1c2c.webp",
+      image: "/Udaipur.png",
       link: "/locations/jaipur"
     },
     {
       name: "Bikaner",
-      image: "https://www.tilakstonearts.com/_next/static/media/Jaipur.240e1c2c.webp",
+      image: "/Bikaner.png",
       link: "/locations/jaipur"
     },
     {
       name: "Punjab",
-      image: "https://www.tilakstonearts.com/_next/static/media/Jaipur.240e1c2c.webp",
+      image: "/Punjab.png",
       link: "/locations/jaipur"
     },
   ];
