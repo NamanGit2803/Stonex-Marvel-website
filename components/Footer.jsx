@@ -26,7 +26,7 @@ const Footer = () => {
                         {/* details  */}
                         <div className="w-full space-y-4">
                             <div className="text-sm leading-relaxed text-gray-300 font-light tracking-wide">
-                                <p className="font-normal text-[#ff7e2e] mb-2 tracking-wider">Address</p>
+                                <p className="font-normal mb-2 tracking-wider">Address</p>
                                 <p>
                                     First & Second Floor, TSA India, Mall 21, Mirza Ismail Road, Opposite Rajmandir Cinema, 5 Batti, C
                                     Scheme, Jaipur, Rajasthan 302001
@@ -34,14 +34,14 @@ const Footer = () => {
                             </div>
 
                             <div className="flex flex-col gap-2 text-sm text-gray-300 font-light tracking-wide">
-                                <a href="tel:+919319374633" className="hover:text-[#ff7e2e] transition-colors flex items-center gap-2">
-                                    <span className="font-normal text-[#ff7e2e] tracking-wider">Call:</span> +91 93193 74633
+                                <a href="tel:+919319374633" className=" transition-colors flex items-center gap-2">
+                                    <span className="font-normal  tracking-wider">Call:</span> +91 93193 74633
                                 </a>
                                 <a
                                     href="mailto:info@tilakstonearts.com"
-                                    className="hover:text-[#ff7e2e] transition-colors flex items-center gap-2"
+                                    className=" transition-colors flex items-center gap-2"
                                 >
-                                    <span className="font-normal text-[#ff7e2e] tracking-wider">Email:</span> info@tilakstonearts.com
+                                    <span className="font-normal  tracking-wider">Email:</span> info@tilakstonearts.com
                                 </a>
                             </div>
                         </div>
@@ -49,31 +49,31 @@ const Footer = () => {
 
                     {/* links  */}
                     <div className="flex flex-col gap-5">
-                        <h3 className="text-lg md:text-xl font-light text-[#ff7e2e] tracking-widest uppercase text-sm">
+                        <h3 className="text-lg md:text-xl font-light tracking-widest uppercase">
                             House Of Talks
                         </h3>
                         <div className="flex flex-col gap-3">
                             <Link
                                 href={""}
-                                className="text-sm text-gray-300 hover:text-[#ff7e2e] hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
+                                className="text-sm text-gray-300 hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
                             >
                                 About Us
                             </Link>
                             <Link
                                 href={""}
-                                className="text-sm text-gray-300 hover:text-[#ff7e2e] hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
+                                className="text-sm text-gray-300 hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
                             >
                                 The Team
                             </Link>
                             <Link
                                 href={""}
-                                className="text-sm text-gray-300 hover:text-[#ff7e2e] hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
+                                className="text-sm text-gray-300  hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
                             >
                                 Artisans
                             </Link>
                             <Link
                                 href={""}
-                                className="text-sm text-gray-300 hover:text-[#ff7e2e] hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
+                                className="text-sm text-gray-300 hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
                             >
                                 Our Clients
                             </Link>
@@ -81,31 +81,31 @@ const Footer = () => {
                     </div>
 
                     <div className="flex flex-col gap-5">
-                        <h3 className="text-lg md:text-xl font-light text-[#ff7e2e] tracking-widest uppercase text-sm">
+                        <h3 className="text-lg md:text-xl font-light tracking-widest uppercase">
                             Quick Links
                         </h3>
                         <div className="flex flex-col gap-3">
                             <Link
                                 href={"/marble-pooja-room-designs"}
-                                className="text-sm text-gray-300 hover:text-[#ff7e2e] hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
+                                className="text-sm text-gray-300 hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
                             >
                                 Pooja Room
                             </Link>
                             <Link
                                 href={"/premium-marble-temple-for-home"}
-                                className="text-sm text-gray-300 hover:text-[#ff7e2e] hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
+                                className="text-sm text-gray-300  hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
                             >
                                 Dream Temples
                             </Link>
                             <Link
                                 href={"/communal-temple-design"}
-                                className="text-sm text-gray-300 hover:text-[#ff7e2e] hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
+                                className="text-sm text-gray-300 hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
                             >
                                 Communal Temples
                             </Link>
                             <Link
                                 href={"/AppointmentPage"}
-                                className="text-sm text-gray-300 hover:text-[#ff7e2e] hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
+                                className="text-sm text-gray-300 hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
                             >
                                 Book appointment
                             </Link>
@@ -113,17 +113,17 @@ const Footer = () => {
                     </div>
 
                     <div className="flex flex-col gap-5">
-                        <h3 className="text-lg md:text-xl font-light text-[#ff7e2e] tracking-widest uppercase text-sm">Legal</h3>
+                        <h3 className="text-lg md:text-xl font-light tracking-widest uppercase">Legal</h3>
                         <div className="flex flex-col gap-3">
                             <Link
                                 href={"/"}
-                                className="text-sm text-gray-300 hover:text-[#ff7e2e] hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
+                                className="text-sm text-gray-300 hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
                             >
                                 Terms & Conditions
                             </Link>
                             <Link
                                 href={""}
-                                className="text-sm text-gray-300 hover:text-[#ff7e2e] hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
+                                className="text-sm text-gray-300 hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
                             >
                                 Privacy Policy
                             </Link>
@@ -131,25 +131,25 @@ const Footer = () => {
                     </div>
 
                     <div className="flex flex-col gap-5">
-                        <h3 className="text-lg md:text-xl font-light text-[#ff7e2e] tracking-widest uppercase text-sm">
+                        <h3 className="text-lg md:text-xl font-light  tracking-widest uppercase ">
                             Need Help
                         </h3>
                         <div className="flex flex-col gap-3">
                             <Link
                                 href={""}
-                                className="text-sm text-gray-300 hover:text-[#ff7e2e] hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
+                                className="text-sm text-gray-300 hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
                             >
                                 FAQs
                             </Link>
                             <Link
                                 href={""}
-                                className="text-sm text-gray-300 hover:text-[#ff7e2e] hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
+                                className="text-sm text-gray-300  hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
                             >
                                 Call Us
                             </Link>
                             <Link
                                 href={""}
-                                className="text-sm text-gray-300 hover:text-[#ff7e2e] hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
+                                className="text-sm text-gray-300 hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
                             >
                                 Email
                             </Link>
@@ -161,25 +161,25 @@ const Footer = () => {
                 <div className="flex gap-6 py-8 w-full justify-start">
                     <a
                         href="#"
-                        className="text-gray-300 hover:text-[#ff7e2e] transition-all duration-200 hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(255,126,46,0.5)]"
+                        className="text-gray-300  transition-all duration-200 hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(255,126,46,0.5)]"
                     >
                         <FaInstagram className="h-6 w-6 md:h-7 md:w-7" />
                     </a>
                     <a
                         href="#"
-                        className="text-gray-300 hover:text-[#ff7e2e] transition-all duration-200 hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(255,126,46,0.5)]"
+                        className="text-gray-300  transition-all duration-200 hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(255,126,46,0.5)]"
                     >
                         <FiFacebook className="h-6 w-6 md:h-7 md:w-7" />
                     </a>
                     <a
                         href="#"
-                        className="text-gray-300 hover:text-[#ff7e2e] transition-all duration-200 hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(255,126,46,0.5)]"
+                        className="text-gray-300 transition-all duration-200 hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(255,126,46,0.5)]"
                     >
                         <FiYoutube className="h-6 w-6 md:h-7 md:w-7" />
                     </a>
                     <a
                         href="#"
-                        className="text-gray-300 hover:text-[#ff7e2e] transition-all duration-200 hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(255,126,46,0.5)]"
+                        className="text-gray-300 transition-all duration-200 hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(255,126,46,0.5)]"
                     >
                         <FaLinkedinIn className="h-6 w-6 md:h-7 md:w-7" />
                     </a>
