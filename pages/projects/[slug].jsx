@@ -17,10 +17,10 @@ import { motion, AnimatePresence } from 'framer-motion'
 // Project data with different images for each category
 const projectCategories = [
     { 
-        id: 'communal', 
-        name: 'Communal', 
+        id: 'Corporate', 
+        name: 'Corporate', 
         bannerImage: '/img5.png', 
-        displayName: 'COMMUNAL PROJECTS',
+        displayName: 'CORPORATE PROJECTS',
         description: 'Community-focused architectural marvels that bring people together',
         projects: [
             {
@@ -50,10 +50,10 @@ const projectCategories = [
         ]
     },
     { 
-        id: 'residential', 
-        name: 'Residential', 
+        id: 'Luxury-Living', 
+        name: 'Luxury Living', 
         bannerImage: '/img4.png', 
-        displayName: 'RESIDENTIAL PROJECTS',
+        displayName: 'LUXURY LIVING PROJECTS',
         description: 'Beautiful living spaces designed for comfort and elegance',
         projects: [
             {
@@ -83,10 +83,10 @@ const projectCategories = [
         ]
     },
     { 
-        id: 'international', 
-        name: 'International', 
+        id: 'Overseas', 
+        name: 'Overseas', 
         bannerImage: '/home-decor.jpg', 
-        displayName: 'INTERNATIONAL PROJECTS',
+        displayName: 'Overseas PROJECTS',
         description: 'Global architectural excellence across continents',
         projects: [
             {
