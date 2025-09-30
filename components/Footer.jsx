@@ -1,118 +1,200 @@
-import React from "react";
-import { Button } from "./ui/button";
-import { Separator } from "./ui/separator";
-import Link from "next/link";
-import Image from "next/image";
+import { Separator } from "./ui/separator"
+import Link from "next/link"
 
-import { FaInstagram } from "react-icons/fa";
-import { FiFacebook } from "react-icons/fi";
-import { FiYoutube } from "react-icons/fi";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa"
+import { FiFacebook } from "react-icons/fi"
+import { FiYoutube } from "react-icons/fi"
+import { FaLinkedinIn } from "react-icons/fa"
 
 const Footer = () => {
-  return (
-    <footer className="flex bg-[#0d0d0d] text-white p-3 px-6">
-      <div className="grow">
-        <div className="grid grid-cols-2 gap-8 py-10 md:py-20 lg:grid-cols-5">
-          {/* logo  */}
-          <div className="flex flex-col col-span-2 sm:col-span-1 gap-3 justify-start items-start">
-            <Image sr/>
-            <Link href="/" className="flex items-center space-x-2 hover:opacity-90 transition">
-              <span className="text-3xl font-bold text-theme tracking-wide">Indian</span>
-              <span className="text-3xl font-bold text-white-800">Stonex</span>
-            </Link>
+    return (
+        <footer className="flex bg-[#0d0d0d] text-white px-6 py-12 md:px-12 lg:px-16">
+            <div className="grow max-w-7xl mx-auto w-full">
+                <div className="grid grid-cols-2 gap-x-8 gap-y-12 md:gap-x-12 lg:gap-x-16 py-8 md:py-12 lg:grid-cols-5">
+                    {/* logo  */}
+                    <div className="flex flex-col col-span-2 sm:col-span-1 gap-6 justify-start items-start">
+                        <Link
+                            href="/"
+                            className="w-full flex-col flex tracking-[.2000rem] leading-tight hover:opacity-80 transition-opacity"
+                        >
+                            <span className="text-2xl md:text-3xl font-light">Indian</span>
+                            <span className="text-4xl md:text-5xl font-extralight bg-gradient-to-r from-[#ff7e2e] via-[#ff9d5c] to-[#ffb380] bg-clip-text text-transparent">
+                                Stonex
+                            </span>
+                        </Link>
 
+                        {/* details  */}
+                        <div className="w-full space-y-4">
+                            <div className="text-sm leading-relaxed text-gray-300 font-light tracking-wide">
+                                <p className="font-normal text-[#ff7e2e] mb-2 tracking-wider">Address</p>
+                                <p>
+                                    First & Second Floor, TSA India, Mall 21, Mirza Ismail Road, Opposite Rajmandir Cinema, 5 Batti, C
+                                    Scheme, Jaipur, Rajasthan 302001
+                                </p>
+                            </div>
 
+                            <div className="flex flex-col gap-2 text-sm text-gray-300 font-light tracking-wide">
+                                <a href="tel:+919319374633" className="hover:text-[#ff7e2e] transition-colors flex items-center gap-2">
+                                    <span className="font-normal text-[#ff7e2e] tracking-wider">Call:</span> +91 93193 74633
+                                </a>
+                                <a
+                                    href="mailto:info@tilakstonearts.com"
+                                    className="hover:text-[#ff7e2e] transition-colors flex items-center gap-2"
+                                >
+                                    <span className="font-normal text-[#ff7e2e] tracking-wider">Email:</span> info@tilakstonearts.com
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
-            {/* details  */}
-            <div className="w-full pr-5">
-              <span className="text-xs">Address : In Front of Post Office, near Truck Union, Vasundhara Nagar Manglana Road, Makrana Rajasthan. <br />Pin: 341505</span>
+                    {/* links  */}
+                    <div className="flex flex-col gap-5">
+                        <h3 className="text-lg md:text-xl font-light text-[#ff7e2e] tracking-widest uppercase text-sm">
+                            House Of Talks
+                        </h3>
+                        <div className="flex flex-col gap-3">
+                            <Link
+                                href={""}
+                                className="text-sm text-gray-300 hover:text-[#ff7e2e] hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
+                            >
+                                About Us
+                            </Link>
+                            <Link
+                                href={""}
+                                className="text-sm text-gray-300 hover:text-[#ff7e2e] hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
+                            >
+                                The Team
+                            </Link>
+                            <Link
+                                href={""}
+                                className="text-sm text-gray-300 hover:text-[#ff7e2e] hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
+                            >
+                                Artisans
+                            </Link>
+                            <Link
+                                href={""}
+                                className="text-sm text-gray-300 hover:text-[#ff7e2e] hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
+                            >
+                                Our Clients
+                            </Link>
+                        </div>
+                    </div>
+
+                    <div className="flex flex-col gap-5">
+                        <h3 className="text-lg md:text-xl font-light text-[#ff7e2e] tracking-widest uppercase text-sm">
+                            Quick Links
+                        </h3>
+                        <div className="flex flex-col gap-3">
+                            <Link
+                                href={"/marble-pooja-room-designs"}
+                                className="text-sm text-gray-300 hover:text-[#ff7e2e] hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
+                            >
+                                Pooja Room
+                            </Link>
+                            <Link
+                                href={"/premium-marble-temple-for-home"}
+                                className="text-sm text-gray-300 hover:text-[#ff7e2e] hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
+                            >
+                                Dream Temples
+                            </Link>
+                            <Link
+                                href={"/communal-temple-design"}
+                                className="text-sm text-gray-300 hover:text-[#ff7e2e] hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
+                            >
+                                Communal Temples
+                            </Link>
+                            <Link
+                                href={"/AppointmentPage"}
+                                className="text-sm text-gray-300 hover:text-[#ff7e2e] hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
+                            >
+                                Book appointment
+                            </Link>
+                        </div>
+                    </div>
+
+                    <div className="flex flex-col gap-5">
+                        <h3 className="text-lg md:text-xl font-light text-[#ff7e2e] tracking-widest uppercase text-sm">Legal</h3>
+                        <div className="flex flex-col gap-3">
+                            <Link
+                                href={"/"}
+                                className="text-sm text-gray-300 hover:text-[#ff7e2e] hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
+                            >
+                                Terms & Conditions
+                            </Link>
+                            <Link
+                                href={""}
+                                className="text-sm text-gray-300 hover:text-[#ff7e2e] hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
+                            >
+                                Privacy Policy
+                            </Link>
+                        </div>
+                    </div>
+
+                    <div className="flex flex-col gap-5">
+                        <h3 className="text-lg md:text-xl font-light text-[#ff7e2e] tracking-widest uppercase text-sm">
+                            Need Help
+                        </h3>
+                        <div className="flex flex-col gap-3">
+                            <Link
+                                href={""}
+                                className="text-sm text-gray-300 hover:text-[#ff7e2e] hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
+                            >
+                                FAQs
+                            </Link>
+                            <Link
+                                href={""}
+                                className="text-sm text-gray-300 hover:text-[#ff7e2e] hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
+                            >
+                                Call Us
+                            </Link>
+                            <Link
+                                href={""}
+                                className="text-sm text-gray-300 hover:text-[#ff7e2e] hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
+                            >
+                                Email
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+
+                {/* icons   */}
+                <div className="flex gap-6 py-8 w-full justify-start">
+                    <a
+                        href="#"
+                        className="text-gray-300 hover:text-[#ff7e2e] transition-all duration-200 hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(255,126,46,0.5)]"
+                    >
+                        <FaInstagram className="h-6 w-6 md:h-7 md:w-7" />
+                    </a>
+                    <a
+                        href="#"
+                        className="text-gray-300 hover:text-[#ff7e2e] transition-all duration-200 hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(255,126,46,0.5)]"
+                    >
+                        <FiFacebook className="h-6 w-6 md:h-7 md:w-7" />
+                    </a>
+                    <a
+                        href="#"
+                        className="text-gray-300 hover:text-[#ff7e2e] transition-all duration-200 hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(255,126,46,0.5)]"
+                    >
+                        <FiYoutube className="h-6 w-6 md:h-7 md:w-7" />
+                    </a>
+                    <a
+                        href="#"
+                        className="text-gray-300 hover:text-[#ff7e2e] transition-all duration-200 hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(255,126,46,0.5)]"
+                    >
+                        <FaLinkedinIn className="h-6 w-6 md:h-7 md:w-7" />
+                    </a>
+                </div>
+
+                {/* divider  */}
+                <Separator className="w-full bg-gradient-to-r from-gray-800 via-[#ff7e2e]/20 to-gray-800" />
+
+                {/* Copyright section  */}
+                <div className="flex justify-center items-center py-6 text-sm text-gray-400 font-light tracking-wider">
+                    © Indian Stonex Private Limited, 2024. All rights reserved.
+                </div>
             </div>
+        </footer>
+    )
+}
 
-            <div className="w-full pr-5 flex flex-col text-sm">
-              <span>Call : +91 7014116801</span>
-              <span>Email : indianstonexinfo@gmail.com</span>
-            </div>
-
-
-
-          </div>
-          {/* links  */}
-          <div className="flex flex-col gap-3 ">
-            <h3 className=" text-xl">House Of Talks</h3>
-            <div className="flex text-sm flex-col gap-4">
-              <Link href={"/About"}>About Us</Link>
-              <Link href={""}>The Team</Link>
-              <Link href={"/"}>Indian Stonex</Link>
-              <Link href={""}>Our Clients</Link>
-            </div>
-          </div>
-          <div className="flex flex-col gap-3">
-            <h3 className=" text-xl">Quick Links</h3>
-            <div className="flex text-sm flex-col gap-4">
-              <Link href={"/marble-pooja-room-designs"}>
-                Pooja Room
-              </Link>
-              <Link href={"/premium-marble-temple-for-home"}>
-                Dream Temples
-              </Link>
-              <Link href={"/communal-temple-design"}>
-                Communal Temples
-              </Link>
-              <Link href={"/AppointmentPage"}>
-                Book appointment
-              </Link>
-            </div>
-          </div>
-          <div className="flex flex-col gap-3">
-            <h3 className=" text-xl">Legal</h3>
-            <div className="flex text-sm flex-col gap-4">
-              <Link href={"/"}>
-                Terms & Conditions
-              </Link>
-              <Link href={"/"}>Privacy Policy</Link>
-              <Link href={"/"}>Cookies Policy</Link>
-              <Link href={"/"}>Disclaimer</Link>
-            </div>
-          </div>
-          <div className="flex flex-col gap-3">
-            <h3 className="text-xl">Need Help</h3>
-            <div className="flex flex-col gap-4 text-sm">
-              <Link href={"/"}>FAQs</Link>
-              <Link href={""}>Call Us</Link>
-              <Link href={""}>Email</Link>
-            </div>
-          </div>
-        </div>
-        {/* icons   */}
-        <div className=" flex gap-5 pb-5 w-full justify-start">
-          <a href="https://www.instagram.com/indian_stonex?igsh=dzA3aWpoNXF1dGVk" target="_blank" rel="noopener noreferrer">
-            <FaInstagram className="h-7 w-7 hover:cursor-pointer hover:scale-110 duration-200" />
-          </a>
-
-          <a href="https://www.facebook.com/share/1BEsC7YXEM/" target="_blank" rel="noopener noreferrer">
-            <FiFacebook className="h-7 w-7 hover:cursor-pointer hover:scale-110 duration-200" />
-          </a>
-
-          <a href="https://youtube.com/@indianstonex-c3i?si=Z1i5Ge1sLZyp7Tdo" target="_blank" rel="noopener noreferrer">
-            <FiYoutube className="h-7 w-7 hover:cursor-pointer hover:scale-110 duration-200" />
-          </a>
-
-          <a href="https://www.linkedin.com/in/indian-stonex-091ab1385?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
-            <FaLinkedinIn className="h-7 w-7 hover:cursor-pointer hover:scale-110 duration-200" />
-          </a>
-
-        </div>
-        {/* divider  */}
-        <Separator className="w-full" />
-
-        {/* Copyright section  */}
-        <div className="flex justify-center items-center h-[5vh] ">
-          © Indian Stonex Private Limited, 2024
-        </div>
-      </div>
-    </footer>
-  );
-};
-
-export default Footer;
+export default Footer
