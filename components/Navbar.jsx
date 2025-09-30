@@ -27,12 +27,12 @@ const navItems = [
   {
     name: "Our Creations", href: "",
     dropdown: [
-      { name: "Communal Temples", href: "/communal-temple-design", src: 'https://fabdiz.com/wp-content/uploads/2024/04/425299420_1061269654963171_8894025131850542049_n.jpg' },
-      { name: "Murti", href: "/", src: 'https://media.designcafe.com/wp-content/uploads/2022/11/24185017/living-room-marble-wall-design-for-partition.jpg' },
-      { name: "Dream Temples", href: "/premium-marble-temple-for-home", src: "https://5.imimg.com/data5/SELLER/Default/2024/9/448018779/ZB/HH/ZZ/26887741/marble-pooja-mandir.jpg" },
-      { name: "Jain temples", href: "/jain-temple", src: 'https://media.designcafe.com/wp-content/uploads/2022/11/24185017/living-room-marble-wall-design-for-partition.jpg' },
-      { name: "Home Decor", href: "/", src: 'https://media.designcafe.com/wp-content/uploads/2022/11/24185017/living-room-marble-wall-design-for-partition.jpg' },
-      { name: "Pooja Rooms", href: "/marble-pooja-room-designs", src: "https://bonito.in/wp-content/uploads/2021/11/1-01.jpg" },
+      { name: "Communal Temples", href: "/communal-temple-design", src: '/project1.jpg' },
+      { name: "Murti", href: "/", src: '/murti1.jpg' },
+      { name: "Dream Temples", href: "/premium-marble-temple-for-home", src: "/project6.jpg" },
+      { name: "Jain temples", href: "/jain-temple", src: '/project3.jpg' },
+      { name: "Home Decor", href: "/", src: '/home-decor.jpg' },
+      { name: "Pooja Rooms", href: "/marble-pooja-room-designs", src: "/project4.jpg" },
     ],
   },
   { name: "Location", href: "/Location" },
@@ -94,7 +94,7 @@ const Navbar = () => {
             >
               <div className="w-15 h-15">
                 <img
-                  src="/logo.jpg"
+                  src="/logo1.png"
                   alt="Logo"
                   className="w-15 h-15 object-contain drop-shadow-sm"
                 />
@@ -144,7 +144,7 @@ const Navbar = () => {
                         {item.dropdown.map((link) => (
                           <Link 
                             href={link.href} 
-                            className="text-gray-800 hover:cursor-pointer hover:underline decoration-[#d59352] decoration-2 underline-offset-3 text-sm font-normal focus:outline-none focus:ring-0" 
+                            className="text-gray-800 hover:cursor-pointer hover:underline decoration-theme decoration-2 underline-offset-3 text-sm font-normal focus:outline-none focus:ring-0" 
                             key={link.name}
                           >
                             {link.name}

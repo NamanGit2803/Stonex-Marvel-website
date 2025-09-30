@@ -5,6 +5,7 @@
 
 :root {
   --background: oklch(1 0 0);
+  --theme: oklch(73.05% 0.1796 47.90deg);;
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -37,12 +38,12 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
-  --font-inter: "Inter", sans-serif;
-  --font-playfair: "Playfair Display", serif;
+  --underline-color: oklch(70.47% 0.122 59.53)
 }
 
 .dark {
   --background: oklch(0.145 0 0);
+  --theme: oklch(73.05% 0.1796 47.90deg);;
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.145 0 0);
   --card-foreground: oklch(0.985 0 0);
@@ -77,10 +78,8 @@
 }
 
 @theme inline {
-  --font-sans: var(--font-inter);
-  --font-mono: var(--font-geist-mono);
-  --font-serif: var(--font-playfair);
   --color-background: var(--background);
+  --color-theme: var(--theme);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
@@ -118,73 +117,21 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-@keyframes float-y {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-6px);
-  }
-}
-@keyframes drift-x {
-  0%,
-  100% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(8px);
-  }
-}
-@keyframes fade-up {
-  0% {
-    opacity: 0;
-    transform: translateY(8px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes ring-pulse {
-  0% {
-    box-shadow: 0 0 0 0 rgba(255, 126, 46, 0.35);
-  }
-  70% {
-    box-shadow: 0 0 0 12px rgba(255, 126, 46, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(255, 126, 46, 0);
-  }
-}
-
-@layer utilities {
-  .animate-float-slow {
-    animation: float-y 6s ease-in-out infinite;
-    will-change: transform;
-  }
-  .animate-drift-slow {
-    animation: drift-x 8s ease-in-out infinite;
-    will-change: transform;
-  }
-  .animate-fade-up {
-    animation: fade-up 0.8s ease both;
-    will-change: transform, opacity;
-  }
-  .glow-pulse {
-    animation: ring-pulse 2.2s ease-out infinite;
-  }
-}
-
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+}
+
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;            /* Chrome/Safari */
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE/Edge */
+  scrollbar-width: none;     /* Firefox */
 }

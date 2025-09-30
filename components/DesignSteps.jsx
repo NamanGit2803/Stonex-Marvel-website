@@ -149,8 +149,8 @@ export default function DesignSteps() {
               >
                 <div className="relative flex-shrink-0">
                   <div className={`w-10 h-10 rounded-full flex items-center justify-center ${
-                    activeStep === step.id ? 'bg-amber-600' : 'bg-amber-500'
-                  } font-bold text-lg text-white transition-all duration-300`} style={{backgroundColor: '#a08f0f'}}>
+                    activeStep === step.id ? 'bg-theme' : 'bg-amber-500'
+                  } font-bold text-lg text-white transition-all duration-300`} style={{backgroundColor: 'var(--color-theme)'}}>
                     {step.id}
                   </div>
                 </div>
@@ -164,7 +164,7 @@ export default function DesignSteps() {
                         e.stopPropagation();
                         openModal(step.id);
                       }}
-                      className="mt-4 text-amber-700 font-medium hover:text-amber-800 flex items-center transition-colors duration-300"
+                      className="mt-4 text-theme font-medium hover:text-amber-800 flex items-center transition-colors duration-300"
                       style={{color: '#a08f0f'}}
                     >
                       See details
@@ -195,12 +195,12 @@ export default function DesignSteps() {
                   {currentStep.details.map((detail, index) => (
                     <div key={index} className="flex">
                       <div className="flex-shrink-0 mr-4">
-                        <div className="w-3 h-3 rounded-full bg-amber-500 mt-2" style={{backgroundColor: '#a08f0f'}}></div>
+                        <div className="w-3 h-3 rounded-full bg-amber-500 mt-2" style={{backgroundColor: 'var(--color-theme'}}></div>
                       </div>
                       <div>
                         <h4 className="font-semibold text-gray-800">{detail.title}</h4>
                         {detail.milestone && (
-                          <div className="text-sm text-amber-700 font-medium my-2" style={{color: '#a08f0f'}}>{detail.milestone}</div>
+                          <div className="text-sm text-theme font-medium my-2" style={{color: 'var(--color-theme)'}}>{detail.milestone}</div>
                         )}
                         <p className="text-gray-600 mt-1">{detail.description}</p>
                       </div>

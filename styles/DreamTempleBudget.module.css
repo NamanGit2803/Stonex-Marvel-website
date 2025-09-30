@@ -75,7 +75,7 @@
   position: absolute;
   top: 20px;
   left: 20px;
-  background-color: #b08c47;
+  background-color: var(--color-theme);
   color: #fff;
   display: inline-block;
   padding: 10px 16px;
