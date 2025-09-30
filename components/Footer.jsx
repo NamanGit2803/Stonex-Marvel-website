@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "./ui/button";
 import { Separator } from "./ui/separator";
 import Link from "next/link";
+import Image from "next/image";
 
 import { FaInstagram } from "react-icons/fa";
 import { FiFacebook } from "react-icons/fi";
@@ -15,20 +16,21 @@ const Footer = () => {
         <div className="grid grid-cols-2 gap-8 py-10 md:py-20 lg:grid-cols-5">
           {/* logo  */}
           <div className="flex flex-col col-span-2 sm:col-span-1 gap-3 justify-start items-start">
-<Link href="/" className="flex items-center space-x-2 hover:opacity-90 transition">
-  <span className="text-3xl font-bold text-theme tracking-wide">Indian</span>
-  <span className="text-3xl font-bold text-white-800">Stonex</span>
-</Link>
+            <Image sr/>
+            <Link href="/" className="flex items-center space-x-2 hover:opacity-90 transition">
+              <span className="text-3xl font-bold text-theme tracking-wide">Indian</span>
+              <span className="text-3xl font-bold text-white-800">Stonex</span>
+            </Link>
 
 
 
             {/* details  */}
             <div className="w-full pr-5">
-              <span className="text-xs">Address : n Front of Post Office, near Truck Union, Vasundhara Nagar Manglana Road, Makrana Rajasthan. 341505</span>
+              <span className="text-xs">Address : In Front of Post Office, near Truck Union, Vasundhara Nagar Manglana Road, Makrana Rajasthan. <br />Pin: 341505</span>
             </div>
 
             <div className="w-full pr-5 flex flex-col text-sm">
-              <span>Call : +91 93193 74633</span>
+              <span>Call : +91 7014116801</span>
               <span>Email : indianstonexinfo@gmail.com</span>
             </div>
 
@@ -48,9 +50,6 @@ const Footer = () => {
           <div className="flex flex-col gap-3">
             <h3 className=" text-xl">Quick Links</h3>
             <div className="flex text-sm flex-col gap-4">
-              <Link href={""}>
-                How it Works
-              </Link>
               <Link href={"/marble-pooja-room-designs"}>
                 Pooja Room
               </Link>
@@ -68,20 +67,18 @@ const Footer = () => {
           <div className="flex flex-col gap-3">
             <h3 className=" text-xl">Legal</h3>
             <div className="flex text-sm flex-col gap-4">
-              <Link href={""}>Corporate Info</Link>
               <Link href={"/"}>
                 Terms & Conditions
               </Link>
-              <Link href={""}>Privacy Policy</Link>
-              <Link href={""}>Cookies Policy</Link>
-              <Link href={""}>Disclaimer</Link>
+              <Link href={"/"}>Privacy Policy</Link>
+              <Link href={"/"}>Cookies Policy</Link>
+              <Link href={"/"}>Disclaimer</Link>
             </div>
           </div>
           <div className="flex flex-col gap-3">
             <h3 className="text-xl">Need Help</h3>
             <div className="flex flex-col gap-4 text-sm">
-              <Link href={""}>FAQs</Link>
-              <Link href={""}>Stores</Link>
+              <Link href={"/"}>FAQs</Link>
               <Link href={""}>Call Us</Link>
               <Link href={""}>Email</Link>
             </div>

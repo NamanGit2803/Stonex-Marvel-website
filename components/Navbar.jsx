@@ -19,9 +19,9 @@ const navItems = [
   {
     name: "Projects", href: '',
     dropdown: [
-      { name: "Communal", href: "/projects/communal", src: "https://images.squarespace-cdn.com/content/v1/65d325ddd662de7fdcb2411f/bc03c460-5a81-44e1-9920-fc07e711d20a/download+%285%29.jpg" },
-      { name: "Residential", href: "/projects/residential", src: "https://fabdiz.com/wp-content/uploads/2024/04/product-jpeg-1000x1000-1.webp" },
-      { name: "International", href: "/projects/international", src: 'https://media.designcafe.com/wp-content/uploads/2022/11/24185017/living-room-marble-wall-design-for-partition.jpg' },
+      { name: "Communal", href: "/", src: "https://images.squarespace-cdn.com/content/v1/65d325ddd662de7fdcb2411f/bc03c460-5a81-44e1-9920-fc07e711d20a/download+%285%29.jpg" },
+      { name: "Residential", href: "/", src: "https://fabdiz.com/wp-content/uploads/2024/04/product-jpeg-1000x1000-1.webp" },
+      { name: "International", href: "/", src: 'https://media.designcafe.com/wp-content/uploads/2022/11/24185017/living-room-marble-wall-design-for-partition.jpg' },
     ],
   },
   {

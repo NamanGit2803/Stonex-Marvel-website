@@ -14,9 +14,13 @@ import {
 import { Separator } from "@/components/ui/separator"
 
 const className = [
-    { name: 'communal', src: 'https://api.servertsa.com/uploads/1733300550903.jpeg', content: 'COMMUNAL-PROJECT' },
+    { name: 'communal', src: '/img5.png', content: 'COMMUNAL-PROJECT' },
     { name: 'residential', src: 'https://api.servertsa.com/uploads/1733296958645.jpeg', content: 'RESIDENTIAL-PROJECT' },
     { name: 'international', src: 'https://api.servertsa.com/uploads/1733300646054.jpeg', content: 'INTERNATIONAL-PROJECT' },
+]
+
+const projects = [
+    {}
 ]
 
 const Projects = () => {
