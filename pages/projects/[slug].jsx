@@ -164,9 +164,7 @@ const Projects = () => {
         hidden: { opacity: 0 },
         visible: {
             opacity: 1,
-            transition: {
-                staggerChildren: 0.1
-            }
+            transition: { staggerChildren: 0.1 }
         }
     }
 
@@ -175,9 +173,7 @@ const Projects = () => {
         visible: {
             y: 0,
             opacity: 1,
-            transition: {
-                duration: 0.5
-            }
+            transition: { duration: 0.5 }
         }
     }
 
@@ -212,7 +208,7 @@ const Projects = () => {
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                 />
                 
-                {/* Enhanced Gradient Overlay */}
+                {/* Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
                 
                 {/* Content */}
@@ -224,8 +220,10 @@ const Projects = () => {
                             transition={{ delay: 0.3, duration: 0.7 }}
                             className="text-white max-w-3xl"
                         >
-                            <h1 className="text-6xl md:text-7xl font-bold mb-6 tracking-wider font-serif">
-                                {currentCategory.displayName}
+                            <h1 className="mt-6 font-semibold tracking-tight text-4xl sm:text-6xl md:text-7xl animate-slide-up">
+                                <span className="bg-gradient-to-r from-[#ff7e2e] to-[#ffb380] bg-clip-text text-transparent">
+                                    {currentCategory.displayName}
+                                </span>
                             </h1>
                             <p className="text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed">
                                 {currentCategory.description}
@@ -241,7 +239,7 @@ const Projects = () => {
                     </div>
                 </div>
 
-                {/* Enhanced Scroll Indicator */}
+                {/* Scroll Indicator */}
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -264,7 +262,7 @@ const Projects = () => {
             {/* Projects Section */}
             <section className="py-16 px-6">
                 <div className="container mx-auto">
-                    {/* Search and Filter Section */}
+                    {/* Search and Filter */}
                     <motion.div
                         initial={{ y: 30, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
@@ -285,9 +283,7 @@ const Projects = () => {
                                         <SelectContent>
                                             <SelectGroup>
                                                 <SelectLabel>Cities</SelectLabel>
-                                                <SelectItem value="all">
-                                                    All Cities
-                                                </SelectItem>
+                                                <SelectItem value="all">All Cities</SelectItem>
                                                 {cities.map(city => (
                                                     <SelectItem key={city} value={city}>
                                                         {city}
@@ -335,11 +331,13 @@ const Projects = () => {
                         className="mb-8"
                     >
                         <div className="flex items-center justify-between mb-8">
-                            <motion.h2 
+                            <motion.h2
                                 variants={itemVariants}
-                                className="text-3xl font-bold text-gray-900"
+                                className="mt-6 font-semibold tracking-tight text-3xl sm:text-5xl md:text-6xl animate-slide-up"
                             >
-                                Featured Projects
+                                <span className="bg-gradient-to-r from-[#ff7e2e] to-[#ffb380] bg-clip-text text-transparent">
+                                    Featured Projects
+                                </span>
                             </motion.h2>
                             <motion.span 
                                 variants={itemVariants}
@@ -388,7 +386,7 @@ const Projects = () => {
                                                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                                                 />
                                                 
-                                                {/* Gradient Overlay */}
+                                                {/* Overlay */}
                                                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                                                 
                                                 {/* Content Overlay */}
@@ -407,7 +405,7 @@ const Projects = () => {
                                                         </div>
                                                     </div>
                                                     
-                                                    {/* View More Button */}
+                                                    {/* View More */}
                                                     <motion.div
                                                         initial={{ opacity: 0, y: 10 }}
                                                         whileHover={{ opacity: 1, y: 0 }}
@@ -422,9 +420,6 @@ const Projects = () => {
                                                         </Button>
                                                     </motion.div>
                                                 </div>
-
-                                                {/* Hover Effect Indicator */}
-                                                <div className="absolute top-4 right-4 w-2 h-2 bg-theme rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                                             </div>
                                         </motion.div>
                                     ))}
@@ -432,12 +427,10 @@ const Projects = () => {
                             </motion.div>
                         )}
                     </motion.div>
-
-                    
                 </div>
             </section>
         </div>
     )
 }
 
-export default Projects
+export default Projects;
