@@ -1,21 +1,21 @@
 import React from 'react'
-import Hero from '../components/Hero'
-import DreamTempleBudget from '../components/DreamTempleBudget'
-import OurServices from '../components/OurServices'
-import DimensionsPictures from '../components/DimensionsPictures'
+import Hero from '../../components'
+import DreamTempleBudget from '../../components/DreamTempleBudget'
+import OurServices from '../../components/OurServices'
+import DimensionsPictures from '../../components/DimensionsPictures'
 
 const PoojaRooms = () => {
   return (
     <div>
-        <Hero/>
+      <Hero />
 
-        <DreamTempleBudget/>
+      <DreamTempleBudget />
 
-        <OurServices/>
+      <OurServices />
 
-        <DimensionsPictures/>
+      <DimensionsPictures />
     </div>
-    
+
   )
 }
 
