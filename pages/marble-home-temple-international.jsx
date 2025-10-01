@@ -35,7 +35,6 @@ export default function Home() {
         <CitySection/>
         <DreamTempleBudget/>
         <ProjectShowcase/>
-        <ComparisonTable/>
         <FAQ/>
         <PoojaRoomJourney/>
       </div>
