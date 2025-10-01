@@ -10,8 +10,8 @@ import {
     SelectLabel,
     SelectTrigger,
     SelectValue,
-} from "@/components/ui/select"
-import { Separator } from "@/components/ui/separator"
+} from "../components/ui/select"
+import { Separator } from "../components/ui/separator"
 import { motion, AnimatePresence } from 'framer-motion'
 
 // Project data with different images for each category
