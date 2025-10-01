@@ -4,47 +4,75 @@ import Image from 'next/image';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 const ProjectShowcase = () => {
-  const [activeTab, setActiveTab] = useState('Residential');
+  const [activeTab, setActiveTab] = useState('Luxury-Living');
   const sliderRef = useRef(null);
 
   // Updated project data with temple-related titles
   const projects = [
-    {
-      id: 1,
-      title: 'Divine Marble Temple - Rohtak',
-      image: 'https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1733043480807.jpeg&w=1920&q=75',
-      link: '/Residential/detail/manoj-goyal-marble-pooja-room-in-rohtak-haryana',
-      category: 'Communal'
-    },
-    {
-      id: 2,
-      title: 'Sacred Marble Temple - Ashok Vihar',
-      image: 'https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1732991607721.jpeg&w=1920&q=75',
-      link: '/Residential/detail/parvesh-mehta-marble-temple-in-ashok-vihar-delhi',
-      category: 'Residential'
-    },
-    {
-      id: 3,
-      title: 'Elegant Marble Temple - Worli',
-      image: 'https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1732984135083.jpeg&w=1920&q=75',
-      link: '/Residential/detail/nisha-jain-samosharana-marble-temple-in-worli-mumbai-maharashtra',
-      category: 'Residential'
-    },
-    {
-      id: 4,
-      title: 'Traditional Marble Temple - Gorakhpur',
-      image: 'https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1733044968981.jpeg&w=1920&q=75',
-      link: '/Residential/detail/palak-gupta-marble-temple-in-gorakhpur-uttar-pradesh',
-      category: 'Residential'
-    },
-    {
-      id: 5,
-      title: 'Royal Marble Temple - Jaipur',
-      image: 'https://www.tilakstonearts.com/_next/image?url=https%3A%2F%2Fapi.servertsa.com%2Fuploads%2F1733851641162.jpeg&w=1920&q=75',
-      link: '/Residential/detail/harsh-poddar-marble-pooja-room-in-jaipur-rajasthan',
-      category: 'International'
-    }
-  ];
+            {
+                id: 1,
+                title: 'Shri 1008 Munisuvratnath Jain Temple',
+                image: '/img5.png',
+                link: '',
+                category: 'Corporate'
+            },
+            {
+                id: 2,
+                title: 'Shri Adinath Bhagwan Temple Complex',
+                image: '/img2.jpg',
+                link: '',
+                category: 'Corporate'
+            },
+            {
+                id: 3,
+                title: 'Community Marble Temple',
+                image: '/img6.png',
+                link: '',
+                category: 'Corporate'
+            },
+            {
+                id: 4,
+                title: 'Luxury Villa Home Temple',
+                image: '/img12.jpg',
+                link: '',
+                category: 'Luxury-Living'
+            },
+            {
+                id: 5,
+                title: 'Modern Apartment Temple',
+                image: '/img10.jpg',
+                link: '',
+                category: 'Luxury-Living'
+            },
+            {
+                id: 6,
+                title: 'Garden Temple Pavilion',
+                image: '/img7.png',
+                link: '',
+                category: 'Luxury-Living'
+            },
+            {
+                id: 7,
+                title: 'Jain Temple Complex',
+                image: '/img10.jpg',
+                category: 'Overseas',
+                link: ''
+            },
+            {
+                id: 8,
+                title: 'Cultural Center Temple',
+                image: '/murti1.jpg',
+                category: 'Overseas',
+                link: ''
+            },
+            {
+                id: 9,
+                title: 'Peace Temple',
+                image: '/project5.jpg',
+                category: 'Overseas',
+                link: ''
+            }
+        ]
 
   // Filter projects based on active tab
   const filteredProjects = projects.filter(project => project.category === activeTab);
@@ -87,22 +115,22 @@ const ProjectShowcase = () => {
             <div className={styles.btnTab}>
               <ul>
                 <li
-                  className={activeTab === 'Communal' ? styles.active : ''}
-                  onClick={() => handleTabClick('Communal')}
+                  className={activeTab === 'Corporate' ? styles.active : ''}
+                  onClick={() => handleTabClick('Corporate')}
                 >
-                  Communal
+                  Corporate
                 </li>
                 <li
-                  className={activeTab === 'Residential' ? styles.active : ''}
-                  onClick={() => handleTabClick('Residential')}
+                  className={activeTab === 'Luxury-Living' ? styles.active : ''}
+                  onClick={() => handleTabClick('Luxury-Living')}
                 >
-                  Residential
+                  Luxury-Living
                 </li>
                 <li
-                  className={activeTab === 'International' ? styles.active : ''}
-                  onClick={() => handleTabClick('International')}
+                  className={activeTab === 'Overseas' ? styles.active : ''}
+                  onClick={() => handleTabClick('Overseas')}
                 >
-                  International
+                  Overseas
                 </li>
               </ul>
             </div>
@@ -125,7 +153,7 @@ const ProjectShowcase = () => {
                                 alt="Project Image"
                                 fill
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                style={{ objectFit: 'cover' }}
+                                style={{ objectFit: 'contain' }}
                               />
                             </div>
                           </a>
