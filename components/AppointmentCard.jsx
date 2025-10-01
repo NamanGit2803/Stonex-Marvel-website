@@ -9,15 +9,15 @@ import {
     CardFooter,
     CardHeader,
     CardTitle,
-} from "@/components/ui/card"
-import { Input } from "@/components/ui/input";
-import { Calendar } from "@/components/ui/calendar";
-import { Label } from "@/components/ui/label";
-import { cn } from "@/lib/utils";
+} from "../components/ui/card"
+import { Input } from "../components/ui/input";
+import { Calendar } from "../components/ui/calendar";
+import { Label } from "../components/ui/label";
+import { cn } from "../lib/utils";
 import {
     RadioGroup,
     RadioGroupItem,
-} from "@/components/ui/radio-group"
+} from "../components/ui/radio-group"
 import { Store } from 'lucide-react';
 import { MdOutlineTempleHindu } from "react-icons/md";
 
