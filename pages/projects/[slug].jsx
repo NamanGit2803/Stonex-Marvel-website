@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
-import { Button } from "../components/ui/button"
-import { Input } from "../components/ui/input"
+import { Button } from "../../components/ui/button"
+import { Input } from "../../components/ui/input"
 import {
     Select,
     SelectContent,
@@ -10,8 +10,8 @@ import {
     SelectLabel,
     SelectTrigger,
     SelectValue,
-} from "../components/ui/select"
-import { Separator } from "../components/ui/separator"
+} from "../../components/ui/select"
+import { Separator } from "../../components/ui/separator"
 import { motion, AnimatePresence } from 'framer-motion'
 
 // Project data with different images for each category
