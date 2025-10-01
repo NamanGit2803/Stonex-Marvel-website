@@ -47,7 +47,7 @@ const DreamTemplesSection = () => {
           <div className="lg:w-1/2">
             <div className="page_listweb__MXW81">
               <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-6">
-                What sets TSA International Apart
+                What sets Indian StonexInternational Apart
               </h2>
               <ul className="space-y-4">
                 <li className="flex items-start">

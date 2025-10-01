@@ -18,7 +18,7 @@ export default function ImageTextSection() {
           <div className="w-full md:w-1/2 order-1 md:order-2 md:pl-12 mb-8 md:mb-0 flex items-center">
             <div className="text-content text-center md:text-left max-w-lg mx-auto md:mx-0 py-6 md:py-0">
               <h2 className="text-2xl md:text-3xl font-semibold mb-4">
-                Be a part of the TSA Design Hub Community
+                Be a part of the Indian Stonex Design Hub Community
               </h2>
               <p className="text-lg">
                 Our specialized B2B team is dedicated to supporting your business, working alongside you to create tailored solutions for your clients, regardless of the project size. By partnering with us, you'll unlock exclusive advantages designed to enhance your experience.

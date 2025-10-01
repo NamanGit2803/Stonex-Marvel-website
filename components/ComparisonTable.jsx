@@ -58,7 +58,7 @@ const ComparisonTable = () => {
       <div className="container mx-auto">
         <div className="row justify-center">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-900">The TSA Difference</h2>
+            <h2 className="text-3xl font-bold text-gray-900">The Indian StonexDifference</h2>
           </div>
           <div className="w-full max-w-6xl mx-auto">
             {/* Scrollable container for the table */}

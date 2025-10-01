@@ -59,7 +59,7 @@ export default function CollaborateSection() {
             <div className="text-content text-center lg:text-left">
               <h3 className="text-2xl md:text-3xl font-semibold mb-4">Exclusive Lookbook Access</h3>
               <p className="text-lg">
-                Although we do not share a public catalog, our TSA Design Hub offers you exclusive access to all of our ongoing projects. As a partner, you'll have insider access to our latest designs and concepts, ensuring your pooja room projects are always at the forefront of innovation and quality.
+                Although we do not share a public catalog, our Indian StonexDesign Hub offers you exclusive access to all of our ongoing projects. As a partner, you'll have insider access to our latest designs and concepts, ensuring your pooja room projects are always at the forefront of innovation and quality.
               </p>
             </div>
           </div>
