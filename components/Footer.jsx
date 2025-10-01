@@ -50,7 +50,7 @@ const Footer = () => {
                     {/* links  */}
                     <div className="flex flex-col gap-5">
                         <h3 className="text-lg md:text-xl font-light tracking-widest uppercase">
-                            House Of Talks
+                            Our Space
                         </h3>
                         <div className="flex flex-col gap-3">
                             <Link
