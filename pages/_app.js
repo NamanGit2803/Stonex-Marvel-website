@@ -1,9 +1,9 @@
-import "@/styles/globals.css";
+import '../styles/globals.css'
 // import Navbar from "@/components/Navbar";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import { Montserrat } from 'next/font/google';
-import SpeedDial from "@/components/SpeedDial";
+import SpeedDial from "../components/SpeedDial";
 import { useEffect, useState } from "react";
 import Head from "next/head";
 

@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/radio-group"
 import { Store } from 'lucide-react';
 import { MdOutlineTempleHindu } from "react-icons/md";
-import AppointmentCard from "@/components/AppointmentCard";
+import AppointmentCard from "../components/AppointmentCard";
 
 
 export default function AppointmentPage() {

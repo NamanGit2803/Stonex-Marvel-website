@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
-import { cn } from "@/lib/utils"
-import { Separator } from "@/components/ui/separator"
+import { cn } from "../lib/utils"
+import { Separator } from "../components/ui/separator"
 import Image from "next/image";
 import { useRouter } from "next/router";
 

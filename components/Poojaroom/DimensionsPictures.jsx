@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaTimes } from 'react-icons/fa';
-import styles from '../styles/DimensionsPictures.module.css';
+import styles from '../../styles/DimensionsPictures.module.css';
 
 const DimensionsPictures = () => {
   const [showForm, setShowForm] = useState(false);

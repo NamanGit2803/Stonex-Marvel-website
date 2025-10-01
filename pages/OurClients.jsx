@@ -1,5 +1,5 @@
 import React from 'react'
-import ClientCarousel from "@/components/ClientCarousel";
+import ClientCarousel from "../components/ClientCarousel";
 
 const OurClients = () => {
     return (

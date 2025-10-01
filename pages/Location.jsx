@@ -1,5 +1,5 @@
 import React from 'react'
-import CitySection from '@/components/CitySection'
+import CitySection from '../components/CitySection'
 
 const Location = () => {
   return (

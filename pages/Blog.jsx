@@ -1,6 +1,6 @@
 import React from 'react'
-import OtherHeroSection from '@/components/OtherHeroSection'
-import BlogSection from '@/components/BlogSection'
+import OtherHeroSection from '../components/OtherHeroSection'
+import BlogSection from '../components/BlogSection'
 
 const Blog = () => {
   return (
