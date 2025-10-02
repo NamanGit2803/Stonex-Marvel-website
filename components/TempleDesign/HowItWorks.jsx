@@ -6,201 +6,240 @@ const HowItWorks = () => {
   const steps = [
     {
       id: 1,
-      title: "Lets Connect One on One",
+      title: "Initial Consultation",
+      subtitle: "Let's Connect One on One",
       image: "/_next/static/media/image1.84c47ee9.gif",
+      description: "We begin by understanding your vision and requirements for the perfect sacred space",
       items: [
         {
-          subtitle: "It All Begins with a Form",
-          description: "We want to understand your needs better to design your perfect space.",
-          button: "Fill Form Link",
+          subtitle: "Complete Our Detailed Form",
+          description: "Share your requirements, preferences, and vision for your dream temple space",
+          button: "Fill Detailed Form",
           milestone: ""
         },
         {
-          subtitle: "Connect Over a Meet",
-          description: "Join us in an interactive session to discuss your Pooja Space and design ideas with our experts. Book a time that suits you best.",
-          button: "",
-          milestone: "Milestone: Concept Discovery Session"
+          subtitle: "Personalized Design Session",
+          description: "Schedule a one-on-one consultation with our design experts to discuss your spiritual space",
+          button: "Book Consultation",
+          milestone: "Milestone: Concept Discovery Completed"
         }
       ]
     },
     {
       id: 2,
-      title: "Start With Your Design",
+      title: "Design Development",
+      subtitle: "Bringing Your Vision to Life",
       image: "/_next/static/media/image2.79a73f73.gif",
+      description: "Transform your ideas into detailed, visual designs with our expert team",
       items: [
         {
-          subtitle: "Pay the Design Fee",
-          description: "If you're happy with the session and we're aligned on your needs, choose a design plan to start.",
-          button: "",
+          subtitle: "Design Agreement & Fee",
+          description: "Secure your design phase with our comprehensive design package",
+          button: "View Design Plans",
           milestone: ""
         },
         {
-          subtitle: "2D Design",
-          description: "Our expert designers will create a detailed 2D plan for your temple, showcasing the style and placement of deities.",
+          subtitle: "2D Technical Drawings",
+          description: "Receive detailed floor plans and elevation drawings for precise planning",
           button: "",
-          milestone: "Milestone: Design Fee 200 USD"
+          milestone: "Milestone: Design Fee - $200"
         },
         {
-          subtitle: "3D Design",
-          description: "Once the 2D plan is finalized, visualize your dream space with a 3D model.",
+          subtitle: "3D Visualizations",
+          description: "Experience your temple in stunning 3D before construction begins",
           button: "",
-          milestone: "Milestone: 3D Design Fee"
+          milestone: "Milestone: 3D Design Fee Applied"
         },
         {
-          subtitle: "Finalize Your Design",
-          description: "Agree on a design to move forward with production.",
-          button: "",
+          subtitle: "Final Design Approval",
+          description: "Review and approve the complete design package",
+          button: "Approve Design",
           milestone: ""
         }
       ]
     },
     {
       id: 3,
-      title: "Place The Order",
+      title: "Project Commencement",
+      subtitle: "Placing Your Order",
       image: "/_next/static/media/image3.493b9a3b.gif",
+      description: "Begin the creation process with secure payment and project initiation",
       items: [
         {
-          subtitle: "Start the Order Process",
-          description: "Pay 50% of the final quote to get started.",
-          button: "",
+          subtitle: "Initial Payment",
+          description: "Secure your project timeline with 50% advance payment",
+          button: "Make Payment",
           milestone: ""
         },
         {
-          subtitle: "The Work Commences",
-          description: "Track your project status through our portal.",
-          button: "",
-          milestone: ""
+          subtitle: "Project Kick-off",
+          description: "Your dedicated project manager begins coordinating all aspects",
+          button: "Track Project",
+          milestone: "Milestone: Production Started"
         }
       ]
     },
     {
       id: 4,
-      title: "Production",
+      title: "Craftsmanship Phase",
+      subtitle: "Precision Production",
       image: "/_next/static/media/image4.ee79520e.gif",
+      description: "Watch your temple take shape through skilled craftsmanship and quality materials",
       items: [
         {
-          subtitle: "Receive Updates",
-          description: "We'll keep you updated on your Dream Temple's progress. You'll have the chance to provide feedback and approvals as needed.",
-          button: "",
+          subtitle: "Regular Progress Updates",
+          description: "Receive weekly updates with photos and videos of your temple's progress",
+          button: "View Updates",
           milestone: ""
         },
         {
-          subtitle: "Share Your Approval",
-          description: "Approve the final pictures of the temple to proceed to the next stage.",
-          button: "",
-          milestone: "Milestone: Pay the remaining 50%"
+          subtitle: "Final Quality Approval",
+          description: "Approve the completed temple before packaging and dispatch",
+          button: "Give Approval",
+          milestone: "Milestone: Balance 50% Payment Due"
         }
       ]
     },
     {
       id: 5,
-      title: "Prepare for Dispatch",
+      title: "Secure Dispatch",
+      subtitle: "Preparing for Journey",
       image: "/_next/static/media/image5.0083fac6.gif",
+      description: "Expert packaging and secure dispatch ensuring safe delivery worldwide",
       items: [
         {
-          subtitle: "International Packaging",
-          description: "Once the full payment is received, we'll carefully pack your order and share videos of the process.",
-          button: "",
+          subtitle: "International-Grade Packaging",
+          description: "Specialized packaging designed for international shipping safety",
+          button: "View Packaging",
           milestone: ""
         },
         {
-          subtitle: "Dispatch from Our Production",
-          description: "Your shipment will be dispatched, ready to reach your doorstep.",
-          button: "",
-          milestone: ""
+          subtitle: "Secure Dispatch Process",
+          description: "Your temple begins its journey with complete tracking visibility",
+          button: "Track Shipment",
+          milestone: "Milestone: Shipment Dispatched"
         }
       ]
     },
     {
       id: 6,
-      title: "On-Site Installation",
+      title: "Final Installation",
+      subtitle: "Completing Your Vision",
       image: "/_next/static/media/image1.84c47ee9.gif",
+      description: "Professional guidance for perfect installation and setup of your sacred space",
       items: [
         {
-          subtitle: "Transit Updates",
-          description: "Stay informed about your shipment's journey.",
-          button: "",
+          subtitle: "Real-time Transit Monitoring",
+          description: "Track your shipment's journey with regular updates",
+          button: "Monitor Delivery",
           milestone: ""
         },
         {
-          subtitle: "Unpacking and Installation",
-          description: "When your shipment arrives, we'll schedule a call to assist you with unpacking and installation.",
-          button: "",
-          milestone: ""
+          subtitle: "Expert Installation Support",
+          description: "Comprehensive guidance for perfect installation and setup",
+          button: "Schedule Support",
+          milestone: "Milestone: Project Successfully Completed"
         }
       ]
     }
   ];
 
   return (
-    <section className="py-12 bg-gray-50">
+    <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
       <div className="container mx-auto px-4">
-        <div className="row mb-8">
-          <div className="text-center w-full">
-            <h3 className="text-3xl md:text-4xl font-bold text-gray-800">How It works</h3>
-          </div>
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-light mb-6">
+            Our <span className="font-semibold text-amber-600">Process</span>
+          </h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto mb-6"></div>
+          <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
+            A seamless journey from concept to completion, ensuring your sacred space is crafted 
+            with precision, care, and spiritual significance.
+          </p>
         </div>
 
-        {steps.map((step, index) => (
-          <div key={step.id} className={`flex flex-col ${index > 0 ? 'mt-8' : ''}`}>
-            {/* Payment Complete Banner after step 4 */}
-            {step.id === 4 && (
-              <div className="my-6 py-4 rounded-lg" style={{ backgroundColor: '#b08c4c' }}>
-                <div className="text-center">
-                  <h2 className="text-xl md:text-2xl font-semibold text-white flex items-center justify-center">
-                    <img 
-                      alt="Checkmark" 
-                      width="35" 
-                      height="35" 
-                      className="mr-3"
-                      src={`${baseUrl}/_next/static/media/check.728a30db.png`}
-                    />
-                    Hurrah! Complete payment has been made!
-                  </h2>
+        {/* Process Steps */}
+        <div className="max-w-6xl mx-auto">
+          {steps.map((step, index) => (
+            <div key={step.id} className="mb-16 last:mb-0">
+              {/* Payment Complete Banner after step 4 */}
+              {step.id === 4 && (
+                <div className="my-12 py-6 rounded-2xl bg-gradient-to-r from-amber-500 to-amber-600 shadow-lg">
+                  <div className="text-center">
+                    <h2 className="text-2xl md:text-3xl font-semibold text-white flex items-center justify-center">
+                      <img 
+                        alt="Checkmark" 
+                        width="40" 
+                        height="40" 
+                        className="mr-4"
+                        src={`${baseUrl}/_next/static/media/check.728a30db.png`}
+                      />
+                      Payment Complete! Your Temple is Ready for Dispatch
+                    </h2>
+                    <p className="text-amber-100 mt-2 text-lg">
+                      Thank you for your trust. We're preparing your sacred space for its journey to you.
+                    </p>
+                  </div>
                 </div>
-              </div>
-            )}
+              )}
 
-            <div className="flex flex-col lg:flex-row justify-center items-stretch rounded-lg overflow-hidden">
-              {/* Image Section - Always on left */}
-              <div className="lg:w-2/5 order-1">
-                <div className="h-56 md:h-64 bg-gray-100 relative">
-                  <div 
-                    className="absolute inset-0 bg-contain bg-center bg-no-repeat"
-                    style={{ backgroundImage: `url(${baseUrl}${step.image})` }}
-                  ></div>
+              {/* Step Container */}
+              <div className={`flex flex-col lg:flex-row items-stretch rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 bg-white ${
+                index % 2 === 1 ? 'lg:flex-row-reverse' : ''
+              }`}>
+                {/* Image Section */}
+                <div className="lg:w-2/5 relative">
+                  <div className="h-64 lg:h-full bg-gradient-to-br from-amber-50 to-amber-100 relative overflow-hidden">
+                    <div 
+                      className="absolute inset-0 bg-contain bg-center bg-no-repeat"
+                      style={{ backgroundImage: `url(${baseUrl}${step.image})` }}
+                    ></div>
+                    {/* Step Number Badge */}
+                    <div className="absolute top-4 left-4 w-12 h-12 bg-amber-500 text-white rounded-full flex items-center justify-center text-lg font-bold shadow-lg">
+                      {step.id}
+                    </div>
+                  </div>
                 </div>
-              </div>
-              
-              {/* Content Section */}
-              <div className="lg:w-3/5 p-5 md:p-6 order-2">
-                <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">{step.title}</h2>
-                <ul className="space-y-4">
-                  {step.items.map((item, itemIndex) => (
-                    <li key={itemIndex} className="pb-3 border-b border-gray-100 last:border-b-0 last:pb-0">
-                      {item.subtitle && (
-                        <div className="text-md font-semibold text-gray-700 mb-1">{item.subtitle}</div>
-                      )}
-                      {item.milestone && (
-                        <div className="text-sm font-medium bg-black text-white py-1 px-3 rounded-md inline-block mb-2">
-                          {item.milestone}
+                
+                {/* Content Section */}
+                <div className="lg:w-3/5 p-8">
+                  <div className="mb-6">
+                    <h3 className="text-2xl font-bold text-gray-800 mb-2">{step.title}</h3>
+                    <p className="text-lg text-amber-600 font-medium mb-3">{step.subtitle}</p>
+                    <p className="text-gray-600">{step.description}</p>
+                  </div>
+                  
+                  <div className="space-y-6">
+                    {step.items.map((item, itemIndex) => (
+                      <div key={itemIndex} className="pb-6 border-b border-gray-100 last:border-b-0 last:pb-0">
+                        <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
+                          <div className="flex-1">
+                            <h4 className="text-lg font-semibold text-gray-800 mb-2">{item.subtitle}</h4>
+                            <p className="text-gray-600 mb-3">{item.description}</p>
+                            {item.milestone && (
+                              <div className="inline-flex items-center bg-gradient-to-r from-amber-500 to-amber-600 text-white text-sm font-semibold py-2 px-4 rounded-full shadow-md">
+                                {item.milestone}
+                              </div>
+                            )}
+                          </div>
+                          
+                          {item.button && (
+                            <button className="bg-gray-900 hover:bg-black text-white font-medium py-2.5 px-6 rounded-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg flex-shrink-0 whitespace-nowrap">
+                              {item.button}
+                            </button>
+                          )}
                         </div>
-                      )}
-                      {item.description && (
-                        <p className="text-gray-600 text-sm mb-2">{item.description}</p>
-                      )}
-                      {item.button && (
-                        <button className="bg-black hover:bg-gray-800 text-white text-sm font-medium py-1.5 px-4 rounded-md transition-colors">
-                          {item.button}
-                        </button>
-                      )}
-                    </li>
-                  ))}
-                </ul>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+
+
       </div>
     </section>
   );

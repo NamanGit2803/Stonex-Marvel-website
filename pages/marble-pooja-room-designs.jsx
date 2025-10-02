@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import styles from "../styles/Home.module.css";
 import Hero from "../components/Poojaroom/Hero";
-import DreamTempleBudget from "../components/Poojaroom/DreamTempleBudget";
+import DreamTempleBudget from "../components/DreamTempleBudget";
 import ComparisonTable from "../components/ComparisonTable";
 import DimensionsPictures from "../components/DimensionsPictures";
 import ProjectShowcase from "../components/ProjectShowcase";
@@ -22,7 +22,6 @@ export default function Home() {
       <div >
         <Hero/>
         <DreamTempleBudget/>
-        <ComparisonTable/>
         <Solutions/>
         <ServicesSection/>
         <DimensionsPictures/>
