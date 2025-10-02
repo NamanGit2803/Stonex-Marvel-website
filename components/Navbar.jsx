@@ -116,13 +116,13 @@ const Navbar = () => {
                     className={
                       !item.dropdown
                         ? cn(
-                            "px-2 py-2 text-sm uppercase tracking-wide transition-colors duration-200 relative",
-                            "after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-theme after:transition-all after:duration-300",
-                            hoveredItem === item.name
-                              ? "after:w-full text-gray-900"
-                              : "after:w-0 ",
-                            "focus:outline-none focus:ring-0 focus:border-0"
-                          )
+                          "px-2 py-2 text-sm uppercase tracking-wide transition-colors duration-200 relative",
+                          "after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-theme after:transition-all after:duration-300",
+                          hoveredItem === item.name
+                            ? "after:w-full text-gray-900"
+                            : "after:w-0 ",
+                          "focus:outline-none focus:ring-0 focus:border-0"
+                        )
                         : "px-2 py-2 uppercase text-sm  tracking-wide hover:text-gray-900 transition-colors duration-200 relative focus:outline-none focus:ring-0 focus:border-0"
                     }
                   >
@@ -142,9 +142,9 @@ const Navbar = () => {
                       {/* left section  */}
                       <div className="col-span-2 flex flex-col gap-3 ">
                         {item.dropdown.map((link) => (
-                          <Link 
-                            href={link.href} 
-                            className="text-gray-800 hover:cursor-pointer hover:underline decoration-theme decoration-2 underline-offset-3 text-sm font-normal focus:outline-none focus:ring-0" 
+                          <Link
+                            href={link.href}
+                            className="text-gray-800 hover:cursor-pointer hover:underline decoration-theme decoration-2 underline-offset-3 text-sm font-normal focus:outline-none focus:ring-0"
                             key={link.name}
                           >
                             {link.name}
@@ -155,9 +155,9 @@ const Navbar = () => {
                       {/* right section  */}
                       <div className="col-span-10 grid grid-cols-6 gap-2 border-l items-center px-4 py-5">
                         {item.dropdown.map((link) => (
-                          <Link 
-                            href={link.href} 
-                            key={link.name} 
+                          <Link
+                            href={link.href}
+                            key={link.name}
                             className="flex flex-col items-center h-full focus:outline-none focus:ring-0"
                           >
                             <img className="w-full h-full rounded-sm" src={link.src} alt="img" />
@@ -198,16 +198,12 @@ const Navbar = () => {
             {/* Logo and Title - Center (absolute positioning to keep it centered) */}
             <div className="absolute left-1/2 transform -translate-x-1/2 flex items-center">
               <Link href={'/'} className="flex items-center gap-2 focus:outline-none focus:ring-0">
-                <div className="w-10 h-10 bg-gradient-to-br from-slate-600 via-slate-400 to-slate-600 rounded-lg flex items-center justify-center shadow-lg">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 text-white drop-shadow-sm"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path d="M12 3L2 9l10 12 10-12-10-6z" />
-                  </svg>
+                <div className="w-10 h-10">
+                  <img
+                    src="/logo1.png"
+                    alt="Logo"
+                    className="w-8 h-8 object-contain drop-shadow-sm"
+                  />
                 </div>
               </Link>
             </div>

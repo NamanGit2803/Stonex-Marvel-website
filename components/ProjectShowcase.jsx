@@ -9,70 +9,70 @@ const ProjectShowcase = () => {
 
   // Updated project data with temple-related titles
   const projects = [
-            {
-                id: 1,
-                title: 'Shri 1008 Munisuvratnath Jain Temple',
-                image: '/img5.png',
-                link: '',
-                category: 'Corporate'
-            },
-            {
-                id: 2,
-                title: 'Shri Adinath Bhagwan Temple Complex',
-                image: '/img2.jpg',
-                link: '',
-                category: 'Corporate'
-            },
-            {
-                id: 3,
-                title: 'Community Marble Temple',
-                image: '/img6.png',
-                link: '',
-                category: 'Corporate'
-            },
-            {
-                id: 4,
-                title: 'Luxury Villa Home Temple',
-                image: '/img12.jpg',
-                link: '',
-                category: 'Luxury-Living'
-            },
-            {
-                id: 5,
-                title: 'Modern Apartment Temple',
-                image: '/img10.jpg',
-                link: '',
-                category: 'Luxury-Living'
-            },
-            {
-                id: 6,
-                title: 'Garden Temple Pavilion',
-                image: '/img7.png',
-                link: '',
-                category: 'Luxury-Living'
-            },
-            {
-                id: 7,
-                title: 'Jain Temple Complex',
-                image: '/img10.jpg',
-                category: 'Overseas',
-                link: ''
-            },
-            {
-                id: 8,
-                title: 'Cultural Center Temple',
-                image: '/murti1.jpg',
-                category: 'Overseas',
-                link: ''
-            },
-            {
-                id: 9,
-                title: 'Peace Temple',
-                image: '/project5.jpg',
-                category: 'Overseas',
-                link: ''
-            }
-        ]
+    {
+      id: 1,
+      title: 'Shri 1008 Munisuvratnath Jain Temple',
+      image: '/img5.png',
+      link: '',
+      category: 'Corporate'
+    },
+    {
+      id: 2,
+      title: 'Shri Adinath Bhagwan Temple Complex',
+      image: '/img2.jpg',
+      link: '',
+      category: 'Corporate'
+    },
+    {
+      id: 3,
+      title: 'Community Marble Temple',
+      image: '/img4.png',
+      link: '',
+      category: 'Corporate'
+    },
+    {
+      id: 4,
+      title: 'Luxury Villa Home Temple',
+      image: '/img12.jpg',
+      link: '',
+      category: 'Luxury-Living'
+    },
+    {
+      id: 5,
+      title: 'Modern Apartment Temple',
+      image: '/img10.jpg',
+      link: '',
+      category: 'Luxury-Living'
+    },
+    {
+      id: 6,
+      title: 'Garden Temple Pavilion',
+      image: '/img7.png',
+      link: '',
+      category: 'Luxury-Living'
+    },
+    {
+      id: 7,
+      title: 'Jain Temple Complex',
+      image: '/img10.jpg',
+      category: 'Overseas',
+      link: ''
+    },
+    {
+      id: 8,
+      title: 'Cultural Center Temple',
+      image: '/murti1.jpg',
+      category: 'Overseas',
+      link: ''
+    },
+    {
+      id: 9,
+      title: 'Peace Temple',
+      image: '/project5.jpg',
+      category: 'Overseas',
+      link: ''
+    }
+  ]
 
   // Filter projects based on active tab
   const filteredProjects = projects.filter(project => project.category === activeTab);
@@ -150,10 +150,8 @@ const ProjectShowcase = () => {
                             <div className={styles.cardImg}>
                               <img
                                 src={project.image}
-                                alt="Project Image"
-                                fill
-                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                style={{ objectFit: 'contain' }}
+                                alt={project.title}
+                                className={styles.projectImg}
                               />
                             </div>
                           </a>
