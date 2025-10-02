@@ -140,6 +140,47 @@ const projectCategories = [
             }
         ]
     },
+    {
+        id: 'Sculptures',
+        name: 'Sculptures',
+        bannerImage: '/HDimg2.jpg',
+        displayName: 'Sculptures PROJECTS',
+        description: 'Carving stories into stone for generations',
+        projects: [
+            {
+                id: 1,
+                title: 'Royal Paidalstain Sculpture',
+                address: 'Amber Fort Road, Jaipur, Rajasthan',
+                sculptor: 'Rajendra Sharma',
+                duration: '6 Months',
+                image: '/img2.jpg'
+            },
+            {
+                id: 2,
+                title: 'Marble Ganesha Statue',
+                address: 'Civil Lines, Kota, Rajasthan',
+                sculptor: 'Manoj Prajapati',
+                duration: '8 Months',
+                image: '/Murti2.jpg'
+            },
+            {
+                id: 3,
+                title: 'Krishna Sculpture',
+                address: 'Connaught Place, New Delhi',
+                sculptor: 'Aarav Mehta',
+                duration: '5 Months',
+                image: '/murti1.jpg'
+            },
+            {
+                id: 4,
+                title: 'Sacred Ganesha Idol',
+                address: 'Worli Seaface, Mumbai, Maharashtra',
+                sculptor: 'Prakash Deshmukh',
+                duration: '7 Months',
+                image: '/project3.jpg'
+            },
+        ]
+    },
 ]
 
 const cities = [

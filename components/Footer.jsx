@@ -18,7 +18,7 @@ const Footer = () => {
                             className="w-full flex-col flex tracking-[.2000rem] leading-tight hover:opacity-80 transition-opacity"
                         >
                             <span className="text-2xl md:text-3xl font-light">Indian</span>
-                            <span className="text-4xl md:text-5xl font-extralight bg-gradient-to-r from-[#ff7e2e] via-[#ff9d5c] to-[#ffb380] bg-clip-text text-transparent">
+                            <span className="text-4xl md:text-5xl font-extralight bg-gradient-to-r from-theme via-[#ff9d5c] to-[#fa9c5e] bg-clip-text text-transparent">
                                 Stonex
                             </span>
                         </Link>

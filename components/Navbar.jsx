@@ -28,7 +28,7 @@ const navItems = [
     name: "Stone Gallery", href: "",
     dropdown: [
       { name: " Community Temple", href: "/communal-temple-design", src: '/project1.jpg' },
-      { name: "Sculptures", href: "/", src: '/murti1.jpg' },
+      { name: "Sculptures", href: "/projects/Sculptures", src: '/murti1.jpg' },
       { name: "Custom Temple", href: "/premium-marble-temple-for-home", src: "/project6.jpg" },
       { name: "Spiritual Jain Creations", href: "/jain-temple", src: '/project3.jpg' },
       { name: "Interior Elegance", href: "/", src: '/home-decor.jpg' },
@@ -36,7 +36,7 @@ const navItems = [
     ],
   },
   { name: "Find Us", href: "/Location" },
-  { name: "Raw Material", href: "" },
+  { name: "Raw Material", href: "/raw-material" },
   { name: "Insights ", href: "/Blog" },
   { name: "Schedule a Visit", href: "/AppointmentPage" },
   { name: "What Clients Say", href: "/Testimonials" },
