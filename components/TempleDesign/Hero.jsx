@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaTimes } from 'react-icons/fa';
-import styles from '../../styles/TempleDesign/Hero.module.css';
+import styles from '../../styles/TsaDesignhub/Hero.module.css';
 
 const Hero = () => {
   const [isFormVisible, setIsFormVisible] = useState(false);
@@ -26,8 +26,6 @@ const Hero = () => {
     } else {
       document.body.style.overflow = 'unset';
     }
-
-    // Cleanup function
     return () => {
       document.body.style.overflow = 'unset';
     };
@@ -35,50 +33,46 @@ const Hero = () => {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value
-    });
+    setFormData({ ...formData, [name]: value });
   };
 
-  const handleFocus = (field) => {
-    setFocusedFields({
-      ...focusedFields,
-      [field]: true
-    });
-  };
-
+  const handleFocus = (field) => setFocusedFields({ ...focusedFields, [field]: true });
   const handleBlur = (field) => {
-    if (!formData[field]) {
-      setFocusedFields({
-        ...focusedFields,
-        [field]: false
-      });
-    }
+    if (!formData[field]) setFocusedFields({ ...focusedFields, [field]: false });
   };
-
+  
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here
     console.log(formData);
   };
 
   return (
-    <section className={styles.hero}>
+    <section className={`${styles.hero} relative overflow-hidden`}>
       <div className={styles.heroContent}>
+        {/* Left Content */}
         <div className={styles.leftContent}>
-          <h1>Let's Get Started With<br />Your Dream Temple</h1>
-          
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight animate-slide-up">
+            Let's Get Started With<br />
+            <span className="bg-gradient-to-r from-[#ff7e2e] via-[#ff9d5c] to-[#ffb380] bg-clip-text text-transparent">
+              Your Dream Temple
+            </span>
+          </h1>
+
+          <p className="mt-6 max-w-md text-gray-700 text-lg sm:text-xl animate-fade-in-up">
+            We craft luxurious, bespoke pooja rooms and marble temples with precision and timeless artistry.
+          </p>
+
           {/* Mobile-only button */}
           <button 
-            className={styles.mobileExpertButton}
+            className="mt-8 rounded-xl bg-[#ff7e2e] px-8 py-4 text-white font-semibold shadow-lg transition-all hover:scale-105 hover:shadow-xl animate-fade-in-up"
             onClick={() => setIsFormVisible(true)}
           >
             Talk to Our Expert
           </button>
         </div>
-        
-        <div className={`${styles.rightContent} ${isFormVisible ? styles.mobileFormVisible : ''}`}>
+
+        {/* Right Content - Form */}
+        <div className={`${styles.rightContent} ${isFormVisible ? styles.mobileFormVisible : ''} animate-slide-up`}>
           <div className={styles.contactForm}>
             {/* Close button for mobile */}
             <button 
@@ -88,9 +82,12 @@ const Hero = () => {
               <FaTimes />
             </button>
             
-            <h2>Talk to Our Expert</h2>
-            
-            <form onSubmit={handleSubmit}>
+            <h2 className="text-2xl font-semibold mb-6 animate-fade-in-up">
+              Talk to Our Expert
+            </h2>
+
+            <form onSubmit={handleSubmit} className="space-y-5">
+              {/* Full Name */}
               <div className={styles.formGroup}>
                 <div className={styles.inputContainer}>
                   <input 
@@ -111,7 +108,8 @@ const Hero = () => {
                   </label>
                 </div>
               </div>
-              
+
+              {/* Email */}
               <div className={styles.formGroup}>
                 <div className={styles.inputContainer}>
                   <input 
@@ -132,7 +130,8 @@ const Hero = () => {
                   </label>
                 </div>
               </div>
-              
+
+              {/* Phone */}
               <div className={styles.formGroup}>
                 <div className={styles.inputContainer}>
                   <div className={styles.phoneInputContainer}>
@@ -152,7 +151,8 @@ const Hero = () => {
                   </div>
                 </div>
               </div>
-              
+
+              {/* City */}
               <div className={styles.formGroup}>
                 <div className={styles.inputContainer}>
                   <input 
@@ -173,7 +173,8 @@ const Hero = () => {
                   </label>
                 </div>
               </div>
-              
+
+              {/* User Type */}
               <div className={styles.formGroup}>
                 <label className={styles.radioLabel}>Tell us about yourself *</label>
                 <div className={styles.radioGroup}>
@@ -187,7 +188,6 @@ const Hero = () => {
                     />
                     I am a homeowner looking for a pooja unit or pooja room
                   </label>
-                  
                   <label className={styles.radioOption}>
                     <input 
                       type="radio" 
@@ -200,8 +200,11 @@ const Hero = () => {
                   </label>
                 </div>
               </div>
-              
-              <button type="submit" className={styles.nextButton}>Next</button>
+
+              {/* Submit Button */}
+              <button type="submit" className="w-full rounded-xl bg-[#ff7e2e] py-3 text-white font-semibold shadow-lg hover:scale-105 transition-all">
+                Next
+              </button>
             </form>
           </div>
         </div>

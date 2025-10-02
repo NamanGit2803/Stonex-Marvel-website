@@ -28,7 +28,7 @@ const Footer = () => {
                             <div className="text-sm leading-relaxed text-gray-300 font-light tracking-wide">
                                 <p className="font-normal mb-2 tracking-wider">Address</p>
                                 <p>
-                                    First & Second Floor, TSA India, Mall 21, Mirza Ismail Road, Opposite Rajmandir Cinema, 5 Batti, C
+                                    First & Second Floor, Indian StonexIndia, Mall 21, Mirza Ismail Road, Opposite Rajmandir Cinema, 5 Batti, C
                                     Scheme, Jaipur, Rajasthan 302001
                                 </p>
                             </div>

@@ -4,7 +4,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import styles from "../styles/Home.module.css";
 import Hero from "../components/Hero";
 import DreamTempleBudget from "../components/DreamTempleBudget";
-import ComparisonTable from "../components/ComparisonTable";
 import DimensionsPictures from "../components/DimensionsPictures";
 import ProjectShowcase from "../components/ProjectShowcase";
 import CitySection from "../components/CitySection";

@@ -23,7 +23,6 @@ export default function Home() {
       <div>
         <Hero/>
         <WhyChooseUs/>
-        <ComparisonTable/>
         <ServicesSection/>
         <HowItWorks/>
         <PoojaRoomJourney/>
