@@ -16,10 +16,10 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 // Project data with different images for each category
 const projectCategories = [
-    { 
-        id: 'Corporate', 
-        name: 'Corporate', 
-        bannerImage: '/img5.png', 
+    {
+        id: 'Corporate',
+        name: 'Corporate',
+        bannerImage: '/img5.png',
         displayName: 'CORPORATE PROJECTS',
         description: 'Community-focused architectural marvels that bring people together',
         projects: [
@@ -46,13 +46,38 @@ const projectCategories = [
                 architect: 'Arun Kumar',
                 duration: '16 Months',
                 image: '/img6.png'
-            }
+            },
+            {
+                id: 4,
+                title: 'Shri Parshvanath Digambar Jain Mandir',
+                address: 'Civil Lines, Jaipur, Rajasthan 302006',
+                architect: 'Rajendra Mehta',
+                duration: '20 Months',
+                image: '/img10.jpg'
+            },
+            {
+                id: 5,
+                title: 'Swaminarayan Marble Temple',
+                address: 'Ring Road, Surat, Gujarat 395002',
+                architect: 'Chirag Patel',
+                duration: '30 Months',
+                image: '/img4.png'
+            },
+            {
+                id: 6,
+                title: 'Shri Mahavir Swami Jain Derasar',
+                address: 'Station Road, Udaipur, Rajasthan 313001',
+                architect: 'Sunita Trivedi',
+                duration: '22 Months',
+                image: '/img9.jpg'
+            },
+
         ]
     },
-    { 
-        id: 'Luxury-Living', 
-        name: 'Luxury Living', 
-        bannerImage: '/img4.png', 
+    {
+        id: 'Luxury-Living',
+        name: 'Luxury Living',
+        bannerImage: '/img4.png',
         displayName: 'LUXURY LIVING PROJECTS',
         description: 'Beautiful living spaces designed for comfort and elegance',
         projects: [
@@ -70,7 +95,7 @@ const projectCategories = [
                 address: '23, Golf Course Road, Gurgaon, Haryana 122002',
                 architect: 'Rahul Verma',
                 duration: '2 Months',
-                image: '/img10.jpg'
+                image: '/project2.jpg'
             },
             {
                 id: 3,
@@ -78,14 +103,14 @@ const projectCategories = [
                 address: '45, Green Valley, Pune, Maharashtra 411001',
                 architect: 'Sanjay Mehta',
                 duration: '4 Months',
-                image: '/img7.png'
+                image: '/project3.jpg'
             }
         ]
     },
-    { 
-        id: 'Overseas', 
-        name: 'Overseas', 
-        bannerImage: '/home-decor.jpg', 
+    {
+        id: 'Overseas',
+        name: 'Overseas',
+        bannerImage: '/home-decor.jpg',
         displayName: 'Overseas PROJECTS',
         description: 'Global architectural excellence across continents',
         projects: [
@@ -118,7 +143,7 @@ const projectCategories = [
 ]
 
 const cities = [
-    "Jaipur", "Ahmedabad", "Delhi", "Bangalore", "Mumbai", 
+    "Jaipur", "Ahmedabad", "Delhi", "Bangalore", "Mumbai",
     "Chennai", "Kolkata", "Hyderabad", "Pune", "Surat"
 ]
 
@@ -132,7 +157,7 @@ const Projects = () => {
     useEffect(() => {
         const slug = router.query.slug
         const category = projectCategories.find(cat => cat.id === slug)
-        
+
         if (category) {
             setCurrentCategory(category)
             setFilteredProjects(category.projects)
@@ -141,22 +166,22 @@ const Projects = () => {
 
     useEffect(() => {
         if (!currentCategory) return
-        
+
         let filtered = currentCategory.projects
-        
+
         if (searchTerm) {
             filtered = filtered.filter(project =>
                 project.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
                 project.architect.toLowerCase().includes(searchTerm.toLowerCase())
             )
         }
-        
+
         if (selectedCity && selectedCity !== 'all') {
             filtered = filtered.filter(project =>
                 project.address.toLowerCase().includes(selectedCity.toLowerCase())
             )
         }
-        
+
         setFilteredProjects(filtered)
     }, [searchTerm, selectedCity, currentCategory])
 
@@ -179,8 +204,8 @@ const Projects = () => {
 
     const bannerVariants = {
         initial: { scale: 1.1, opacity: 0 },
-        animate: { 
-            scale: 1, 
+        animate: {
+            scale: 1,
             opacity: 1,
             transition: { duration: 0.8, ease: "easeOut" }
         }
@@ -197,7 +222,7 @@ const Projects = () => {
     return (
         <div className="min-h-screen bg-gray-50">
             {/* Animated Banner Section */}
-            <motion.section 
+            <motion.section
                 className="relative h-[85vh] w-full overflow-hidden"
                 initial="initial"
                 animate="animate"
@@ -207,10 +232,10 @@ const Projects = () => {
                     style={{ backgroundImage: `url(${currentCategory.bannerImage})` }}
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                 />
-                
+
                 {/* Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
-                
+
                 {/* Content */}
                 <div className="relative z-10 h-full flex items-end pb-20">
                     <div className="container mx-auto px-6">
@@ -307,7 +332,7 @@ const Projects = () => {
                                             onChange={(e) => setSearchTerm(e.target.value)}
                                             className="flex-1"
                                         />
-                                        <Button 
+                                        <Button
                                             onClick={() => {
                                                 setSearchTerm('')
                                                 setSelectedCity('all')
@@ -339,7 +364,7 @@ const Projects = () => {
                                     Featured Projects
                                 </span>
                             </motion.h2>
-                            <motion.span 
+                            <motion.span
                                 variants={itemVariants}
                                 className="text-gray-600"
                             >
@@ -362,7 +387,7 @@ const Projects = () => {
                                 </p>
                             </motion.div>
                         ) : (
-                            <motion.div 
+                            <motion.div
                                 variants={containerVariants}
                                 className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
                             >
@@ -385,10 +410,10 @@ const Projects = () => {
                                                     alt={project.title}
                                                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                                                 />
-                                                
+
                                                 {/* Overlay */}
                                                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                                                
+
                                                 {/* Content Overlay */}
                                                 <div className="absolute inset-0 p-6 flex flex-col justify-end text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                                                     <div className="space-y-3">
@@ -404,15 +429,15 @@ const Projects = () => {
                                                             <span>{project.duration}</span>
                                                         </div>
                                                     </div>
-                                                    
+
                                                     {/* View More */}
                                                     <motion.div
                                                         initial={{ opacity: 0, y: 10 }}
                                                         whileHover={{ opacity: 1, y: 0 }}
                                                         className="mt-4"
                                                     >
-                                                        <Button 
-                                                            variant="secondary" 
+                                                        <Button
+                                                            variant="secondary"
                                                             size="sm"
                                                             className="bg-white text-black hover:bg-gray-100"
                                                         >

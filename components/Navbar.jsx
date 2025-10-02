@@ -19,9 +19,9 @@ const navItems = [
   {
     name: "Work Showcase", href: '',
     dropdown: [
-      { name: "Corporate", href: "/projects/Corporate", src: "https://images.squarespace-cdn.com/content/v1/65d325ddd662de7fdcb2411f/bc03c460-5a81-44e1-9920-fc07e711d20a/download+%285%29.jpg" },
-      { name: "Luxury Living", href: "/projects/Luxury-Living", src: "https://fabdiz.com/wp-content/uploads/2024/04/product-jpeg-1000x1000-1.webp" },
-      { name: "Overseas", href: "/projects/Overseas", src: 'https://media.designcafe.com/wp-content/uploads/2022/11/24185017/living-room-marble-wall-design-for-partition.jpg' },
+      { name: "Corporate", href: "/projects/Corporate", src: "/img4.png" },
+      { name: "Luxury Living", href: "/projects/Luxury-Living", src: "/img2.jpg" },
+      { name: "Overseas", href: "/projects/Overseas", src: '/img12.jpg' },
     ],
   },
   {
