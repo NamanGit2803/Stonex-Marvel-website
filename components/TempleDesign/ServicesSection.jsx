@@ -4,32 +4,38 @@ const ServicesSection = () => {
   const services = [
     {
       id: 1,
-      title: "Planning",
+      title: "Strategic Planning",
+      description: "Comprehensive project planning with detailed scope analysis and resource allocation for seamless execution",
       image: "/_next/static/media/icon1.53e2c26d.png"
     },
     {
       id: 2,
       title: "Detailed Drawings",
+      description: "Precision technical drawings and 3D visualizations that bring your vision to life with exact specifications",
       image: "/_next/static/media/icon6.b8508dfc.png"
     },
     {
       id: 3,
-      title: "On Site Supervision",
+      title: "On-Site Supervision",
+      description: "Expert supervision ensuring quality control and adherence to design specifications throughout the project",
       image: "/_next/static/media/icon3.7b73a018.png"
     },
     {
       id: 4,
-      title: "Site Management",
+      title: "Professional Management",
+      description: "End-to-end project management coordinating all aspects from material sourcing to final installation",
       image: "/_next/static/media/icon2.70a949d6.png"
     },
     {
       id: 5,
-      title: "Project Tracking",
+      title: "Progress Tracking",
+      description: "Real-time project monitoring with regular updates and transparent communication at every stage",
       image: "/_next/static/media/icon4.c225f555.png"
     },
     {
       id: 6,
-      title: "Timely Completion",
+      title: "Timely Delivery",
+      description: "Guaranteed project completion within agreed timelines without compromising on quality standards",
       image: "/_next/static/media/icon5.207ee35b.png"
     }
   ];
@@ -37,47 +43,120 @@ const ServicesSection = () => {
   const baseUrl = "https://www.tilakstonearts.com";
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-20 bg-gradient-to-b from-white to-gray-50">
       <div className="container mx-auto px-4">
-        <div className="row">
-          <div className="col-12 mb-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800">We offer Unparalleled Services</h2>
-          </div>
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-light mb-6">
+            Our <span className="font-semibold text-amber-600">Comprehensive</span> Services
+          </h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto mb-6"></div>
+          <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
+            From initial concept to final installation, we provide end-to-end solutions 
+            that ensure exceptional quality and complete satisfaction.
+          </p>
         </div>
-        
-        {/* Desktop Grid (hidden on mobile) */}
-        <div className="hidden md:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
-          {services.map((service) => (
-            <div 
-              key={service.id} 
-              className="p-7 border border-gray-300 rounded-xl transition-all duration-500 mb-8 bg-white text-center flex flex-col items-center justify-center h-72 hover:shadow-lg hover:-translate-y-1"
+
+        {/* Services Grid - Desktop */}
+        <div className="hidden lg:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {services.map((service, index) => (
+            <div
+              key={service.id}
+              className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 p-8 border border-gray-100 hover:border-amber-200"
             >
-              <div 
-                className="w-20 h-20 bg-contain bg-center bg-no-repeat mb-6"
-                style={{ backgroundImage: `url(${baseUrl}${service.image})` }}
-              ></div>
-              <h4 className="text-xl font-semibold text-gray-800 px-2">{service.title}</h4>
+              {/* Service Number */}
+              <div className="absolute -top-4 -left-4 w-8 h-8 bg-amber-500 text-white rounded-full flex items-center justify-center text-sm font-bold">
+                0{index + 1}
+              </div>
+              
+              {/* Icon Container */}
+              <div className="w-20 h-20 bg-gradient-to-br from-amber-50 to-amber-100 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 mx-auto">
+                <img
+                  src={`${baseUrl}${service.image}`}
+                  alt={service.title}
+                  className="w-12 h-12 object-contain"
+                />
+              </div>
+              
+              {/* Content */}
+              <h3 className="text-xl font-semibold text-gray-800 mb-4 text-center group-hover:text-amber-700 transition-colors duration-300">
+                {service.title}
+              </h3>
+              <p className="text-gray-600 leading-relaxed text-center">
+                {service.description}
+              </p>
+              
+              {/* Hover Border Effect */}
+              <div className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-amber-400 to-amber-600 group-hover:w-full transition-all duration-500"></div>
             </div>
           ))}
         </div>
-        
-        {/* Mobile Scrollable (shown on mobile) */}
-        <div className="md:hidden overflow-x-auto whitespace-nowrap py-4 px-2">
-          <div className="inline-flex space-x-6">
-            {services.map((service) => (
-              <div 
-                key={service.id} 
-                className="inline-flex flex-col items-center justify-center p-6 border border-gray-300 rounded-xl bg-white text-center min-w-[220px] h-64"
+
+        {/* Services Grid - Tablet */}
+        <div className="hidden md:grid lg:hidden grid-cols-2 gap-6">
+          {services.map((service, index) => (
+            <div
+              key={service.id}
+              className="group relative bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-500 p-6 border border-gray-100 hover:border-amber-200"
+            >
+              <div className="flex items-start space-x-4">
+                <div className="w-16 h-16 bg-gradient-to-br from-amber-50 to-amber-100 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 flex-shrink-0">
+                  <img
+                    src={`${baseUrl}${service.image}`}
+                    alt={service.title}
+                    className="w-10 h-10 object-contain"
+                  />
+                </div>
+                <div className="flex-1">
+                  <div className="w-6 h-6 bg-amber-500 text-white rounded-full flex items-center justify-center text-xs font-bold mb-2">
+                    {index + 1}
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-800 mb-2 group-hover:text-amber-700 transition-colors duration-300">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    {service.description}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Mobile Carousel */}
+        <div className="md:hidden overflow-x-auto py-4">
+          <div className="inline-flex space-x-6 px-4">
+            {services.map((service, index) => (
+              <div
+                key={service.id}
+                className="inline-flex flex-col bg-white rounded-xl shadow-lg p-6 min-w-[280px] border border-gray-100"
               >
-                <div 
-                  className="w-16 h-16 bg-contain bg-center bg-no-repeat mb-5"
-                  style={{ backgroundImage: `url(${baseUrl}${service.image})` }}
-                ></div>
-                <h4 className="text-lg font-semibold text-gray-800 px-2">{service.title}</h4>
+                <div className="flex items-center space-x-4 mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-amber-50 to-amber-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <img
+                      src={`${baseUrl}${service.image}`}
+                      alt={service.title}
+                      className="w-8 h-8 object-contain"
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <div className="w-6 h-6 bg-amber-500 text-white rounded-full flex items-center justify-center text-xs font-bold">
+                      {index + 1}
+                    </div>
+                  </div>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-800 mb-3">
+                  {service.title}
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {service.description}
+                </p>
               </div>
             ))}
           </div>
         </div>
+
+
       </div>
     </section>
   );
