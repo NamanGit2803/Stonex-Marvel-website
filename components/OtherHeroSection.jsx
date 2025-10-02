@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
-const OtherHeroSection = () => {
+const OtherHeroSection = ({ scrollToBlog }) => {
   return (
     <div className="relative h-[70vh] md:h-[80vh] w-full overflow-hidden">
       {/* Background Image */}
@@ -21,7 +22,7 @@ const OtherHeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="text-4xl sm:text-6xl md:text-7xl font-serif font-bold tracking-tight text-white"
+          className="text-4xl sm:text-6xl md:text-7xl font-serif font-[100] tracking-tight text-white"
         >
           Our Blog
         </motion.h1>
@@ -37,15 +38,15 @@ const OtherHeroSection = () => {
         </motion.p>
 
         {/* CTA Button */}
-        <motion.a
-          href="#blogs"
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 1 }}
-          className="mt-8 inline-block rounded-full border border-white/70 px-6 py-3 text-white font-medium hover:bg-white hover:text-black transition-colors duration-300"
+          onClick={scrollToBlog}
+          className="mt-8 inline-block rounded-full border border-white/70 px-6 py-3 text-white font-medium hover:bg-theme transition-colors duration-300 cursor-pointer"
         >
           Explore Blogs →
-        </motion.a>
+        </motion.div>
       </div>
     </div>
   );

@@ -53,7 +53,7 @@ const TestimonialSection = () => {
 
             {/* Section Heading */}
             <div className="text-center mb-6 sm:mb-10">
-                <h2 className="text-2xl sm:text-4xl font-bold text-gray-900">
+                <h2 className="text-2xl sm:text-4xl font-[500] text-gray-900">
                     What Our Clients Say
                 </h2>
             </div>

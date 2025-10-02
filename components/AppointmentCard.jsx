@@ -42,7 +42,7 @@ export default function AppointmentCard() {
         <Card className="sm:w-[70%] border-none shadow-2xl bg-white/90 backdrop-blur rounded-xl m-auto">
             <CardContent className="sm:p-6 space-y-6">
                 <div className="text-center space-y-2">
-                    <h2 className="text-xl sm:text-3xl font-bold text-gray-900">Book Your Appointment</h2>
+                    <h2 className="text-xl sm:text-3xl font-[500] text-gray-900">Book Your Appointment</h2>
                     <p className="text-gray-500 text-sm">Choose a date, time, and share your details</p>
                 </div>
 

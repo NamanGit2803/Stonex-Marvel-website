@@ -97,9 +97,9 @@ const blogPosts = [
 
 const LatestBlogSection = ({ title }) => {
   return (
-    <div className="container mx-auto px-6 sm:px-4 py-14">
+    <div className="container mx-auto px-6 sm:px-4 py-8">
       {/* Section Title */}
-      <h2 className="text-center font-semibold tracking-tight text-3xl sm:text-5xl md:text-6xl mb-12 animate-slide-up text-gray-900">
+      <h2 className="text-center font-[500] tracking-tight text-3xl sm:text-3xl md:text-5xl mb-12 animate-slide-up text-gray-900">
         {title}
       </h2>
 
@@ -111,7 +111,7 @@ const LatestBlogSection = ({ title }) => {
             whileHover={{ scale: 1.03 }}
             transition={{ type: "spring", stiffness: 200, damping: 15 }}
           >
-            <Card className="overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl bg-white transition-all duration-300 group cursor-pointer">
+            {title == 'Our Latest Blog Post' ? post.isLatest == true && <Card className="overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl bg-white transition-all duration-300 group cursor-pointer">
               {/* Blog Image with overlay */}
               <div className="relative w-full h-52 sm:h-60 md:h-72 overflow-hidden">
                 <img
@@ -135,6 +135,32 @@ const LatestBlogSection = ({ title }) => {
                 </span>
               </CardContent>
             </Card>
+              :
+              post.isLatest == false && <Card className="overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl bg-white transition-all duration-300 group cursor-pointer">
+                {/* Blog Image with overlay */}
+                <div className="relative w-full h-52 sm:h-60 md:h-72 overflow-hidden">
+                  <img
+                    src={post.image}
+                    alt={post.title}
+                    className="object-cover h-full w-full transform group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                </div>
+
+                {/* Blog Content */}
+                <CardContent className="p-2">
+                  <h3 className="text-lg font-semibold mb-3 text-gray-900 group-hover:text-black transition-colors duration-300 line-clamp-2">
+                    {post.title}
+                  </h3>
+                  <p className="text-sm text-gray-600 line-clamp-3 mb-4">
+                    {post.description}
+                  </p>
+                  <span className="text-sm font-medium text-gray-800 group-hover:underline">
+                    Read More →
+                  </span>
+                </CardContent>
+              </Card>
+            }
           </motion.div>
         ))}
       </div>
