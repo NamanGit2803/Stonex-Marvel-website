@@ -101,6 +101,7 @@ const Hero = () => {
           >
             Talk to Our Expert
           </button>
+          <div className='text-xs text-gray-700 hover:text-gray-900'>Contact : +91 93193 74633</div>
         </div>
 
         <div className={`${styles.rightContent} ${isFormVisible ? styles.mobileFormVisible : ''} ${isFormClosed ? styles.hiddenForm : ''}`}>
@@ -122,7 +123,11 @@ const Hero = () => {
             </button>
 
             <h2>Talk to Our Expert</h2>
-
+            <div className="text-center">
+              <span className="inline-block text-center text-xs text-gray-700 cursor-pointer transform hover:scale-105 hover:text-gray-900 transition duration-200">
+                Contact : +91 93193 74633
+              </span>
+            </div>
             <form onSubmit={handleSubmit}>
               <div className={styles.formGroup}>
                 <div className={styles.inputContainer}>
