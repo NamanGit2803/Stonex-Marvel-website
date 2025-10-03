@@ -11,9 +11,9 @@ const navItems = [
     name: "Indian Stonex", href: "",
     dropdown: [
       { name: "About Us", href: "/About", src: "/HDimg.jpg" },
-      { name: "The Team", href: "/", src: '/HDimg3.jpg' },
-      { name: "Artisans", href: "/", src: '/HDimg2.jpg' },
-      { name: "Our Clients", href: "/OurClients", src: '/HDimg4.jpg' },
+      { name: "The Team", href: "/", src: '/HDImg3.jpg' },
+      { name: "Artisans", href: "/", src: '/HDImg2.jpg' },
+      { name: "Our Clients", href: "/OurClients", src: '/HDImg4.jpg' },
     ],
   },
   {
