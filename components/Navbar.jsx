@@ -10,10 +10,10 @@ const navItems = [
   {
     name: "Indian Stonex", href: "",
     dropdown: [
-      { name: "About Us", href: "/About", src: "https://i.pinimg.com/564x/68/5d/bf/685dbf4b95c6c81f0158ae13e0369881.jpg" },
-      { name: "The Team", href: "/", src: 'https://image.made-in-china.com/2f0j00MZnkfCabkqcS/Marble-Stone-Entrnce-Design-Patterns-Modern-Medallion-Marble-Floor-Decor.jpg' },
-      { name: "Artisans", href: "/", src: 'https://5.imimg.com/data5/SELLER/Default/2024/5/419339312/HK/SC/EV/50436332/whatsapp-image-2024-05-16-at-12-26-31-pm-1-500x500.jpeg' },
-      { name: "Our Clients", href: "/OurClients", src: 'https://media.designcafe.com/wp-content/uploads/2021/04/09160149/marble-pooja-mandir-designs-for-home.jpg' },
+      { name: "About Us", href: "/About", src: "/HDimg.jpg" },
+      { name: "The Team", href: "/", src: '/HDimg3.jpg' },
+      { name: "Artisans", href: "/", src: '/HDimg2.jpg' },
+      { name: "Our Clients", href: "/OurClients", src: '/HDimg4.jpg' },
     ],
   },
   {
@@ -160,7 +160,7 @@ const Navbar = () => {
                             key={link.name}
                             className="flex flex-col items-center h-full focus:outline-none focus:ring-0"
                           >
-                            <img className="w-full h-full rounded-sm" src={link.src} alt="img" />
+                            <img className="w-full h-55 object-cover rounded-sm" src={link.src} alt="img" />
                             <span className="text-sm font-medium text-gray-800 mt-2">{link.name}</span>
                           </Link>
                         ))}
@@ -237,16 +237,12 @@ const Navbar = () => {
 
               {/* Logo and Title for Mobile Menu */}
               <div className="flex items-center justify-center gap-3 mb-8">
-                <div className="w-12 h-12 bg-gradient-to-br from-slate-600 via-slate-400 to-slate-600 rounded-lg flex items-center justify-center shadow-lg">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-7 w-7 text-white drop-shadow-sm"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path d="M12 3L2 9l10 12 10-12-10-6z" />
-                  </svg>
+                <div className="w-12 h-12  from-slate-600 via-slate-400 to-slate-600 rounded-lg flex items-center justify-center shadow-lg">
+                  <img
+                    src="/logo1.png"
+                    alt="Logo"
+                    className="w-8 h-8 object-contain drop-shadow-sm"
+                  />
                 </div>
                 <span className="font-semibold text-lg tracking-wide text-gray-900">House of Indian Stonex</span>
               </div>

@@ -42,7 +42,7 @@ const HowItWorks = () => {
           subtitle: "2D Technical Drawings",
           description: "Receive detailed floor plans and elevation drawings for precise planning",
           button: "",
-          milestone: "Milestone: Design Fee - $200"
+          milestone: "Milestone"
         },
         {
           subtitle: "3D Visualizations",
@@ -224,11 +224,11 @@ const HowItWorks = () => {
                             )}
                           </div>
                           
-                          {item.button && (
+                          {/* {item.button && (
                             <button className="bg-gray-900 hover:bg-black text-white font-medium py-2.5 px-6 rounded-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg flex-shrink-0 whitespace-nowrap">
                               {item.button}
                             </button>
-                          )}
+                          )} */}
                         </div>
                       </div>
                     ))}
