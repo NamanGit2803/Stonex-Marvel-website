@@ -15,7 +15,7 @@ export default function SpeedDial() {
     { icon: <FiFacebook />, label: "Facebook", href: 'https://www.facebook.com/share/1BEsC7YXEM/' },
     { icon: <FiYoutube />, label: "YouTube", href: 'https://youtube.com/@indianstonex-c3i?si=Z1i5Ge1sLZyp7Tdo' },
     { icon: <FaLinkedinIn />, label: "LinkedIn", href: 'https://www.linkedin.com/in/indian-stonex-091ab1385?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
-    { icon: <FaWhatsapp />, label: "Whatsapp", href: ' https://wa.me/+918058843190' },
+    { icon: <FaWhatsapp />, label: "Whatsapp", href: ' https://wa.me/+917014116801' },
     { icon: <IoMdCall />, label: "Call", href: '' },
     { icon: <FaPinterestP />, label: "Pinterest", href: 'https://pin.it/4Y2BLCCQ8' },
     

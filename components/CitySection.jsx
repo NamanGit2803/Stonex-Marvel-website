@@ -12,7 +12,7 @@ const CitySection = () => {
     },
     {
       name: "Mumbai",
-      image: "/Mumbai.png",
+      image: "/Mumbai2.png",
       link: "/locations/mumbai"
     },
     {
@@ -27,22 +27,22 @@ const CitySection = () => {
     },
     {
       name: "Surat",
-      image: "/Surat.png",
+      image: "/Surat2.png",
       link: "/locations/surat"
     },
     {
       name: "Kota",
-      image: "/Kota.png",
+      image: "/Kota2.png",
       link: "/locations/kota"
     },
     {
       name: "Jaipur",
-      image: "/Jaipur.png",
+      image: "/Jaipur2.png",
       link: "/locations/jaipur"
     },
      {
       name: "Hyderabad",
-      image: "/Hyderabad.png",
+      image: "/Hyderabad2.png",
       link: "/locations/jaipur"
     },
      {

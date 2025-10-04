@@ -76,7 +76,8 @@ const PoojaRoomJourney = () => {
       <div 
         className="relative w-full bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('https://www.tilakstonearts.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpoojaroomm.cd27ceda.jpg&w=2048&q=75')`,
+          backgroundImage: `url('/img25.jpg')`,
+          backgroundSize: 'cover',
           height: '55vh'
         }}
       >
