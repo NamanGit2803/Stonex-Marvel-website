@@ -204,9 +204,12 @@ const WhyChooseUs = () => {
             
             {/* Form Content */}
             <div className="p-8">
-              <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-2 text-center">
                 Talk to Our Expert
               </h2>
+               <div className="text-sm font-bold text-gray-800 hover:text-gray-900 text-center">
+                Contact Us : <span >+91 93193 74633</span>
+              </div>
               <p className="text-gray-600 mb-6">
                 Fill in your details and we'll get back to you shortly.
               </p>

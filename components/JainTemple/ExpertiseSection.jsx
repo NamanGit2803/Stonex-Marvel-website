@@ -50,7 +50,7 @@ const ExpertiseSection = () => {
     if (!isAutoPlaying) return;
 
     const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => 
+      setCurrentImageIndex((prevIndex) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
     }, 3000);
@@ -59,13 +59,13 @@ const ExpertiseSection = () => {
   }, [images.length, isAutoPlaying]);
 
   const handleNextImage = () => {
-    setCurrentImageIndex((prevIndex) => 
+    setCurrentImageIndex((prevIndex) =>
       prevIndex === images.length - 1 ? 0 : prevIndex + 1
     );
   };
 
   const handlePrevImage = () => {
-    setCurrentImageIndex((prevIndex) => 
+    setCurrentImageIndex((prevIndex) =>
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
     );
   };
@@ -140,7 +140,7 @@ const ExpertiseSection = () => {
                 </svg>
               </div>
               <p className="text-xl md:text-2xl text-gray-700 leading-relaxed font-light italic">
-               At Indian Stonex, we believe that a marble temple is more than just a structure—it is a serene sanctuary that reflects devotion, tradition, and artistry. Our designs are inspired by India’s rich cultural heritage, creating sacred spaces that bring harmony, elegance, and spiritual tranquility to your home
+                At Indian Stonex, we believe that a marble temple is more than just a structure—it is a serene sanctuary that reflects devotion, tradition, and artistry. Our designs are inspired by India’s rich cultural heritage, creating sacred spaces that bring harmony, elegance, and spiritual tranquility to your home
               </p>
             </div>
           </div>
@@ -159,9 +159,9 @@ const ExpertiseSection = () => {
                       alt={`Jain Temple Craftsmanship ${currentImageIndex + 1}`}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
-                    
+
                     {/* Navigation Arrows */}
-                    <button 
+                    <button
                       onClick={handlePrevImage}
                       className="absolute left-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/90 rounded-full flex items-center justify-center shadow-lg hover:bg-white transition-all duration-300 hover:scale-110"
                     >
@@ -169,7 +169,7 @@ const ExpertiseSection = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                       </svg>
                     </button>
-                    <button 
+                    <button
                       onClick={handleNextImage}
                       className="absolute right-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/90 rounded-full flex items-center justify-center shadow-lg hover:bg-white transition-all duration-300 hover:scale-110"
                     >
@@ -179,17 +179,17 @@ const ExpertiseSection = () => {
                     </button>
 
                     {/* Play/Pause Button */}
-                    <button 
+                    <button
                       onClick={() => setIsAutoPlaying(!isAutoPlaying)}
                       className="absolute bottom-4 right-4 w-10 h-10 bg-black/70 rounded-full flex items-center justify-center text-white hover:bg-black transition-all duration-300"
                     >
                       {isAutoPlaying ? (
                         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M6 4h4v16H6zM14 4h4v16h-4z"/>
+                          <path d="M6 4h4v16H6zM14 4h4v16h-4z" />
                         </svg>
                       ) : (
                         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M8 5v14l11-7z"/>
+                          <path d="M8 5v14l11-7z" />
                         </svg>
                       )}
                     </button>
@@ -207,11 +207,10 @@ const ExpertiseSection = () => {
                     <button
                       key={image.id}
                       onClick={() => handleThumbnailClick(index)}
-                      className={`h-16 rounded-lg overflow-hidden transition-all duration-300 ${
-                        index === currentImageIndex 
-                          ? 'ring-2 ring-amber-500 ring-offset-2 transform scale-105' 
+                      className={`h-16 rounded-lg overflow-hidden transition-all duration-300 ${index === currentImageIndex
+                          ? 'ring-2 ring-amber-500 ring-offset-2 transform scale-105'
                           : 'opacity-70 hover:opacity-100 hover:scale-105'
-                      }`}
+                        }`}
                     >
                       <img
                         src={image.src}
@@ -229,7 +228,7 @@ const ExpertiseSection = () => {
                   <h3 className="text-3xl font-bold text-gray-800 mb-6">
                     Expertise in Jain Traditions
                   </h3>
-                  
+
                   <div className="space-y-6">
                     <div className="flex items-start space-x-4">
                       <div className="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center flex-shrink-0">
@@ -275,7 +274,7 @@ const ExpertiseSection = () => {
                   </div>
 
                   <div className="mt-8 pt-6 border-t border-gray-200">
-                    <button 
+                    <button
                       onClick={handleButtonClick}
                       className="bg-gradient-to-r from-amber-500 to-amber-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-amber-600 hover:to-amber-700 transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl"
                     >
@@ -297,18 +296,17 @@ const ExpertiseSection = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                
+
                 {/* Navigation Dots */}
                 <div className="flex justify-center space-x-2 mt-4">
                   {images.slice(0, 5).map((_, index) => (
                     <button
                       key={index}
                       onClick={() => handleThumbnailClick(index)}
-                      className={`w-3 h-3 rounded-full transition-all ${
-                        index === currentImageIndex 
-                          ? 'bg-amber-500 scale-125' 
+                      className={`w-3 h-3 rounded-full transition-all ${index === currentImageIndex
+                          ? 'bg-amber-500 scale-125'
                           : 'bg-gray-300 hover:bg-gray-400'
-                      }`}
+                        }`}
                     />
                   ))}
                 </div>
@@ -319,12 +317,12 @@ const ExpertiseSection = () => {
                 <h3 className="text-2xl font-bold text-gray-800 mb-4 text-center">
                   Expertise in Jain Traditions
                 </h3>
-                
+
                 <p className="text-gray-600 leading-relaxed mb-6 text-center">
                   Our artisans are well-versed in the rich iconography specific to Jainism. From the intricate carvings of the Tirthankaras to the symbolic representations of the Astha Mangal, we ensure that every element of your pooja room is authentic and spiritually resonant.
                 </p>
 
-                <button 
+                <button
                   onClick={handleButtonClick}
                   className="w-full bg-gradient-to-r from-amber-500 to-amber-600 text-white py-3 rounded-lg font-semibold hover:from-amber-600 hover:to-amber-700 transition-all duration-300 shadow-lg"
                 >
@@ -341,27 +339,30 @@ const ExpertiseSection = () => {
         <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 p-4">
           <div className="relative bg-white rounded-xl max-w-md w-full max-h-[90vh] overflow-y-auto">
             {/* Close Button */}
-            <button 
+            <button
               onClick={handleCloseForm}
               className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 transition-colors z-10"
             >
               <FaTimes size={24} />
             </button>
-            
+
             {/* Form Content */}
             <div className="p-8">
-              <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-2 text-center">
                 Talk to Our Expert
               </h2>
+              <div className="text-sm font-bold text-gray-800 hover:text-gray-900 text-center">
+                Contact Us : <span >+91 93193 74633</span>
+              </div>
               <p className="text-gray-600 mb-6">
                 Fill in your details and we'll get back to you shortly.
               </p>
-              
+
               <form onSubmit={handleSubmit} className="space-y-6">
                 {/* Full Name */}
                 <div className="relative">
-                  <input 
-                    type="text" 
+                  <input
+                    type="text"
                     id="fullName"
                     name="fullName"
                     value={formData.fullName}
@@ -371,13 +372,12 @@ const ExpertiseSection = () => {
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all"
                   />
-                  <label 
+                  <label
                     htmlFor="fullName"
-                    className={`absolute left-4 transition-all duration-200 pointer-events-none ${
-                      formData.fullName || focusedFields.fullName
+                    className={`absolute left-4 transition-all duration-200 pointer-events-none ${formData.fullName || focusedFields.fullName
                         ? 'top-0 text-xs bg-white px-2 text-amber-600 -translate-y-1/2'
                         : 'top-3 text-gray-500'
-                    }`}
+                      }`}
                   >
                     Full Name *
                   </label>
@@ -385,8 +385,8 @@ const ExpertiseSection = () => {
 
                 {/* Email */}
                 <div className="relative">
-                  <input 
-                    type="email" 
+                  <input
+                    type="email"
                     id="email"
                     name="email"
                     value={formData.email}
@@ -396,13 +396,12 @@ const ExpertiseSection = () => {
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all"
                   />
-                  <label 
+                  <label
                     htmlFor="email"
-                    className={`absolute left-4 transition-all duration-200 pointer-events-none ${
-                      formData.email || focusedFields.email
+                    className={`absolute left-4 transition-all duration-200 pointer-events-none ${formData.email || focusedFields.email
                         ? 'top-0 text-xs bg-white px-2 text-amber-600 -translate-y-1/2'
                         : 'top-3 text-gray-500'
-                    }`}
+                      }`}
                   >
                     Email Address *
                   </label>
@@ -414,8 +413,8 @@ const ExpertiseSection = () => {
                     <span className="px-4 py-3 bg-gray-50 border-r border-gray-300 text-gray-700">
                       +91
                     </span>
-                    <input 
-                      type="tel" 
+                    <input
+                      type="tel"
                       id="phone"
                       name="phone"
                       value={formData.phone}
@@ -430,8 +429,8 @@ const ExpertiseSection = () => {
 
                 {/* City */}
                 <div className="relative">
-                  <input 
-                    type="text" 
+                  <input
+                    type="text"
                     id="city"
                     name="city"
                     value={formData.city}
@@ -441,13 +440,12 @@ const ExpertiseSection = () => {
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all"
                   />
-                  <label 
+                  <label
                     htmlFor="city"
-                    className={`absolute left-4 transition-all duration-200 pointer-events-none ${
-                      formData.city || focusedFields.city
+                    className={`absolute left-4 transition-all duration-200 pointer-events-none ${formData.city || focusedFields.city
                         ? 'top-0 text-xs bg-white px-2 text-amber-600 -translate-y-1/2'
                         : 'top-3 text-gray-500'
-                    }`}
+                      }`}
                   >
                     City *
                   </label>
@@ -458,11 +456,11 @@ const ExpertiseSection = () => {
                   <label className="block text-sm font-medium text-gray-700">
                     Tell us about yourself *
                   </label>
-                  
+
                   <label className="flex items-start space-x-3 p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
-                    <input 
-                      type="radio" 
-                      name="userType" 
+                    <input
+                      type="radio"
+                      name="userType"
                       value="homeowner"
                       checked={formData.userType === 'homeowner'}
                       onChange={handleInputChange}
@@ -472,11 +470,11 @@ const ExpertiseSection = () => {
                       I am a homeowner looking for stone work solutions
                     </span>
                   </label>
-                  
+
                   <label className="flex items-start space-x-3 p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
-                    <input 
-                      type="radio" 
-                      name="userType" 
+                    <input
+                      type="radio"
+                      name="userType"
                       value="designer"
                       checked={formData.userType === 'designer'}
                       onChange={handleInputChange}
@@ -489,7 +487,7 @@ const ExpertiseSection = () => {
                 </div>
 
                 {/* Submit Button */}
-                <button 
+                <button
                   type="submit"
                   className="w-full bg-gradient-to-r from-amber-500 to-amber-600 text-white py-3 px-6 rounded-lg font-semibold hover:from-amber-600 hover:to-amber-700 transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl"
                 >

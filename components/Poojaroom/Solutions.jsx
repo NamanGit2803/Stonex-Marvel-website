@@ -104,7 +104,10 @@ const Solutions = () => {
             </button>
             
             <div className={styles.contactForm}>
-              <h2>Talk to Our Expert</h2>
+              <h2 className='text-center'>Talk to Our Expert</h2>
+               <div className="text-sm font-bold text-gray-800 hover:text-gray-900 text-center">
+                Contact Us : <span >+91 93193 74633</span>
+              </div>
               
               <form onSubmit={handleSubmit}>
                 <div className={styles.formGroup}>

@@ -111,7 +111,7 @@ const projectCategories = [
         id: 'Overseas',
         name: 'Overseas',
         bannerImage: '/home-decor.jpg',
-        displayName: 'Overseas PROJECTS',
+        displayName: 'OVERSEAS PROJECTS',
         description: 'Global architectural excellence across continents',
         projects: [
             {
@@ -286,15 +286,15 @@ const Projects = () => {
                             transition={{ delay: 0.3, duration: 0.7 }}
                             className="text-white max-w-3xl"
                         >
-                            <h1 className="mt-6 font-semibold tracking-tight text-4xl sm:text-6xl md:text-7xl animate-slide-up">
-                                <span className="bg-gradient-to-r from-[#ff7e2e] to-[#ffb380] bg-clip-text text-transparent">
+                            <h1 className="mt-6 font-extralight tracking-tight text-3xl sm:text-5xl md:text-6xl animate-slide-up">
+                                <span className="">
                                     {currentCategory.displayName}
                                 </span>
                             </h1>
-                            <p className="text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed">
+                            <p className="text-lg md:text-xl font-extralight text-gray-200 mb-8 leading-relaxed">
                                 {currentCategory.description}
                             </p>
-                            <div className="flex items-center space-x-6 text-lg">
+                            <div className="flex items-center space-x-6 text-sm">
                                 <span className="bg-theme text-black px-4 py-2 rounded-full font-semibold">
                                     {filteredProjects.length} Divine Creations
                                 </span>
@@ -399,9 +399,9 @@ const Projects = () => {
                         <div className="flex items-center justify-between mb-8">
                             <motion.h2
                                 variants={itemVariants}
-                                className="mt-6 font-semibold tracking-tight text-3xl sm:text-5xl md:text-6xl animate-slide-up"
+                                className="mt-6  tracking-tight text-3xl sm:text-5xl md:text-6xl animate-slide-up"
                             >
-                                <span className="bg-gradient-to-r from-[#ff7e2e] to-[#ffb380] bg-clip-text text-transparent">
+                                <span className="bg-gradient-to-r from-theme to-[#ffb380] bg-clip-text text-transparent">
                                     Featured Projects
                                 </span>
                             </motion.h2>

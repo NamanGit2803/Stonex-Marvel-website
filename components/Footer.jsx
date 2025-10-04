@@ -190,7 +190,7 @@ const Footer = () => {
 
                 {/* Copyright section  */}
                 <div className="flex justify-center items-center py-6 text-sm text-gray-400 font-light tracking-wider">
-                    © Indian Stonex Private Limited, 2024. All rights reserved.
+                    © Indian Stonex Private Limited, 2025. All rights reserved.
                 </div>
             </div>
         </footer>

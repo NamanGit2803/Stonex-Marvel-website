@@ -139,12 +139,12 @@ const DimensionsPictures = () => {
 
       {/* Form Overlay */}
       {showForm && (
-        <motion.div 
+        <motion.div
           className={styles.formOverlay}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
         >
-          <motion.div 
+          <motion.div
             className={styles.formContainer}
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
@@ -155,9 +155,121 @@ const DimensionsPictures = () => {
             </button>
 
             <div className={styles.contactForm}>
-              <h2>Talk to Our Expert</h2>
+              <h2 className='text-center'>Talk to Our Expert</h2>
+              <div className="text-sm font-bold text-gray-800 hover:text-gray-900 text-center">
+                Contact Us : <span >+91 93193 74633</span>
+              </div>
               <form onSubmit={handleSubmit}>
-                {/* --- inputs unchanged --- */}
+                <div className={styles.formGroup}>
+                  <div className={styles.inputContainer}>
+                    <input
+                      type="text"
+                      id="fullName"
+                      name="fullName"
+                      value={formData.fullName}
+                      onChange={handleInputChange}
+                      onFocus={() => handleFocus('fullName')}
+                      onBlur={() => handleBlur('fullName')}
+                      required
+                    />
+                    <label
+                      htmlFor="fullName"
+                      className={formData.fullName || focusedFields.fullName ? styles.focusedLabel : ''}
+                    >
+                      Full Name *
+                    </label>
+                  </div>
+                </div>
+
+                <div className={styles.formGroup}>
+                  <div className={styles.inputContainer}>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      onFocus={() => handleFocus('email')}
+                      onBlur={() => handleBlur('email')}
+                      required
+                    />
+                    <label
+                      htmlFor="email"
+                      className={formData.email || focusedFields.email ? styles.focusedLabel : ''}
+                    >
+                      Email Address *
+                    </label>
+                  </div>
+                </div>
+
+                <div className={styles.formGroup}>
+                  <div className={styles.inputContainer}>
+                    <div className={styles.phoneInputContainer}>
+                      <div className={`${styles.phoneInput} ${focusedFields.phone ? styles.phoneInputFocused : ''}`}>
+                        <span className={styles.countryCode}>+91</span>
+                        <input
+                          type="tel"
+                          id="phone"
+                          name="phone"
+                          value={formData.phone}
+                          onChange={handleInputChange}
+                          onFocus={() => handleFocus('phone')}
+                          onBlur={() => handleBlur('phone')}
+                          placeholder="Phone number"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className={styles.formGroup}>
+                  <div className={styles.inputContainer}>
+                    <input
+                      type="text"
+                      id="city"
+                      name="city"
+                      value={formData.city}
+                      onChange={handleInputChange}
+                      onFocus={() => handleFocus('city')}
+                      onBlur={() => handleBlur('city')}
+                      required
+                    />
+                    <label
+                      htmlFor="city"
+                      className={formData.city || focusedFields.city ? styles.focusedLabel : ''}
+                    >
+                      City *
+                    </label>
+                  </div>
+                </div>
+
+                <div className={styles.formGroup}>
+                  <label className={styles.radioLabel}>Tell us about yourself *</label>
+                  <div className={styles.radioGroup}>
+                    <label className={styles.radioOption}>
+                      <input
+                        type="radio"
+                        name="userType"
+                        value="homeowner"
+                        checked={formData.userType === 'homeowner'}
+                        onChange={handleInputChange}
+                      />
+                      I am a homeowner looking for a pooja unit or pooja room
+                    </label>
+
+                    <label className={styles.radioOption}>
+                      <input
+                        type="radio"
+                        name="userType"
+                        value="designer"
+                        checked={formData.userType === 'designer'}
+                        onChange={handleInputChange}
+                      />
+                      I am an interior designer/consultant seeking solutions for my client
+                    </label>
+                  </div>
+                </div>
+
                 <button type="submit" className={styles.nextButton}>Next</button>
               </form>
             </div>

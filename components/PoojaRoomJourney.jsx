@@ -73,7 +73,7 @@ const PoojaRoomJourney = () => {
 
   return (
     <>
-      <div 
+      <div
         className="relative w-full bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: `url('/img25.jpg')`,
@@ -86,7 +86,7 @@ const PoojaRoomJourney = () => {
           <h2 className="text-white text-4xl md:text-5xl font-medium mb-8" style={{ fontSize: '1.6rem', color: '#fff' }}>
             Let's Build Your Pooja Temple Together
           </h2>
-          <button 
+          <button
             className="flex items-center justify-center gap-2 group hover:bg-hover-theme transition-colors duration-300"
             style={{
               textDecoration: 'none',
@@ -134,7 +134,7 @@ const PoojaRoomJourney = () => {
             maxHeight: '90vh',
             overflowY: 'auto'
           }}>
-            <button 
+            <button
               style={{
                 position: 'absolute',
                 top: '15px',
@@ -150,7 +150,7 @@ const PoojaRoomJourney = () => {
             >
               <FaTimes />
             </button>
-            
+
             <div style={{
               background: 'white',
               padding: '2rem',
@@ -161,23 +161,27 @@ const PoojaRoomJourney = () => {
               <h2 style={{
                 fontSize: '1.5rem',
                 marginBottom: '0.5rem',
-                color: '#333'
+                color: '#333',
+                textAlign: 'center',
               }}>
                 Talk to Our Expert
               </h2>
-              
+              <div className="text-sm font-bold text-gray-800 hover:text-gray-900 text-center">
+                Contact Us : <span >+91 93193 74633</span>
+              </div>
+
               <form onSubmit={handleSubmit}>
                 <div style={{ marginBottom: '1.2rem', position: 'relative' }}>
                   <div style={{ position: 'relative', marginTop: '1rem' }}>
-                    <input 
-                      type="text" 
-                      id="fullName" 
+                    <input
+                      type="text"
+                      id="fullName"
                       name="fullName"
                       value={formData.fullName}
                       onChange={handleInputChange}
                       onFocus={() => handleFocus('fullName')}
                       onBlur={() => handleBlur('fullName')}
-                      required 
+                      required
                       style={{
                         width: '100%',
                         padding: '0.75rem',
@@ -186,8 +190,8 @@ const PoojaRoomJourney = () => {
                         fontSize: '1rem'
                       }}
                     />
-                    <label 
-                      htmlFor="fullName" 
+                    <label
+                      htmlFor="fullName"
                       style={{
                         position: 'absolute',
                         left: '0.75rem',
@@ -210,18 +214,18 @@ const PoojaRoomJourney = () => {
                     </label>
                   </div>
                 </div>
-                
+
                 <div style={{ marginBottom: '1.2rem', position: 'relative' }}>
                   <div style={{ position: 'relative', marginTop: '1rem' }}>
-                    <input 
-                      type="email" 
-                      id="email" 
+                    <input
+                      type="email"
+                      id="email"
                       name="email"
                       value={formData.email}
                       onChange={handleInputChange}
                       onFocus={() => handleFocus('email')}
                       onBlur={() => handleBlur('email')}
-                      required 
+                      required
                       style={{
                         width: '100%',
                         padding: '0.75rem',
@@ -230,8 +234,8 @@ const PoojaRoomJourney = () => {
                         fontSize: '1rem'
                       }}
                     />
-                    <label 
-                      htmlFor="email" 
+                    <label
+                      htmlFor="email"
                       style={{
                         position: 'absolute',
                         left: '0.75rem',
@@ -254,7 +258,7 @@ const PoojaRoomJourney = () => {
                     </label>
                   </div>
                 </div>
-                
+
                 <div style={{ marginBottom: '1.2rem', position: 'relative' }}>
                   <div style={{ position: 'relative', marginTop: '1rem' }}>
                     <div style={{
@@ -275,9 +279,9 @@ const PoojaRoomJourney = () => {
                         }}>
                           +91
                         </span>
-                        <input 
-                          type="tel" 
-                          id="phone" 
+                        <input
+                          type="tel"
+                          id="phone"
                           name="phone"
                           value={formData.phone}
                           onChange={handleInputChange}
@@ -296,18 +300,18 @@ const PoojaRoomJourney = () => {
                     </div>
                   </div>
                 </div>
-                
+
                 <div style={{ marginBottom: '1.2rem', position: 'relative' }}>
                   <div style={{ position: 'relative', marginTop: '1rem' }}>
-                    <input 
-                      type="text" 
-                      id="city" 
+                    <input
+                      type="text"
+                      id="city"
                       name="city"
                       value={formData.city}
                       onChange={handleInputChange}
                       onFocus={() => handleFocus('city')}
                       onBlur={() => handleBlur('city')}
-                      required 
+                      required
                       style={{
                         width: '100%',
                         padding: '0.75rem',
@@ -316,8 +320,8 @@ const PoojaRoomJourney = () => {
                         fontSize: '1rem'
                       }}
                     />
-                    <label 
-                      htmlFor="city" 
+                    <label
+                      htmlFor="city"
                       style={{
                         position: 'absolute',
                         left: '0.75rem',
@@ -340,7 +344,7 @@ const PoojaRoomJourney = () => {
                     </label>
                   </div>
                 </div>
-                
+
                 <div style={{ marginBottom: '1.2rem', position: 'relative' }}>
                   <label style={{
                     display: 'block',
@@ -365,9 +369,9 @@ const PoojaRoomJourney = () => {
                       color: '#333',
                       fontSize: '0.9rem'
                     }}>
-                      <input 
-                        type="radio" 
-                        name="userType" 
+                      <input
+                        type="radio"
+                        name="userType"
                         value="homeowner"
                         checked={formData.userType === 'homeowner'}
                         onChange={handleInputChange}
@@ -382,7 +386,7 @@ const PoojaRoomJourney = () => {
                       />
                       I am a homeowner looking for a pooja unit or pooja room
                     </label>
-                    
+
                     <label style={{
                       display: 'flex',
                       alignItems: 'center',
@@ -392,9 +396,9 @@ const PoojaRoomJourney = () => {
                       color: '#333',
                       fontSize: '0.9rem'
                     }}>
-                      <input 
-                        type="radio" 
-                        name="userType" 
+                      <input
+                        type="radio"
+                        name="userType"
                         value="designer"
                         checked={formData.userType === 'designer'}
                         onChange={handleInputChange}
@@ -411,7 +415,7 @@ const PoojaRoomJourney = () => {
                     </label>
                   </div>
                 </div>
-                
+
                 <button type="submit" style={{
                   background: 'var(--color-theme)',
                   color: 'white',

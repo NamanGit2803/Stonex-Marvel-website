@@ -82,9 +82,12 @@ const Hero = () => {
               <FaTimes />
             </button>
             
-            <h2 className="text-2xl font-semibold mb-6 animate-fade-in-up">
+            <h2 className="text-2xl font-semibold mb-6 animate-fade-in-up text-center">
               Talk to Our Expert
             </h2>
+             <div className="text-sm font-bold text-gray-800 hover:text-gray-900 text-center">
+                Contact Us : <span >+91 93193 74633</span>
+              </div>
 
             <form onSubmit={handleSubmit} className="space-y-5">
               {/* Full Name */}
