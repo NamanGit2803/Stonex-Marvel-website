@@ -31,7 +31,7 @@ const navItems = [
       { name: "Sculptures", href: "/projects/Sculptures", src: '/murti1.jpg' },
       { name: "Custom Temple", href: "/premium-marble-temple-for-home", src: "/project6.jpg" },
       { name: "Spiritual Jain Creations", href: "/jain-temple", src: '/project3.jpg' },
-      { name: "Interior Elegance", href: "/", src: '/home-decor.jpg' },
+      { name: "Interior Elegance", href: "/InteriorElegancePage", src: '/home-decor.jpg' },
       { name: "Divine Corner", href: "/marble-pooja-room-designs", src: "/project4.jpg" },
     ],
   },
