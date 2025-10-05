@@ -106,7 +106,7 @@ const DimensionsPictures = () => {
             <div className={styles.contactForm}>
               <h2 className='text-center'>Talk to Our Expert</h2>
               <div className="text-sm font-bold text-gray-800 hover:text-gray-900 text-center">
-                Contact Us : <span >+91 93193 74633</span>
+                Contact Us : <span >+91  7014116801</span>
               </div>
 
               <form onSubmit={handleSubmit}>

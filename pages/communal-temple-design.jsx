@@ -24,7 +24,7 @@ export default function Home() {
         <Hero/>
         <WhyChooseUs/>
         <ServicesSection/>
-        <HowItWorks/>
+        {/* <HowItWorks/> */}
         <PoojaRoomJourney/>
       </div>
   );

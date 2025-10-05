@@ -91,7 +91,7 @@ const Hero = () => {
             animate="visible"
             variants={textVariants}
           >
-            Creating Sacred Spaces<br />For Generations
+           A Reflection of Faith and Purity.<br /> 
           </motion.h1>
 
           {/* Mobile-only button */}

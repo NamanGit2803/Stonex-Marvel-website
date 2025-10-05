@@ -83,25 +83,25 @@ const InteriorElegancePage = () => {
     {
       name: "Modern Minimalist",
       description: "Clean lines with white marble and subtle gold accents",
-      price: "Starting at ₹4.25L",
+      price: "",
       image: "/modern-style.jpg"
     },
     {
       name: "Traditional Opulence",
       description: "Rich carvings with heritage patterns and warm lighting",
-      price: "Starting at ₹6.75L",
+      price: "",
       image: "/traditional-style.jpg"
     },
     {
       name: "Fusion Elegance",
       description: "Blending contemporary design with traditional elements",
-      price: "Starting at ₹5.50L",
+      price: "",
       image: "/fusion-style.jpg"
     },
     {
       name: "Luxury Statement",
       description: "Grand marble temples with premium finishes and lighting",
-      price: "Starting at ₹8.95L",
+      price: "",
       image: "/luxury-style.jpg"
     }
   ];

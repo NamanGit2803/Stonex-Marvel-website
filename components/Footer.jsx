@@ -35,7 +35,7 @@ const Footer = () => {
 
                             <div className="flex flex-col gap-2 text-sm text-gray-300 font-light tracking-wide">
                                 <a href="tel:+919319374633" className=" transition-colors flex items-center gap-2">
-                                    <span className="font-normal  tracking-wider">Call:</span> +91 93193 74633
+                                    <span className="font-normal  tracking-wider">Call:</span> +91  7014116801
                                 </a>
                                 <a
                                     href="mailto:info@tilakstonearts.com"

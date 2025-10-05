@@ -32,7 +32,7 @@ const navItems = [
       { name: "Custom Temple", href: "/premium-marble-temple-for-home", src: "/project6.jpg" },
       { name: "Spiritual Jain Creations", href: "/jain-temple", src: '/project3.jpg' },
       { name: "Interior Elegance", href: "/InteriorElegancePage", src: '/home-decor.jpg' },
-      { name: "Divine Corner", href: "/marble-pooja-room-designs", src: "/project4.jpg" },
+      // { name: "Divine Corner", href: "/marble-pooja-room-designs", src: "/project4.jpg" },
     ],
   },
   { name: "Find Us", href: "/Location" },
@@ -316,7 +316,7 @@ const Navbar = () => {
 
             <h2 className="text-xl font-bold mb-4 text-gray-900 text-center">Talk to Our Expert</h2>
             <div className="text-sm font-bold text-gray-800 hover:text-gray-900 text-center">
-              Contact Us : <span >+91 93193 74633</span>
+              Contact Us : <span >+91  7014116801</span>
             </div>
 
             <form>

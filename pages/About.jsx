@@ -14,6 +14,9 @@ export default function AboutUs() {
     { src: "/project2.jpg", alt: "Custom stonework pillar" },
     { src: "/project3.jpg", alt: "Marble inlay floral pattern" },
     { src: "/project4.jpg", alt: "Temple entrance stone craft" },
+    { src: "/gallery7.png", alt: "Temple entrance stone craft" },
+    { src: "/gallery8.jpg", alt: "Temple entrance stone craft" },
+    { src: "/gallery9.jpg", alt: "Temple entrance stone craft" },
   ]
 
   useEffect(() => {
@@ -61,7 +64,7 @@ export default function AboutUs() {
         <div className="relative z-10 flex h-full items-center justify-center px-6">
           <div className="max-w-4xl text-center text-white animate-fade-in-up">
             <span className="inline-block rounded-full bg-white/20 px-4 py-2 text-sm font-medium tracking-wide backdrop-blur-sm">
-              Since 2020
+              Since 2000
             </span>
 
            <h1 className="mt-6 font-semibold tracking-tight text-3xl sm:text-5xl md:text-6xl animate-slide-up">
@@ -99,7 +102,7 @@ export default function AboutUs() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
             {[
-              { num: "05+", label: "Years Experience" },
+              { num: "25+", label: "Years Experience" },
               { num: "120+", label: "Projects Delivered" },
               { num: "08", label: "Countries Served" },
               { num: "100%", label: "Custom Crafted" },
