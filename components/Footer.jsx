@@ -54,25 +54,25 @@ const Footer = () => {
                         </h3>
                         <div className="flex flex-col gap-3">
                             <Link
-                                href={""}
+                                href={"/About"}
                                 className="text-sm text-gray-300 hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
                             >
                                 About Us
                             </Link>
                             <Link
-                                href={""}
+                                href={"/"}
                                 className="text-sm text-gray-300 hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
                             >
                                 The Team
                             </Link>
                             <Link
-                                href={""}
+                                href={"/"}
                                 className="text-sm text-gray-300  hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
                             >
                                 Artisans
                             </Link>
                             <Link
-                                href={""}
+                                href={"/OurClients"}
                                 className="text-sm text-gray-300 hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
                             >
                                 Our Clients
@@ -95,19 +95,19 @@ const Footer = () => {
                                 href={"/premium-marble-temple-for-home"}
                                 className="text-sm text-gray-300  hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
                             >
-                                Dream Temples
+                                Custom Temple
                             </Link>
                             <Link
                                 href={"/communal-temple-design"}
                                 className="text-sm text-gray-300 hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
                             >
-                                Communal Temples
+                                Community Temple
                             </Link>
                             <Link
                                 href={"/AppointmentPage"}
                                 className="text-sm text-gray-300 hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
                             >
-                                Book appointment
+                                Schedule a Visit
                             </Link>
                         </div>
                     </div>
@@ -116,13 +116,13 @@ const Footer = () => {
                         <h3 className="text-lg md:text-xl font-light tracking-widest uppercase">Legal</h3>
                         <div className="flex flex-col gap-3">
                             <Link
-                                href={"/"}
+                                href={"/terms-and-conditions"}
                                 className="text-sm text-gray-300 hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
                             >
                                 Terms & Conditions
                             </Link>
                             <Link
-                                href={""}
+                                href={"/privacy-policy"}
                                 className="text-sm text-gray-300 hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
                             >
                                 Privacy Policy
@@ -142,16 +142,10 @@ const Footer = () => {
                                 FAQs
                             </Link>
                             <Link
-                                href={""}
+                                href={"/"}
                                 className="text-sm text-gray-300  hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
                             >
                                 Call Us
-                            </Link>
-                            <Link
-                                href={""}
-                                className="text-sm text-gray-300 hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
-                            >
-                                Email
                             </Link>
                         </div>
                     </div>
