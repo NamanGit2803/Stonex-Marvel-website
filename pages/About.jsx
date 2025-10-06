@@ -5,8 +5,9 @@ import { X, ChevronLeft, ChevronRight } from "lucide-react"
 export default function AboutUs() {
   const heroRef = useRef(null)
   const [selectedIndex, setSelectedIndex] = useState(null)
+  const [showAll, setShowAll] = useState(false) // show more toggle
 
-  // Gallery images
+  // ------------------- GALLERY IMAGES -------------------
   const images = [
     { src: "/img4.png", alt: "Intricate white marble temple carving detail" },
     { src: "/img5.png", alt: "Marble mandir with arches" },
@@ -19,6 +20,7 @@ export default function AboutUs() {
     { src: "/gallery9.jpg", alt: "Temple entrance stone craft" },
   ]
 
+  // ------------------- FADE-IN ANIMATION -------------------
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -37,13 +39,16 @@ export default function AboutUs() {
     return () => observer.disconnect()
   }, [])
 
-  // Lightbox navigation
+  // ------------------- LIGHTBOX NAVIGATION -------------------
   const handlePrev = () => {
     setSelectedIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1))
   }
   const handleNext = () => {
     setSelectedIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1))
   }
+
+  // ------------------- DISPLAY LIMITED IMAGES INITIALLY -------------------
+  const displayedImages = showAll ? images : images.slice(0, 6)
 
   return (
     <main className="min-h-screen bg-white font-sans">
@@ -67,13 +72,12 @@ export default function AboutUs() {
               Since 2000
             </span>
 
-           <h1 className="mt-6 font-semibold tracking-tight text-3xl sm:text-5xl md:text-6xl animate-slide-up">
-  Indian{" "}
-  <span className="bg-gradient-to-r from-[#ff7e2e] to-[#ffb380] bg-clip-text text-transparent">
-    StoneX
-  </span>
-</h1>
-
+            <h1 className="mt-6 font-semibold tracking-tight text-3xl sm:text-5xl md:text-6xl animate-slide-up">
+              Indian{" "}
+              <span className="bg-gradient-to-r from-[#ff7e2e] to-[#ffb380] bg-clip-text text-transparent">
+                StoneX
+              </span>
+            </h1>
 
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white/90 sm:text-xl">
               Crafting marble temples, sculptures, and bespoke stonework with timeless artistry
@@ -207,8 +211,9 @@ export default function AboutUs() {
             Explore our collection of handcrafted marble temples, sculptures, and custom stonework
           </p>
 
+          {/* Gallery Grid */}
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {images.map((image, idx) => (
+            {displayedImages.map((image, idx) => (
               <div
                 key={idx}
                 className="cursor-pointer group relative overflow-hidden rounded-2xl border border-gray-200 shadow-sm hover:shadow-xl"
@@ -223,6 +228,18 @@ export default function AboutUs() {
               </div>
             ))}
           </div>
+
+          {/* View More Button */}
+          {!showAll && images.length > 6 && (
+            <div className="mt-10">
+              <button
+                onClick={() => setShowAll(true)}
+                className="rounded-lg bg-[#ff7e2e] px-8 py-3 text-white font-medium shadow-lg transition hover:scale-105"
+              >
+                View More
+              </button>
+            </div>
+          )}
         </div>
 
         {/* Lightbox Modal */}
