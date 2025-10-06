@@ -226,7 +226,7 @@ const PrivacyPolicy = () => {
               <strong>In Short:</strong> Yes, we update this notice to comply with relevant laws.
             </p>
             <p className="mb-4">
-              We may revise this Privacy Policy, with updates indicated by a "Revised" date. Material changes will be communicated via prominent notice or direct notification.
+              We may revise this Privacy Policy, with updates indicated by a &quot;Revised&quot; date. Material changes will be communicated via prominent notice or direct notification.
             </p>
 
             <h2 className="text-2xl font-semibold mt-6 mb-4">14. How Can You Contact Us About This Notice?</h2>
