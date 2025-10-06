@@ -164,51 +164,49 @@ const MarbleTemple = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section 
-  className="relative min-h-screen flex items-center justify-center pt-16"
-  style={{ 
-    backgroundImage: "url('/HDimg4.jpg')",
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat'
-  }}
->
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -top-40 -right-40 w-80 h-80 bg-amber-200 rounded-full blur-3xl opacity-30"></div>
-          <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-amber-100 rounded-full blur-3xl opacity-30"></div>
-        </div>
-        
+      <section
+        className="relative min-h-screen flex items-center justify-center pt-16"
+        style={{
+          backgroundImage: "url('/HDimg4.jpg')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/40 bg-opacity-50"></div>
+
         <div className="container mx-auto px-6 relative z-10" >
           <div className="max-w-4xl mx-auto text-center">
-           <motion.h1
-  className="text-5xl md:text-7xl font-serif font-light text-white mb-6 leading-tight bg-cover bg-center p-6 rounded-xl"
-  initial={{ opacity: 0, y: 30 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.8 }}
->
-  Sacred Spaces,<br />
-  <span className="text-amber-600">Timeless Craft</span>
-</motion.h1>
+            <motion.h1
+              className="text-4xl md:text-6xl font-serif font- text-white mb-6 leading-tight bg-cover bg-center p-6 rounded-xl"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              Sacred Spaces,<br />
+              <span className="text-theme">Timeless Craft</span>
+            </motion.h1>
 
 
-<motion.p 
-  className="text-xl text-white mb-8 max-w-2xl mx-auto leading-relaxed"
-  initial={{ opacity: 0, y: 30 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.8, delay: 0.2 }}
->
-  Crafting exquisite marble temples that blend spiritual tradition with modern elegance. 
-  Each piece is a masterpiece, built to inspire generations.
-</motion.p>
+            <motion.p
+              className="text-xl text-white mb-8 max-w-2xl mx-auto leading-relaxed"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              Crafting exquisite marble temples that blend spiritual tradition with modern elegance.
+              Each piece is a masterpiece, built to inspire generations.
+            </motion.p>
 
-            
-            <motion.div 
+
+            <motion.div
               className="flex flex-col sm:flex-row gap-4 justify-center items-center"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              <button 
+              <button
                 onClick={() => setIsFormVisible(true)}
                 className="bg-amber-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-amber-700 transition-all duration-300 transform hover:scale-105 flex items-center"
               >
@@ -230,7 +228,7 @@ const MarbleTemple = () => {
       {/* Features Section */}
       <section id="features" className="py-20 bg-white">
         <div className="container mx-auto px-6">
-          <motion.div 
+          <motion.div
             className="text-center mb-16"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -249,20 +247,18 @@ const MarbleTemple = () => {
             {features.map((feature, index) => (
               <motion.div
                 key={index}
-                className={`p-8 rounded-2xl transition-all duration-500 ${
-                  activeFeature === index 
-                    ? 'bg-amber-50 border-2 border-amber-200 shadow-lg' 
-                    : 'bg-gray-50 border-2 border-transparent'
-                }`}
+                className={`p-8 rounded-2xl transition-all duration-500 ${activeFeature === index
+                  ? 'bg-amber-50 border-2 border-amber-200 shadow-lg'
+                  : 'bg-gray-50 border-2 border-transparent'
+                  }`}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
                 onMouseEnter={() => setActiveFeature(index)}
               >
-                <div className={`w-12 h-12 rounded-lg flex items-center justify-center mb-4 transition-colors ${
-                  activeFeature === index ? 'bg-amber-600 text-white' : 'bg-amber-100 text-amber-600'
-                }`}>
+                <div className={`w-12 h-12 rounded-lg flex items-center justify-center mb-4 transition-colors ${activeFeature === index ? 'bg-amber-600 text-white' : 'bg-amber-100 text-amber-600'
+                  }`}>
                   {feature.icon}
                 </div>
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">{feature.title}</h3>
@@ -276,7 +272,7 @@ const MarbleTemple = () => {
       {/* Temple Designs Section */}
       <section id="designs" className="py-20 bg-gray-50">
         <div className="container mx-auto px-6">
-          <motion.div 
+          <motion.div
             className="text-center mb-16"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -300,7 +296,7 @@ const MarbleTemple = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                
+
               >
                 <div className="relative h-48 bg-gradient-to-br from-amber-100 to-amber-50 overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -311,7 +307,7 @@ const MarbleTemple = () => {
                     <span className="text-sm font-bold">{temple.price}</span>
                   </div> */}
                 </div>
-                
+
                 <div className="p-5">
                   <h3 className="text-lg font-semibold text-gray-800 mb-3 leading-tight">{temple.description}</h3>
                   <ul className="space-y-2 mb-4">
@@ -322,7 +318,7 @@ const MarbleTemple = () => {
                       </li>
                     ))}
                   </ul>
-                  <button 
+                  <button
                     onClick={() => setIsFormVisible(true)}
                     className="w-full bg-gray-800 text-white py-2.5 rounded-lg hover:bg-amber-600 transition-colors font-semibold text-sm"
                   >
@@ -338,7 +334,7 @@ const MarbleTemple = () => {
       {/* Process Section */}
       <section id="process" className="py-20 bg-white">
         <div className="container mx-auto px-6">
-          <motion.div 
+          <motion.div
             className="text-center mb-16"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -392,7 +388,7 @@ const MarbleTemple = () => {
             <p className="text-amber-100 text-xl mb-8 max-w-2xl mx-auto">
               Begin your journey to a beautifully crafted marble temple that will inspire devotion for generations
             </p>
-            <button 
+            <button
               onClick={() => setIsFormVisible(true)}
               className="bg-white text-amber-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 flex items-center mx-auto"
             >
@@ -423,7 +419,7 @@ const MarbleTemple = () => {
                   <h3 className="text-2xl font-serif font-light text-gray-800">
                     Begin Your Journey
                   </h3>
-                  <button 
+                  <button
                     onClick={() => setIsFormVisible(false)}
                     className="text-gray-400 hover:text-gray-600 transition-colors"
                   >
@@ -533,7 +529,7 @@ const MarbleTemple = () => {
                   </select>
                 </div>
 
-                <button 
+                <button
                   type="submit"
                   className="w-full bg-amber-600 text-white py-3 rounded-lg hover:bg-amber-700 transition-colors font-semibold text-sm mt-2"
                 >

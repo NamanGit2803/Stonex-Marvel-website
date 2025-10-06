@@ -26,7 +26,7 @@ const Footer = () => {
                         {/* details  */}
                         <div className="w-full space-y-4">
                             <div className="text-sm leading-relaxed text-gray-300 font-light tracking-wide">
-                                <p className="font-normal mb-2 tracking-wider">Address</p>
+                                <p className="font-normal mb-2 tracking-wider">Address:</p>
                                 <p>
                                     First & Second Floor, Indian StonexIndia, Mall 21, Mirza Ismail Road, Opposite Rajmandir Cinema, 5 Batti, C
                                     Scheme, Jaipur, Rajasthan 302001
