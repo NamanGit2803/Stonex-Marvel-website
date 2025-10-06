@@ -136,7 +136,7 @@ const Footer = () => {
                         </h3>
                         <div className="flex flex-col gap-3">
                             <Link
-                                href={""}
+                                href={"#faq"}
                                 className="text-sm text-gray-300 hover:translate-x-1 transition-all duration-200 font-light tracking-wide"
                             >
                                 FAQs

@@ -52,7 +52,7 @@ const FAQ = () => {
   ];
 
   return (
-    <section className="bg-amber-50 py-16 px-6 sm:px-8 lg:px-12">
+    <section id="faq" className="bg-amber-50 py-16 px-6 sm:px-8 lg:px-12">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
