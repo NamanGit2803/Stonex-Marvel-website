@@ -20,7 +20,7 @@ const projectCategories = [
         id: 'Corporate',
         name: 'Corporate',
         bannerImage: '/img5.png',
-        displayName: 'CORPORATE PROJECTS',
+        displayName: 'Corporate Projects',
         description: 'Community-focused architectural marvels that bring people together',
         projects: [
             {
@@ -78,7 +78,7 @@ const projectCategories = [
         id: 'Luxury-Living',
         name: 'Luxury Living',
         bannerImage: '/img4.png',
-        displayName: 'LUXURY LIVING PROJECTS',
+        displayName: 'Luxury Living Projects',
         description: 'Beautiful living spaces designed for comfort and elegance',
         projects: [
             {
@@ -111,7 +111,7 @@ const projectCategories = [
         id: 'Overseas',
         name: 'Overseas',
         bannerImage: '/home-decor.jpg',
-        displayName: 'OVERSEAS PROJECTS',
+        displayName: 'Overseas Projects',
         description: 'Global architectural excellence across continents',
         projects: [
             {
