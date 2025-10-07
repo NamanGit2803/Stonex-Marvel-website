@@ -77,7 +77,7 @@ const projectCategories = [
     {
         id: 'Luxury-Living',
         name: 'Luxury Living',
-        bannerImage: '/img4.png',
+        bannerImage: '/luxuryBg.jpg',
         displayName: 'Luxury Living Projects',
         description: 'Beautiful living spaces designed for comfort and elegance',
     projects: [
