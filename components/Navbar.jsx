@@ -19,18 +19,18 @@ const navItems = [
   {
     name: "Work Showcase", href: '',
     dropdown: [
-      { name: "Corporate", href: "/projects/Corporate", src: "/img4.png" },
+      { name: "Corporate", href: "/projects/Corporate", src: "/Corporate.jpg" },
       { name: "Luxury Living", href: "/projects/Luxury-Living", src: "/img2.jpg" },
-      { name: "Overseas", href: "/projects/Overseas", src: '/img12.jpg' },
+      { name: "Overseas", href: "/projects/Overseas", src: '/Overseas.jpg' },
     ],
   },
   {
     name: "Stone Gallery", href: "",
     dropdown: [
-      { name: "Community Temple", href: "/communal-temple-design", src: '/project1.jpg' },
-      { name: "Sculptures", href: "/projects/Sculptures", src: '/murti1.jpg' },
-      { name: "Custom Temple", href: "/premium-marble-temple-for-home", src: "/project6.jpg" },
-      { name: "Spiritual Jain Creations", href: "/jain-temple", src: '/project3.jpg' },
+      { name: "Community Temple", href: "/communal-temple-design", src: '/communityTemple.jpg' },
+      { name: "Sculptures", href: "/projects/Sculptures", src: '/sculpture.jpg' },
+      { name: "Custom Temple", href: "/premium-marble-temple-for-home", src: "/customTemple.jpg" },
+      { name: "Spiritual Jain Creations", href: "/jain-temple", src: '/jainTemple.jpg' },
       { name: "Interior Elegance", href: "/InteriorElegancePage", src: '/home-decor.jpg' },
       // { name: "Divine Corner", href: "/marble-pooja-room-designs", src: "/project4.jpg" },
     ],
