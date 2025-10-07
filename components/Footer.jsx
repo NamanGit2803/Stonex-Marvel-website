@@ -154,25 +154,25 @@ const Footer = () => {
                 {/* icons   */}
                 <div className="flex gap-6 py-8 w-full justify-start">
                     <a
-                        href="#"
+                        href="https://www.instagram.com/indian_stonex?igsh=dzA3aWpoNXF1dGVk"
                         className="text-gray-300  transition-all duration-200 hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(255,126,46,0.5)]"
                     >
                         <FaInstagram className="h-6 w-6 md:h-7 md:w-7" />
                     </a>
                     <a
-                        href="#"
+                        href="https://www.facebook.com/share/1BEsC7YXEM/"
                         className="text-gray-300  transition-all duration-200 hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(255,126,46,0.5)]"
                     >
                         <FiFacebook className="h-6 w-6 md:h-7 md:w-7" />
                     </a>
                     <a
-                        href="#"
+                        href="https://youtube.com/@indianstonex-c3i?si=Z1i5Ge1sLZyp7Tdo"
                         className="text-gray-300 transition-all duration-200 hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(255,126,46,0.5)]"
                     >
                         <FiYoutube className="h-6 w-6 md:h-7 md:w-7" />
                     </a>
                     <a
-                        href="#"
+                        href="https://www.linkedin.com/in/indian-stonex-091ab1385?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                         className="text-gray-300 transition-all duration-200 hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(255,126,46,0.5)]"
                     >
                         <FaLinkedinIn className="h-6 w-6 md:h-7 md:w-7" />

@@ -208,7 +208,7 @@ const MarbleTemple = () => {
             >
               <button
                 onClick={() => setIsFormVisible(true)}
-                className="bg-amber-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-amber-700 transition-all duration-300 transform hover:scale-105 flex items-center"
+                className="bg-theme text-white px-8 py-4 rounded-full font-semibold hover:bg-hover-theme transition-all duration-300 transform hover:scale-105 flex items-center"
               >
                 Begin Your Spiritual Journey
                 <ArrowIcon />
@@ -248,7 +248,7 @@ const MarbleTemple = () => {
               <motion.div
                 key={index}
                 className={`p-8 rounded-2xl transition-all duration-500 ${activeFeature === index
-                  ? 'bg-amber-50 border-2 border-amber-200 shadow-lg'
+                  ? 'bg-amber-50 border-2 border-theme shadow-lg'
                   : 'bg-gray-50 border-2 border-transparent'
                   }`}
                 initial={{ opacity: 0, y: 30 }}
@@ -257,7 +257,7 @@ const MarbleTemple = () => {
                 viewport={{ once: true }}
                 onMouseEnter={() => setActiveFeature(index)}
               >
-                <div className={`w-12 h-12 rounded-lg flex items-center justify-center mb-4 transition-colors ${activeFeature === index ? 'bg-amber-600 text-white' : 'bg-amber-100 text-amber-600'
+                <div className={`w-12 h-12 rounded-lg flex items-center justify-center mb-4 transition-colors ${activeFeature === index ? 'bg-theme text-white' : 'bg-amber-100 text-theme'
                   }`}>
                   {feature.icon}
                 </div>
@@ -313,14 +313,14 @@ const MarbleTemple = () => {
                   <ul className="space-y-2 mb-4">
                     {temple.features.map((feature, idx) => (
                       <li key={idx} className="flex items-center text-gray-600 text-sm">
-                        <div className="w-1.5 h-1.5 bg-amber-400 rounded-full mr-2 flex-shrink-0"></div>
+                        <div className="w-1.5 h-1.5 bg-theme rounded-full mr-2 flex-shrink-0"></div>
                         <span>{feature}</span>
                       </li>
                     ))}
                   </ul>
                   <button
                     onClick={() => setIsFormVisible(true)}
-                    className="w-full bg-gray-800 text-white py-2.5 rounded-lg hover:bg-amber-600 transition-colors font-semibold text-sm"
+                    className="w-full bg-gray-800 text-white py-2.5 rounded-lg hover:bg-theme transition-colors font-semibold text-sm"
                   >
                     Get Custom Quote
                   </button>
@@ -360,9 +360,9 @@ const MarbleTemple = () => {
                 viewport={{ once: true }}
               >
                 <div className="w-20 h-20 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6 relative">
-                  <span className="text-2xl font-serif text-amber-600 font-semibold">{step.step}</span>
+                  <span className="text-2xl font-serif text-theme font-semibold">{step.step}</span>
                   {index < processSteps.length - 1 && (
-                    <div className="hidden lg:block absolute -right-10 top-1/2 w-20 h-0.5 bg-amber-200"></div>
+                    <div className="hidden lg:block absolute -right-10 top-1/2 w-20 h-0.5 bg-theme"></div>
                   )}
                 </div>
                 <h3 className="text-xl font-semibold text-gray-800 mb-3">{step.title}</h3>
@@ -374,7 +374,7 @@ const MarbleTemple = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-amber-600 to-amber-700">
+      <section className="py-20 bg-theme">
         <div className="container mx-auto px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -390,7 +390,7 @@ const MarbleTemple = () => {
             </p>
             <button
               onClick={() => setIsFormVisible(true)}
-              className="bg-white text-amber-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 flex items-center mx-auto"
+              className="bg-white text-theme px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 flex items-center mx-auto"
             >
               Start with Free Consultation
               <ArrowIcon />
@@ -419,6 +419,7 @@ const MarbleTemple = () => {
                   <h3 className="text-2xl font-serif font-light text-gray-800">
                     Begin Your Journey
                   </h3>
+                  
                   <button
                     onClick={() => setIsFormVisible(false)}
                     className="text-gray-400 hover:text-gray-600 transition-colors"
@@ -426,6 +427,9 @@ const MarbleTemple = () => {
                     <CloseIcon />
                   </button>
                 </div>
+                <div className="text-sm font-bold text-gray-800 hover:text-gray-900 ">
+              Contact Us : <span >+91  7014116801</span>
+            </div>
                 <p className="text-gray-600 mt-2 text-sm">
                   Share your details and we'll contact you within 24 hours
                 </p>
@@ -439,7 +443,7 @@ const MarbleTemple = () => {
                     name="fullName"
                     value={formData.fullName}
                     onChange={handleInputChange}
-                    className="w-full px-3 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent text-sm"
+                    className="w-full px-3 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-theme focus:border-transparent text-sm"
                     required
                   />
                 </div>
@@ -451,14 +455,14 @@ const MarbleTemple = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className="w-full px-3 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent text-sm"
+                    className="w-full px-3 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-theme focus:border-transparent text-sm"
                     required
                   />
                 </div>
 
                 <div>
                   <label className="block text-gray-700 mb-2 font-medium text-sm">Phone Number *</label>
-                  <div className="flex border border-gray-300 rounded-lg overflow-hidden focus-within:ring-2 focus-within:ring-amber-500 focus-within:border-transparent">
+                  <div className="flex border border-gray-300 rounded-lg overflow-hidden focus-within:ring-2 focus-within:ring-theme focus-within:border-transparent">
                     <span className="px-3 py-2.5 bg-gray-100 border-r border-gray-300 flex items-center text-sm">+91</span>
                     <input
                       type="tel"
@@ -479,7 +483,7 @@ const MarbleTemple = () => {
                     name="city"
                     value={formData.city}
                     onChange={handleInputChange}
-                    className="w-full px-3 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent text-sm"
+                    className="w-full px-3 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-theme focus:border-transparent text-sm"
                     required
                   />
                 </div>
@@ -494,7 +498,7 @@ const MarbleTemple = () => {
                         value="homeowner"
                         checked={formData.userType === 'homeowner'}
                         onChange={handleInputChange}
-                        className="mr-2 text-amber-600 focus:ring-amber-500"
+                        className="mr-2 text-theme focus:ring-hover-theme"
                         required
                       />
                       Homeowner looking for a pooja unit
@@ -506,7 +510,7 @@ const MarbleTemple = () => {
                         value="designer"
                         checked={formData.userType === 'designer'}
                         onChange={handleInputChange}
-                        className="mr-2 text-amber-600 focus:ring-amber-500"
+                        className="mr-2 text-theme focus:ring-hover-theme"
                       />
                       Interior designer/consultant
                     </label>
@@ -519,7 +523,7 @@ const MarbleTemple = () => {
                     name="templeSize"
                     value={formData.templeSize}
                     onChange={handleInputChange}
-                    className="w-full px-3 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent text-sm"
+                    className="w-full px-3 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-theme focus:border-transparent text-sm"
                   >
                     <option value="">Select size</option>
                     <option value="2-3 ft">2-3 ft (Compact)</option>
@@ -531,7 +535,7 @@ const MarbleTemple = () => {
 
                 <button
                   type="submit"
-                  className="w-full bg-amber-600 text-white py-3 rounded-lg hover:bg-amber-700 transition-colors font-semibold text-sm mt-2"
+                  className="w-full bg-theme text-white py-3 rounded-lg hover:bg-hover-theme transition-colors font-semibold text-sm mt-2"
                 >
                   Schedule Free Consultation
                 </button>

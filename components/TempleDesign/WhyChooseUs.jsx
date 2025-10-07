@@ -129,9 +129,9 @@ const WhyChooseUs = () => {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-light mb-6">
-              Why Choose <span className="font-semibold text-amber-600">Our Services</span>
+              Why Choose <span className="font-semibold text-theme">Our Services</span>
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto mb-6"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-theme to-amber-600 mx-auto mb-6"></div>
             <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
               We combine traditional craftsmanship with modern technology to deliver exceptional 
               stone work that stands the test of time and exceeds expectations.
@@ -143,20 +143,20 @@ const WhyChooseUs = () => {
             {features.map((feature, index) => (
               <div
                 key={feature.id}
-                className="group relative bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 p-8 border border-gray-100 hover:border-amber-200"
+                className="group relative bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 p-8 border border-gray-100 hover:border-theme"
               >
                 {/* Feature Number */}
-                <div className="absolute -top-4 -left-4 w-8 h-8 bg-amber-500 text-white rounded-full flex items-center justify-center text-sm font-bold">
+                <div className="absolute -top-4 -left-4 w-8 h-8 bg-theme text-white rounded-full flex items-center justify-center text-sm font-bold">
                   0{index + 1}
                 </div>
                 
                 {/* Icon Container */}
-                <div className="w-16 h-16 bg-gradient-to-br from-amber-50 to-amber-100 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 text-amber-600">
+                <div className="w-16 h-16 bg-gradient-to-br from-amber-50 to-amber-100 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 text-theme">
                   {feature.icon}
                 </div>
                 
                 {/* Content */}
-                <h3 className="text-xl font-semibold text-gray-800 mb-4 group-hover:text-amber-700 transition-colors duration-300">
+                <h3 className="text-xl font-semibold text-gray-800 mb-4 group-hover:text-theme transition-colors duration-300">
                   {feature.title}
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
@@ -164,7 +164,7 @@ const WhyChooseUs = () => {
                 </p>
                 
                 {/* Hover Border Effect */}
-                <div className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-amber-400 to-amber-600 group-hover:w-full transition-all duration-500"></div>
+                <div className="absolute bottom-0 left-1 w-0 h-1 bg-gradient-to-r from-theme to-amber-600 group-hover:w-full transition-all duration-500"></div>
               </div>
             ))}
           </div>
@@ -180,7 +180,7 @@ const WhyChooseUs = () => {
               </p>
               <button 
                 onClick={handleButtonClick}
-                className="bg-gradient-to-r from-amber-500 to-amber-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-amber-600 hover:to-amber-700 transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl flex items-center justify-center gap-2 mx-auto"
+                className="bg-theme text-white px-8 py-3 rounded-lg font-semibold hover:bg-hover-theme transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl flex items-center justify-center gap-2 mx-auto hover:cursor-pointer"
               >
                 Get Free Consultation
                 <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-300" />
@@ -226,13 +226,13 @@ const WhyChooseUs = () => {
                     onFocus={() => handleFocus('fullName')}
                     onBlur={() => handleBlur('fullName')}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-theme focus:border-transparent transition-all"
                   />
                   <label 
                     htmlFor="fullName"
                     className={`absolute left-4 transition-all duration-200 pointer-events-none ${
                       formData.fullName || focusedFields.fullName
-                        ? 'top-0 text-xs bg-white px-2 text-amber-600 -translate-y-1/2'
+                        ? 'top-0 text-xs bg-white px-2 text-theme -translate-y-1/2'
                         : 'top-3 text-gray-500'
                     }`}
                   >
@@ -251,13 +251,13 @@ const WhyChooseUs = () => {
                     onFocus={() => handleFocus('email')}
                     onBlur={() => handleBlur('email')}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-theme focus:border-transparent transition-all"
                   />
                   <label 
                     htmlFor="email"
                     className={`absolute left-4 transition-all duration-200 pointer-events-none ${
                       formData.email || focusedFields.email
-                        ? 'top-0 text-xs bg-white px-2 text-amber-600 -translate-y-1/2'
+                        ? 'top-0 text-xs bg-white px-2 text-theme -translate-y-1/2'
                         : 'top-3 text-gray-500'
                     }`}
                   >
@@ -267,7 +267,7 @@ const WhyChooseUs = () => {
 
                 {/* Phone */}
                 <div className="relative">
-                  <div className="flex border border-gray-300 rounded-lg focus-within:ring-2 focus-within:ring-amber-500 focus-within:border-transparent transition-all">
+                  <div className="flex border border-gray-300 rounded-lg focus-within:ring-2 focus-within:ring-theme focus-within:border-transparent transition-all">
                     <span className="px-4 py-3 bg-gray-50 border-r border-gray-300 text-gray-700">
                       +91
                     </span>
@@ -296,13 +296,13 @@ const WhyChooseUs = () => {
                     onFocus={() => handleFocus('city')}
                     onBlur={() => handleBlur('city')}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-theme focus:border-transparent transition-all"
                   />
                   <label 
                     htmlFor="city"
                     className={`absolute left-4 transition-all duration-200 pointer-events-none ${
                       formData.city || focusedFields.city
-                        ? 'top-0 text-xs bg-white px-2 text-amber-600 -translate-y-1/2'
+                        ? 'top-0 text-xs bg-white px-2 text-theme -translate-y-1/2'
                         : 'top-3 text-gray-500'
                     }`}
                   >
@@ -323,7 +323,7 @@ const WhyChooseUs = () => {
                       value="homeowner"
                       checked={formData.userType === 'homeowner'}
                       onChange={handleInputChange}
-                      className="mt-1 text-amber-500 focus:ring-amber-500"
+                      className="mt-1 text-theme focus:ring-theme"
                     />
                     <span className="text-sm text-gray-700">
                       I am a homeowner looking for stone work solutions
@@ -337,7 +337,7 @@ const WhyChooseUs = () => {
                       value="designer"
                       checked={formData.userType === 'designer'}
                       onChange={handleInputChange}
-                      className="mt-1 text-amber-500 focus:ring-amber-500"
+                      className="mt-1 text-theme focus:ring-theme"
                     />
                     <span className="text-sm text-gray-700">
                       I am an interior designer/consultant seeking solutions for my client
@@ -348,7 +348,7 @@ const WhyChooseUs = () => {
                 {/* Submit Button */}
                 <button 
                   type="submit"
-                  className="w-full bg-gradient-to-r from-amber-500 to-amber-600 text-white py-3 px-6 rounded-lg font-semibold hover:from-amber-600 hover:to-amber-700 transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl"
+                  className="w-full bg-theme text-white py-3 px-6 rounded-lg font-semibold hover:bg-hover-theme transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl"
                 >
                   Get Free Consultation
                 </button>

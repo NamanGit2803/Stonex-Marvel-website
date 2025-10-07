@@ -48,9 +48,9 @@ const ServicesSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-light mb-6">
-            Our <span className="font-semibold text-amber-600">Comprehensive</span> Services
+            Our <span className="font-semibold text-theme">Comprehensive</span> Services
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-theme to-amber-600 mx-auto mb-6"></div>
           <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
             From initial concept to final installation, we provide end-to-end solutions 
             that ensure exceptional quality and complete satisfaction.
@@ -65,7 +65,7 @@ const ServicesSection = () => {
               className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 p-8 border border-gray-100 hover:border-amber-200"
             >
               {/* Service Number */}
-              <div className="absolute -top-4 -left-4 w-8 h-8 bg-amber-500 text-white rounded-full flex items-center justify-center text-sm font-bold">
+              <div className="absolute -top-4 -left-4 w-8 h-8 bg-theme text-white rounded-full flex items-center justify-center text-sm font-bold">
                 0{index + 1}
               </div>
               
@@ -79,7 +79,7 @@ const ServicesSection = () => {
               </div>
               
               {/* Content */}
-              <h3 className="text-xl font-semibold text-gray-800 mb-4 text-center group-hover:text-amber-700 transition-colors duration-300">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4 text-center group-hover:text-hover-theme transition-colors duration-300">
                 {service.title}
               </h3>
               <p className="text-gray-600 leading-relaxed text-center">
@@ -87,7 +87,7 @@ const ServicesSection = () => {
               </p>
               
               {/* Hover Border Effect */}
-              <div className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-amber-400 to-amber-600 group-hover:w-full transition-all duration-500"></div>
+              <div className="absolute bottom-0 left-1 w-0 h-1 bg-gradient-to-r from-theme to-amber-600 group-hover:w-full transition-all duration-500"></div>
             </div>
           ))}
         </div>
@@ -97,7 +97,7 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <div
               key={service.id}
-              className="group relative bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-500 p-6 border border-gray-100 hover:border-amber-200"
+              className="group relative bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-500 p-6 border border-gray-100 hover:border-theme"
             >
               <div className="flex items-start space-x-4">
                 <div className="w-16 h-16 bg-gradient-to-br from-amber-50 to-amber-100 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 flex-shrink-0">
@@ -108,10 +108,10 @@ const ServicesSection = () => {
                   />
                 </div>
                 <div className="flex-1">
-                  <div className="w-6 h-6 bg-amber-500 text-white rounded-full flex items-center justify-center text-xs font-bold mb-2">
+                  <div className="w-6 h-6 bg-theme text-white rounded-full flex items-center justify-center text-xs font-bold mb-2">
                     {index + 1}
                   </div>
-                  <h3 className="text-lg font-semibold text-gray-800 mb-2 group-hover:text-amber-700 transition-colors duration-300">
+                  <h3 className="text-lg font-semibold text-gray-800 mb-2 group-hover:text-theme transition-colors duration-300">
                     {service.title}
                   </h3>
                   <p className="text-gray-600 text-sm leading-relaxed">
@@ -140,7 +140,7 @@ const ServicesSection = () => {
                     />
                   </div>
                   <div className="flex-1">
-                    <div className="w-6 h-6 bg-amber-500 text-white rounded-full flex items-center justify-center text-xs font-bold">
+                    <div className="w-6 h-6 bg-theme text-white rounded-full flex items-center justify-center text-xs font-bold">
                       {index + 1}
                     </div>
                   </div>

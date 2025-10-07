@@ -144,7 +144,7 @@ const projectCategories = [
         id: 'Sculptures',
         name: 'Sculptures',
         bannerImage: '/HDimg2.jpg',
-        displayName: 'Sculptures PROJECTS',
+        displayName: 'SCULPTURES PROJECTS',
         description: 'Carving stories into stone for generations',
         projects: [
             {
