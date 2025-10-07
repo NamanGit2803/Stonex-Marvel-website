@@ -1,7 +1,7 @@
 import React from 'react';
 
 const DreamTemplesSection = () => {
-  const baseUrl = "https://www.tilakstonearts.com";
+  const baseUrl = "https://www.indianstonex.com";
   
   return (
     <section className="py-16">
@@ -14,7 +14,7 @@ const DreamTemplesSection = () => {
               Dream Temples Built Upon Faith, Crafted with Devotion
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              For over 25 years, Tilak Stone Arts India has been dedicated to crafting exquisite Communal temples, Pooja Rooms, and Home temples that embody faith and devotion across the globe. Our legacy is built on principles of trust and artistry, with skilled artisans meticulously creating each piece to reflect our rich cultural heritage. Using high-quality Vietnam marble, we ensure that every temple is a unique masterpiece, seamlessly blending traditional craftsmanship with contemporary aesthetics. Our commitment to excellence and our clients' trust have been the cornerstones of our success, allowing us to create sacred spaces that inspire and nurture devotion.
+              For over 25 years, Indian Stonex Stone Arts India has been dedicated to crafting exquisite Communal temples, Pooja Rooms, and Home temples that embody faith and devotion across the globe. Our legacy is built on principles of trust and artistry, with skilled artisans meticulously creating each piece to reflect our rich cultural heritage. Using high-quality Vietnam marble, we ensure that every temple is a unique masterpiece, seamlessly blending traditional craftsmanship with contemporary aesthetics. Our commitment to excellence and our clients' trust have been the cornerstones of our success, allowing us to create sacred spaces that inspire and nurture devotion.
             </p>
           </div>
           

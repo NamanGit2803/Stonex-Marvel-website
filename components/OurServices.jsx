@@ -1,30 +1,70 @@
 import React from 'react'
 
 const services = [
-    {name: 'Wall Cladding', src: 'https://www.tilakstonearts.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ficon1.53e2c26d.png&w=1920&q=75'},
-    {name: 'Floor Inlay', src: 'https://www.tilakstonearts.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ficon6.b8508dfc.png&w=1920&q=75'},
-    {name: 'Virtual Tour', src: 'https://www.tilakstonearts.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ficon3.7b73a018.png&w=1920&q=75'},
-    {name: 'Custom Design', src: 'https://www.tilakstonearts.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ficon2.70a949d6.png&w=1920&q=75'},
-    {name: '3D visualisation', src: 'https://www.tilakstonearts.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ficon4.c225f555.png&w=1920&q=75'},
-    {name: 'Project Tracking', src: 'https://www.tilakstonearts.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ficon5.207ee35b.png&w=1920&q=75'},
+  {
+    name: 'Marble Temple Design',
+    src: 'https://images.unsplash.com/photo-1609250291996-7a1a2a08d425?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    name: 'Home Mandir Installation',
+    src: 'https://images.unsplash.com/photo-1629456229192-5e39d4c62d89?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    name: '3D Visualization & Planning',
+    src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    name: 'Customized Carving Work',
+    src: 'https://images.unsplash.com/photo-1606813909021-bb62a5c7c1e1?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    name: 'Vastu-Aligned Layouts',
+    src: 'https://images.unsplash.com/photo-1590595906938-53b7c00361a3?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    name: 'On-Site Project Support',
+    src: 'https://images.unsplash.com/photo-1581091870622-3ca5d5f99c3c?auto=format&fit=crop&w=800&q=80',
+  },
 ]
 
 const OurServices = () => {
   return (
-    <div className='p-10 flex flex-col gap-12 justify-center items-center'>
-        <div className='flex justify-center items-center'>
-            <h2 className='text-2xl font-[500] tracking-[.1875rem]'>We offer Unparalleled Services</h2>
-        </div>
+    <div className="py-16 px-6 flex flex-col gap-12 justify-center items-center bg-white">
+      
+      {/* Title Section */}
+      <div className="text-center max-w-2xl">
+        <h2 className="text-3xl md:text-4xl font-semibold tracking-wide text-[#ff7e2e]">
+          Our Specialized Marble Services
+        </h2>
+        <div className="mt-3 w-20 h-1 bg-[#ff7e2e] mx-auto rounded-full"></div>
+        <p className="mt-4 text-gray-600 text-sm md:text-base leading-relaxed">
+          From elegant marble temples to custom carvings, we bring divine artistry 
+          to life — combining modern design tools with traditional craftsmanship.
+        </p>
+      </div>
 
-        <div className='w-[90%]'>
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
-                {services.map(val=>(<div key={val.src} className='border rounded-md flex justify-between items-center flex-col p-8'>
-                    <img className='h-28' src={val.src} alt="img" />
-                    <div>{val.name}</div>
-                </div>))}
+      {/* Services Grid */}
+      <div className="w-full max-w-6xl">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          {services.map((val) => (
+            <div
+              key={val.name}
+              className="border border-[#ff7e2e]/40 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 hover:border-[#ff7e2e] hover:scale-105 bg-white"
+            >
+              <img
+                className="h-48 w-full object-cover"
+                src={val.src}
+                alt={val.name}
+              />
+              <div className="p-6 text-center">
+                <div className="text-lg font-medium text-gray-800 hover:text-[#ff7e2e] transition-colors">
+                  {val.name}
+                </div>
+              </div>
             </div>
+          ))}
         </div>
-
+      </div>
     </div>
   )
 }

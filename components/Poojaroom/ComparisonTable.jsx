@@ -70,7 +70,7 @@ const ComparisonTable = () => {
                       <div className="text-base font-semibold">Feature</div>
                     </th>
                     <th className="p-4 text-left bg-black text-white border border-dashed border-gray-600 w-[200px] max-w-[200px]">
-                      <div className="text-base font-semibold">Tilak Stone Arts India</div>
+                      <div className="text-base font-semibold">Indian Stonex Stone Arts India</div>
                     </th>
                     <th className="p-4 text-left bg-transparent border border-dashed border-gray-600 w-[200px] max-w-[200px]">
                       <div className="text-base font-semibold">Local Vendors</div>

@@ -28,20 +28,21 @@ const Footer = () => {
                             <div className="text-sm leading-relaxed text-gray-300 font-light tracking-wide">
                                 <p className="font-normal mb-2 tracking-wider">Address:</p>
                                 <p>
-                                    First & Second Floor, Indian StonexIndia, Mall 21, Mirza Ismail Road, Opposite Rajmandir Cinema, 5 Batti, C
-                                    Scheme, Jaipur, Rajasthan 302001
+                                    In Front of Post Office, Near Truck Union, Vasundhara Nagar, Manglana Road, Makrana Rajasthan India
                                 </p>
+                                <p>Pin: 341505</p>
                             </div>
 
                             <div className="flex flex-col gap-2 text-sm text-gray-300 font-light tracking-wide">
                                 <a href="tel:+919319374633" className=" transition-colors flex items-center gap-2">
                                     <span className="font-normal  tracking-wider">Call:</span> +91  7014116801
+                                    
                                 </a>
                                 <a
-                                    href="mailto:info@tilakstonearts.com"
+                                    href="mailto:info@indianstonex.com"
                                     className=" transition-colors flex items-center gap-2"
                                 >
-                                    <span className="font-normal  tracking-wider">Email:</span> info@tilakstonearts.com
+                                    <span className="font-normal  tracking-wider">Email:</span> info@indianstonex.com
                                 </a>
                             </div>
                         </div>

@@ -40,7 +40,7 @@ const ServicesSection = () => {
     }
   ];
 
-  const baseUrl = "https://www.tilakstonearts.com";
+  const baseUrl = "https://www.indianstonex.com";
 
   return (
     <section className="py-20 bg-gradient-to-b from-white to-gray-50">

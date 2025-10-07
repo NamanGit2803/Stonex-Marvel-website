@@ -8,7 +8,7 @@ export default function ImageTextSection() {
             <div 
               className="bg-cover bg-center w-full h-64 md:h-96 mx-auto"
               style={{ 
-                backgroundImage: "url(https://www.tilakstonearts.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Faboutimgtsa.5e3fe6ea.webp&w=3840&q=75)",
+                backgroundImage: "url(https://www.indianstonex.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Faboutimgtsa.5e3fe6ea.webp&w=3840&q=75)",
                 maxWidth: '500px'
               }}
             ></div>

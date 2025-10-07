@@ -25,7 +25,7 @@ export default function HelpSection() {
           {/* Image as background - appears second on mobile */}
           <div className="w-full lg:w-1/2 relative aspect-video lg:aspect-auto"
                style={{ 
-                 backgroundImage: "url(https://www.tilakstonearts.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage1.84c47ee9.gif&w=3840&q=75)",
+                 backgroundImage: "url(https://www.indianstonex.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage1.84c47ee9.gif&w=3840&q=75)",
                  backgroundSize: 'cover',
                  backgroundPosition: 'center',
                  minHeight: '400px'

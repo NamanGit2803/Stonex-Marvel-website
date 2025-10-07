@@ -2,32 +2,32 @@ export default function ScopeOfWorkSection() {
   const workItems = [
     {
       id: 1,
-      image: "https://www.tilakstonearts.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F2ddesign.3c9fbd14.png&w=3840&q=75",
+      image: "https://www.indianstonex.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F2ddesign.3c9fbd14.png&w=3840&q=75",
       title: "2D Design Conceptualisation"
     },
     {
       id: 2,
-      image: "https://www.tilakstonearts.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F3dvirtual.a42b9bb3.png&w=3840&q=75",
+      image: "https://www.indianstonex.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F3dvirtual.a42b9bb3.png&w=3840&q=75",
       title: "3D Virtual Experience"
     },
     {
       id: 3,
-      image: "https://www.tilakstonearts.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FsiteMeasurements.c81e3184.png&w=3840&q=75",
+      image: "https://www.indianstonex.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FsiteMeasurements.c81e3184.png&w=3840&q=75",
       title: "Site Measurements"
     },
     {
       id: 4,
-      image: "https://www.tilakstonearts.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FSiteSupervison.96f4ded3.png&w=3840&q=75",
+      image: "https://www.indianstonex.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FSiteSupervison.96f4ded3.png&w=3840&q=75",
       title: "Site Supervison"
     },
     {
       id: 5,
-      image: "https://www.tilakstonearts.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FProjectManagement.07fb22b6.png&w=3840&q=75",
+      image: "https://www.indianstonex.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FProjectManagement.07fb22b6.png&w=3840&q=75",
       title: "Project Management"
     },
     {
       id: 6,
-      image: "https://www.tilakstonearts.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FLogisticsInstalltaion.e24b3cae.png&w=3840&q=75",
+      image: "https://www.indianstonex.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FLogisticsInstalltaion.e24b3cae.png&w=3840&q=75",
       title: "Logistics & Installation"
     }
   ];

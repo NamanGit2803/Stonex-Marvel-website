@@ -6,7 +6,7 @@ export default function CollaborateSection() {
         <div className="flex justify-center">
           <div className="w-full text-center">
             <h2 className="text-3xl md:text-4xl font-semibold mb-8">
-              Why Collaborate with Tilak Stone Arts India?
+              Why Collaborate with Indian Stonex Stone Arts India?
             </h2>
           </div>
         </div>
@@ -15,7 +15,7 @@ export default function CollaborateSection() {
         <div className="flex flex-col lg:flex-row items-center mb-16">
           <div className="w-full lg:w-1/2 aspect-video lg:aspect-auto bg-cover bg-center mb-6 lg:mb-0"
                style={{ 
-                 backgroundImage: "url(https://www.tilakstonearts.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbottom_img.1baa6cfc.webp&w=3840&q=75)",
+                 backgroundImage: "url(https://www.indianstonex.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbottom_img.1baa6cfc.webp&w=3840&q=75)",
                  minHeight: '400px'
                }}>
           </div>
@@ -23,7 +23,7 @@ export default function CollaborateSection() {
             <div className="text-content text-center lg:text-left">
               <h3 className="text-2xl md:text-3xl font-semibold mb-4">Integrated Solutions for Pooja Rooms</h3>
               <p className="text-lg">
-                At Tilak Stone Arts India, we provide complete solutions for creating divine pooja spaces. From designing stunning temples to crafting intricate murtis, we are your one-stop destination for heavenly pooja rooms. Our experienced team will collaborate with you to create both 2D and 3D layouts for your clients' pooja rooms, ensuring every detail is flawless. From the flooring and walls to the temple, murtis, and everything in between, we manage the entire process in-house—from concept to production—and offer professional installation services to bring your vision to life.
+                At Indian Stonex Stone Arts India, we provide complete solutions for creating divine pooja spaces. From designing stunning temples to crafting intricate murtis, we are your one-stop destination for heavenly pooja rooms. Our experienced team will collaborate with you to create both 2D and 3D layouts for your clients' pooja rooms, ensuring every detail is flawless. From the flooring and walls to the temple, murtis, and everything in between, we manage the entire process in-house—from concept to production—and offer professional installation services to bring your vision to life.
               </p>
             </div>
           </div>
@@ -41,7 +41,7 @@ export default function CollaborateSection() {
           </div>
           <div className="w-full lg:w-1/2 order-1 lg:order-2 aspect-video lg:aspect-auto bg-cover bg-center mb-6 lg:mb-0 lg:pl-12"
                style={{ 
-                 backgroundImage: "url(https://www.tilakstonearts.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcenterimg2.f237b182.webp&w=3840&q=75)",
+                 backgroundImage: "url(https://www.indianstonex.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcenterimg2.f237b182.webp&w=3840&q=75)",
                  minHeight: '400px'
                }}>
           </div>
@@ -51,7 +51,7 @@ export default function CollaborateSection() {
         <div className="flex flex-col lg:flex-row items-center mb-16">
           <div className="w-full lg:w-1/2 aspect-video lg:aspect-auto bg-cover bg-center mb-6 lg:mb-0"
                style={{ 
-                 backgroundImage: "url(https://www.tilakstonearts.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhowitwork_bannerimg.a2b3295a.webp&w=3840&q=75)",
+                 backgroundImage: "url(https://www.indianstonex.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhowitwork_bannerimg.a2b3295a.webp&w=3840&q=75)",
                  minHeight: '400px'
                }}>
           </div>
@@ -77,7 +77,7 @@ export default function CollaborateSection() {
           </div>
           <div className="w-full lg:w-1/2 order-1 lg:order-2 aspect-video lg:aspect-auto bg-cover bg-center mb-6 lg:mb-0 lg:pl-12"
                style={{ 
-                 backgroundImage: "url(https://www.tilakstonearts.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Faboutimg.74a3ccde.webp&w=3840&q=75)",
+                 backgroundImage: "url(https://www.indianstonex.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Faboutimg.74a3ccde.webp&w=3840&q=75)",
                  minHeight: '400px'
                }}>
           </div>

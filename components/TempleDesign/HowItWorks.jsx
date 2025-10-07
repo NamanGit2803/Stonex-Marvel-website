@@ -1,7 +1,7 @@
 import React from 'react';
 
 const HowItWorks = () => {
-  const baseUrl = "https://www.tilakstonearts.com";
+  const baseUrl = "https://www.indianstonex.com";
   
   const steps = [
     {

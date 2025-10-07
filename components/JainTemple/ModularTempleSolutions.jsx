@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ModularTempleSolutions = () => {
-  const baseUrl = "https://www.tilakstonearts.com";
+  const baseUrl = "https://www.indianStonex.com";
   
   const solutions = [
     {

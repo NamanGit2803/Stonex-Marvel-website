@@ -91,7 +91,7 @@ const Hero = () => {
             animate="visible"
             variants={textVariants}
           >
-            Creating Sacred Spaces<br />For Generations
+            Where Marble Meets <br />the Divine
           </motion.h1>
 
           {/* Mobile-only button */}
@@ -122,7 +122,9 @@ const Hero = () => {
             </button>
 
             <h2>Talk to Our Expert</h2>
-
+  <div className="text-sm font-bold text-gray-800 hover:text-gray-900 text-center">
+              Contact Us : <span >+91  7014116801</span>
+            </div>
             <form onSubmit={handleSubmit}>
               <div className={styles.formGroup}>
                 <div className={styles.inputContainer}>

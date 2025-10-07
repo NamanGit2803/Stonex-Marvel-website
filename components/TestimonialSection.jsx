@@ -7,7 +7,7 @@ const testimonials = [
         name: "Sonal Jaiswal",
         location: "Jaipur",
         message:
-            "I’m so glad we came across Tilak Stone Arts. This temple has truly become the soul of our home.",
+            "I’m so glad we came across Indian Stonex Stone Arts. This temple has truly become the soul of our home.",
         image:
             "/project1.jpg",
     },
