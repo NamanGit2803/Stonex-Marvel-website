@@ -8,17 +8,43 @@ export default function AboutUs() {
   const [showAll, setShowAll] = useState(false) // show more toggle
 
   // ------------------- GALLERY IMAGES -------------------
-  const images = [
-    { src: "/img4.png", alt: "Intricate white marble temple carving detail" },
-    { src: "/img5.png", alt: "Marble mandir with arches" },
-    { src: "/project1.jpg", alt: "Handcrafted stone sculpture" },
-    { src: "/project2.jpg", alt: "Custom stonework pillar" },
-    { src: "/project3.jpg", alt: "Marble inlay floral pattern" },
-    { src: "/project4.jpg", alt: "Temple entrance stone craft" },
-    { src: "/gallery7.png", alt: "Temple entrance stone craft" },
-    { src: "/gallery8.jpg", alt: "Temple entrance stone craft" },
-    { src: "/gallery9.jpg", alt: "Temple entrance stone craft" },
-  ]
+ const images = [
+  { src: "/gallery1.jpg", alt: "Intricate white marble temple carving detail" },
+  { src: "/gallery2.jpg", alt: "Marble mandir with arches" },
+  { src: "/gallery3.jpg", alt: "Handcrafted stone sculpture" },
+  { src: "/gallery4.jpg", alt: "Custom stonework pillar" },
+  { src: "/gallery5.jpg", alt: "Marble inlay floral pattern" },
+  { src: "/gallery6.jpg", alt: "Temple entrance stone craft" },
+  { src: "/gallery7.jpg", alt: "Traditional marble temple interior" },
+  { src: "/gallery8.jpg", alt: "Detailed marble ceiling design" },
+  { src: "/gallery9.jpg", alt: "Beautiful marble wall carving" },
+  { src: "/gallery10.jpg", alt: "Grand marble temple entrance" },
+  { src: "/gallery11.jpg", alt: "Decorative marble jali work" },
+  { src: "/gallery12.jpg", alt: "Stone idols carved with precision" },
+  { src: "/gallery13.jpg", alt: "Marble steps and flooring pattern" },
+  { src: "/gallery14.jpg", alt: "Temple dome made of pure marble" },
+  { src: "/gallery15.jpg", alt: "Elegant marble pillars with carving" },
+  { src: "/gallery16.jpg", alt: "Modern marble wall installation" },
+  { src: "/gallery17.jpg", alt: "Traditional marble pooja room setup" },
+  { src: "/gallery18.jpg", alt: "White marble temple craftsmanship" },
+  { src: "/gallery19.jpg", alt: "Detailed sculpture of deity in marble" },
+  { src: "/gallery20.jpg", alt: "Ornamental marble arch design" },
+  { src: "/gallery21.jpg", alt: "Custom-designed marble mandir" },
+  { src: "/gallery22.jpg", alt: "Polished marble surface detail" },
+  { src: "/gallery23.jpg", alt: "Intricate temple facade in stone" },
+  { src: "/gallery24.jpg", alt: "Decorative marble panel work" },
+  { src: "/gallery25.jpg", alt: "Carved marble backdrop design" },
+  { src: "/gallery26.jpg", alt: "Luxurious marble pooja mandir" },
+  { src: "/gallery27.jpg", alt: "Stone and marble pillar pattern" },
+  { src: "/gallery28.jpg", alt: "Temple carving under natural light" },
+  { src: "/gallery29.jpg", alt: "Traditional stone temple courtyard" },
+  { src: "/gallery30.jpg", alt: "Temple statue carved from marble" },
+  { src: "/gallery31.jpg", alt: "Decorative marble tiling work" },
+  { src: "/gallery32.jpg", alt: "Beautiful handcrafted marble facade" },
+  { src: "/gallery33.jpg", alt: "Divine white marble temple sculpture" },
+  { src: "/gallery34.jpg", alt: "Custom marble temple craftsmanship" },
+]
+
 
   // ------------------- FADE-IN ANIMATION -------------------
   useEffect(() => {

@@ -80,32 +80,169 @@ const projectCategories = [
         bannerImage: '/img4.png',
         displayName: 'Luxury Living Projects',
         description: 'Beautiful living spaces designed for comfort and elegance',
-        projects: [
-            {
-                id: 1,
-                title: 'Luxury Villa Home Temple',
-                address: '67, Marine Drive, Mumbai, Maharashtra 400020',
-                architect: 'Neha Patel',
-                duration: '3 Months',
-                image: '/img12.jpg'
-            },
-            {
-                id: 2,
-                title: 'Modern Apartment Temple',
-                address: '23, Golf Course Road, Gurgaon, Haryana 122002',
-                architect: 'Rahul Verma',
-                duration: '2 Months',
-                image: '/project2.jpg'
-            },
-            {
-                id: 3,
-                title: 'Garden Temple Pavilion',
-                address: '45, Green Valley, Pune, Maharashtra 411001',
-                architect: 'Sanjay Mehta',
-                duration: '4 Months',
-                image: '/project3.jpg'
-            }
-        ]
+    projects: [
+  {
+    id: 1,
+    title: 'Luxury Villa Home Temple',
+    address: '67, Marine Drive, Mumbai, Maharashtra 400020',
+    architect: 'Neha Patel',
+    duration: '3 Months',
+    image: '/gallery10.jpg'
+  },
+  {
+    id: 2,
+    title: 'Modern Apartment Temple',
+    address: '23, Golf Course Road, Gurgaon, Haryana 122002',
+    architect: 'Rahul Verma',
+    duration: '2 Months',
+    image: '/gallery11.jpg'
+  },
+  {
+    id: 3,
+    title: 'Garden Temple Pavilion',
+    address: '45, Green Valley, Pune, Maharashtra 411001',
+    architect: 'Sanjay Mehta',
+    duration: '4 Months',
+    image: '/gallery12.jpg'
+  },
+  {
+    id: 4,
+    title: 'Contemporary Marble Pooja Room',
+    address: '12, C Scheme, Jaipur, Rajasthan 302001',
+    architect: 'Priya Sharma',
+    duration: '2.5 Months',
+    image: '/gallery13.jpg'
+  },
+  {
+    id: 5,
+    title: 'Grand Bungalow Temple Design',
+    address: '88, Banjara Hills, Hyderabad, Telangana 500034',
+    architect: 'Vivek Rao',
+    duration: '3.5 Months',
+    image: '/gallery14.jpg'
+  },
+  {
+    id: 6,
+    title: 'Traditional Home Mandir',
+    address: '14, Ashok Nagar, Chennai, Tamil Nadu 600083',
+    architect: 'Meera Iyer',
+    duration: '2 Months',
+    image: '/gallery15.jpg'
+  },
+  {
+    id: 7,
+    title: 'Rooftop Temple Installation',
+    address: '9, Alkapuri, Vadodara, Gujarat 390007',
+    architect: 'Harshad Desai',
+    duration: '3 Months',
+    image: '/gallery16.jpg'
+  },
+  {
+    id: 8,
+    title: 'Luxury Farmhouse Mandir',
+    address: '51, Vasant Vihar, New Delhi 110057',
+    architect: 'Sneha Kapoor',
+    duration: '4.5 Months',
+    image: '/gallery17.jpg'
+  },
+  {
+    id: 9,
+    title: 'Temple with Marble Inlay Work',
+    address: '33, Civil Lines, Kanpur, Uttar Pradesh 208001',
+    architect: 'Rohit Sinha',
+    duration: '3 Months',
+    image: '/gallery18.jpg'
+  },
+  {
+    id: 10,
+    title: 'Minimalist Marble Temple',
+    address: '76, Salt Lake, Kolkata, West Bengal 700091',
+    architect: 'Isha Banerjee',
+    duration: '2.5 Months',
+    image: '/gallery19.jpg'
+  },
+  {
+    id: 11,
+    title: 'Grand Heritage Temple',
+    address: '21, Fatehpura, Udaipur, Rajasthan 313001',
+    architect: 'Kunal Joshi',
+    duration: '5 Months',
+    image: '/gallery20.jpg'
+  },
+  {
+    id: 12,
+    title: 'Classic White Marble Mandir',
+    address: '18, Sector 17, Chandigarh 160017',
+    architect: 'Nisha Gupta',
+    duration: '3 Months',
+    image: '/gallery21.jpg'
+  },
+  {
+    id: 13,
+    title: 'Courtyard Marble Temple',
+    address: '102, BTM Layout, Bengaluru, Karnataka 560076',
+    architect: 'Amit Nair',
+    duration: '3.5 Months',
+    image: '/gallery22.jpg'
+  },
+  {
+    id: 14,
+    title: 'Royal Style Temple Room',
+    address: '5, Lalbagh Road, Lucknow, Uttar Pradesh 226001',
+    architect: 'Pooja Singh',
+    duration: '4 Months',
+    image: '/gallery23.jpg'
+  },
+  {
+    id: 15,
+    title: 'Custom Marble Sculpture Temple',
+    address: '29, Race Course Road, Coimbatore, Tamil Nadu 641018',
+    architect: 'Manoj Kumar',
+    duration: '2.5 Months',
+    image: '/gallery24.jpg'
+  },
+  {
+    id: 16,
+    title: 'Elegant Apartment Mandir',
+    address: '56, Koregaon Park, Pune, Maharashtra 411001',
+    architect: 'Shruti Deshmukh',
+    duration: '3 Months',
+    image: '/gallery25.jpg'
+  },
+  {
+    id: 17,
+    title: 'Marble Wall Art Temple',
+    address: '40, Navrangpura, Ahmedabad, Gujarat 380009',
+    architect: 'Jay Mehta',
+    duration: '2 Months',
+    image: '/gallery26.jpg'
+  },
+  {
+    id: 18,
+    title: 'Compact Home Pooja Room',
+    address: '22, Indiranagar, Bengaluru, Karnataka 560038',
+    architect: 'Anita Reddy',
+    duration: '1.5 Months',
+    image: '/gallery27.jpg'
+  },
+  {
+    id: 19,
+    title: 'Designer Duplex Temple',
+    address: '7, Jubilee Hills, Hyderabad, Telangana 500033',
+    architect: 'Ritesh Patel',
+    duration: '3.5 Months',
+    image: '/gallery28.jpg'
+  },
+  {
+    id: 20,
+    title: 'Temple with Lotus Ceiling Design',
+    address: '16, Mansarovar, Jaipur, Rajasthan 302020',
+    architect: 'Divya Agarwal',
+    duration: '4 Months',
+    image: '/gallery29.jpg'
+  }
+]
+
     },
     {
         id: 'Overseas',
@@ -113,32 +250,113 @@ const projectCategories = [
         bannerImage: '/home-decor.jpg',
         displayName: 'Overseas Projects',
         description: 'Global architectural excellence across continents',
-        projects: [
-            {
-                id: 1,
-                title: 'Jain Temple Complex',
-                address: 'Dubai Marina, Dubai, UAE',
-                architect: 'International Design Team',
-                duration: '8 Months',
-                image: '/img10.jpg'
-            },
-            {
-                id: 2,
-                title: 'Cultural Center Temple',
-                address: 'Diplomatic Area, London, UK',
-                architect: 'Global Architects Inc.',
-                duration: '1 Months',
-                image: '/murti1.jpg'
-            },
-            {
-                id: 3,
-                title: 'Peace Temple',
-                address: 'Orchard Road, Singapore',
-                architect: 'Oceanview Designs',
-                duration: '3 Months',
-                image: '/project5.jpg'
-            }
-        ]
+      projects: [
+  {
+    id: 1,
+    title: 'Shree Krishna Temple',
+    address: 'Thamel, Kathmandu, Nepal',
+    architect: 'Nepal Heritage Designs',
+    duration: '5 Months',
+    image: '/gallery21.jpg'
+  },
+  {
+    id: 2,
+    title: 'Peaceful Meditation Mandir',
+    address: 'Colombo 07, Sri Lanka',
+    architect: 'Island Architects Studio',
+    duration: '4 Months',
+    image: '/gallery22.jpg'
+  },
+  {
+    id: 3,
+    title: 'Lotus Temple Pavilion',
+    address: 'Muscat Hills, Muscat, Oman',
+    architect: 'Gulf Stoneworks',
+    duration: '6 Months',
+    image: '/gallery23.jpg'
+  },
+  {
+    id: 4,
+    title: 'Harmony Marble Shrine',
+    address: 'Doha Corniche, Doha, Qatar',
+    architect: 'Qatar Design Collective',
+    duration: '5 Months',
+    image: '/gallery24.jpg'
+  },
+  {
+    id: 5,
+    title: 'Divine Heritage Temple',
+    address: 'Downtown, Dubai, UAE',
+    architect: 'Emirates Art & Design',
+    duration: '7 Months',
+    image: '/gallery25.jpg'
+  },
+  {
+    id: 6,
+    title: 'Marble Meditation Hall',
+    address: 'Kuwait City, Kuwait',
+    architect: 'Arabian Craft Studios',
+    duration: '6 Months',
+    image: '/gallery26.jpg'
+  },
+  {
+    id: 7,
+    title: 'Global Peace Center',
+    address: 'New York City, USA',
+    architect: 'Harmony Architecture Group',
+    duration: '8 Months',
+    image: '/gallery27.jpg'
+  },
+  {
+    id: 8,
+    title: 'Lotus Spiritual Hall',
+    address: 'Los Angeles, California, USA',
+    architect: 'Pacific Design Works',
+    duration: '7 Months',
+    image: '/gallery28.jpg'
+  },
+  {
+    id: 9,
+    title: 'Divine Retreat Temple',
+    address: 'Toronto, Ontario, Canada',
+    architect: 'Northern Stone Arts',
+    duration: '6 Months',
+    image: '/gallery29.jpg'
+  },
+  {
+    id: 10,
+    title: 'Temple of Serenity',
+    address: 'Zurich, Switzerland',
+    architect: 'European Marble Creations',
+    duration: '7 Months',
+    image: '/gallery30.jpg'
+  },
+  {
+    id: 11,
+    title: 'Spiritual Center of Harmony',
+    address: 'Paris, France',
+    architect: 'Classic Design Atelier',
+    duration: '6 Months',
+    image: '/gallery31.jpg'
+  },
+  {
+    id: 12,
+    title: 'Divine Energy Temple',
+    address: 'Berlin, Germany',
+    architect: 'Continental Design Studio',
+    duration: '5 Months',
+    image: '/gallery32.jpg'
+  },
+  {
+    id: 13,
+    title: 'Sacred Lotus Pavilion',
+    address: 'London, UK',
+    architect: 'Global Architects Inc.',
+    duration: '4 Months',
+    image: '/gallery33.jpg'
+  }
+]
+
     },
     {
         id: 'Sculptures',
