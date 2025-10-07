@@ -19,7 +19,7 @@ const projectCategories = [
     {
         id: 'Corporate',
         name: 'Corporate',
-        bannerImage: '/img5.png',
+        bannerImage: '/coporateBg.jpg',
         displayName: 'Corporate Projects',
         description: 'Community-focused architectural marvels that bring people together',
         projects: [
